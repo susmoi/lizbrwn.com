@@ -13,7 +13,7 @@ body {
   box-sizing: border-box;
 }
 
-h1{ font-family: 'Alata', sans-serif; 
+h1{ font-family: 'Alata', sans-serif;
     /* font-weight:;  */
     font-size: 2.488rem;
     margin-bottom: 3rem;
@@ -21,16 +21,16 @@ h1{ font-family: 'Alata', sans-serif;
     margin-top: none;
     color: #7d869c;
 }
-h2{ font-family: 'Alata', sans-serif; 
-    font-weight: 700; 
+h2{ font-family: 'Alata', sans-serif;
+    font-weight: 700;
     font-size: 1.44rem;
     margin-bottom: 1.2rem;
     line-height: none;
     margin-top: none;
     color: none;
 }
-h3{ font-family: 'Alata', sans-serif; 
-    font-weight: 600; 
+h3{ font-family: 'Alata', sans-serif;
+    font-weight: 600;
     font-size: 1rem;
     margin-bottom: none;
     line-height: none;
@@ -38,8 +38,8 @@ h3{ font-family: 'Alata', sans-serif;
   color: #283cee;}
 /* h4{} */
 
-p{ font-family: 'Lato', sans-serif; 
-    font-weight: 300; 
+p{ font-family: 'Lato', sans-serif;
+    font-weight: 300;
     font-size: 1rem;
     margin-bottom: none;
     line-height: none;
