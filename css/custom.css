@@ -32,7 +32,7 @@ h2{ font-family: 'Alata', sans-serif;
 h3{ font-family: 'Alata', sans-serif;
     font-weight: 600;
     font-size: 1rem;
-    margin-bottom: none;
+    margin-bottom: 0;
     line-height: none;
     margin-top: none;
   color: #283cee;}
@@ -41,7 +41,7 @@ h3{ font-family: 'Alata', sans-serif;
 p{ font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 1rem;
-    margin-bottom: none;
+    margin-bottom: 0;
     line-height: none;
     margin-top: none;
   }
@@ -156,7 +156,7 @@ p {
 
 .about-img{
     display: block;
-    width: 100%;
+    width: 70px;
     margin: 0 0 0 0;
     border-radius: 4px;
     padding-left: 0px;
