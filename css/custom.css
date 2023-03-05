@@ -16,11 +16,11 @@ body {
 h1{ font-family: 'Arial', sans-serif;
     /* font-weight:;  */
     font-size: 2.488rem;
-    font-weight: 100;
+    font-weight: 500;
     margin-bottom: 3rem;
     line-height: none;
     margin-top: none;
-    color: #7d869c;
+    color: none;
 }
 h2{ font-family: 'Arial', sans-serif;
     font-weight: 100;
@@ -36,7 +36,7 @@ h3{ font-family: 'Arial', sans-serif;
     margin-bottom: 0;
     line-height: none;
     margin-top: none;
-  color: #283cee;}
+    color: none;}
 /* h4{} */
 
 p{ font-family: 'Arial', sans-serif;
