@@ -1,3 +1,3 @@
 # lizbrwn.com
-Personal portfolio. Built with html, css, jQuery and bootstrap. 
+Personal portfolio. Built with html, css, jquery and bootstrap. 
 
