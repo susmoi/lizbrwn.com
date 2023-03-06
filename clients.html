@@ -196,8 +196,21 @@
       $(function(){
           $('#footer').load('cc-footer.html');
       });
-    </script>
+</script>
 
+    <!-- active effect -->
+    <script>
+    $(document).ready(function() {
+      $('.list-group-item').hover(
+        function() {
+          $(this).addClass('active');
+            },
+        function() {
+          $(this).removeClass('active');
+        }
+          );
+        });
+    </script>
     <!-- FUNCTIONS END -->
 
 
