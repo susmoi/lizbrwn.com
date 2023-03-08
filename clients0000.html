@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+    <!-- style sheets & images -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\custom.css">
+    <link rel="images" href="images">
+    <link rel="stylesheet" href="/path/to/theme.default.css">
+
+    <!-- fonts -->
+
+    <!-- scripts -->
+
+    <!-- jQ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js" integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- tablesorter -->
+
+    <!-- bootstrap -->
+
+    <!-- data tables -->
+
+  </head>
+  <body>
+    <!-- MAIN -->
+    <main>
+
+      <!--CLIENT WORK PAGE -->
+      <div class="container-fulid main-container">
+
+        <!-- NAV -->
+        <div id="nav">
+           <!-- cc-nav.html inserted below -->
+        </div>
+        <!-- NAV END -->
+
+        <!-- CLIENT TABLE -->
+
+        <div id="csvTable">
+
+        </div>
+
+        <!-- CLIENT TABLE END-->
+
+
+        </div>
+        <!-- CLIENT WORK PAGE END -->
+
+    </main>
+    <!-- END OF MAIN -->
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- cc-footer.html inserted below -->
+
+    </div>
+    <!-- FOOTER END -->
+
+    <!-- SCRIPTS
+
+    <!-- SCRIPTS END -->
+
+
+    <!-- FUNCTIONS -->
+    <!-- Nav -->
+    <script>
+      $(function()
+      {
+          $('#nav').load('cc-nav.html');
+      });
+    </script>
+
+    <!-- Footer -->
+    <script>
+      $(function(){
+          $('#footer').load('cc-footer.html');
+      });
+    </script>
+
+<!-- Import CSV -->
+<script>
+  $(document).ready(function(){
+    $.ajax({
+      type: "GET",
+      url: "https://lizbrwn.com/files/clients.csv",
+      dataType: "text",
+      success: function(data) {
+        var csvData = $.csv.toArrays(data);
+        var table = '<table>';
+        for (var row in csvData) {
+           table += '<tr>';
+           for (var item in csvData[row]) {
+               table += '<td>' + csvData[row][item] + '</td>';
+           }
+           table += '</tr>';
+        }
+        table += '</table>';
+        $('#csvTable').html(table);
+      }
+    });
+  });
+</script>
+
+    <!-- FUNCTIONS END -->
+
+
+  </body>
+</html>
