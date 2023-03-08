@@ -216,6 +216,11 @@ p {
   margin-top: 16rem;
 }
 
+.list-group-item {
+  border: none;
+}
+
+
 /* FOOTER */
 
 footer {
