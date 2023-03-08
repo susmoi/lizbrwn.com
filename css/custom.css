@@ -92,9 +92,11 @@ main {
 
 }
 
+/* Nav stylings */
+
 .main-nav{
 /* adds space below nav */
-  margin: 10rem 0 0 2rem;
+  margin: 2rem 0 0 2rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -105,9 +107,7 @@ main {
 .nav-link-group{
 /* makes nav flex column with even spacing */
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  /* line-height: 5rem; */
   font-family: lato;
   font-weight: 400;
   font-size: 1.1rem;
@@ -121,19 +121,14 @@ main {
 .nav-link:hover{
   text-decoration: underline;
 }
+
+
+
 /* TEXT */
 p {
   margin: 0 auto 1em;
 }
 
-/* .about-container{
-
-} */
-
-
-/* .about-p{
-  font-size: 1.5rem;
-} */
 
 .hero-p{
   font-size: .84rem;
@@ -203,10 +198,7 @@ p {
   font-size: .5em;
   padding: .7em
 }
-/* /MONOTYPE PAGE */
-/* .mono-hero-container{
- height: 100vh;
-}*/
+
 
 .mono-h1 {
   font-size: calc(16px + 7vw)
