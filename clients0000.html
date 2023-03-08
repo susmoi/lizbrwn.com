@@ -89,7 +89,7 @@
   $(document).ready(function(){
     $.ajax({
       type: "GET",
-      url: "https://lizbrwn.com/files/clients.csv",
+      url: "clients.csv",
       dataType: "text",
       success: function(data) {
         var csvData = $.csv.toArrays(data);
