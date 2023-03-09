@@ -108,12 +108,12 @@ main {
   text-align: end;
   background-color: white;
   z-index: 1;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #995309;
 
 }
 
 .nav-element{
-  padding: 5%;
+  padding: 2%;
 }
 
 
@@ -203,6 +203,7 @@ p {
 
 .list-group-item {
   border: none;
+  margin-top: 30%;
 }
 
 
