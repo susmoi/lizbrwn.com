@@ -114,11 +114,6 @@ main {
   border: 2px solid #be0eeb;
 }
 
-.nav-element:hover{
-  text-decoration: underline;
-}
-
-
 
 /* TEXT */
 p {
