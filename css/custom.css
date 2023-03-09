@@ -108,14 +108,12 @@ main {
   text-align: end;
   background-color: white;
   z-index: 1;
-  border-bottom: 2px #7c3617;
+  border-bottom: 2px solid red;
 
 }
 
 .nav-element{
-  color: #7d869c;
   padding: 5%;
-  border: 2px solid #be0eeb;
 }
 
 
