@@ -94,16 +94,6 @@ main {
 
 /* Nav stylings */
 
-.main-nav{
-/* adds space below nav */
-  margin: 2rem 0 0 2rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  text-align: end;
-  font-size: .5em;
-}
-
 .nav-link-group{
 /* makes nav flex column with even spacing */
   display: flex;
@@ -111,14 +101,20 @@ main {
   font-family: lato;
   font-weight: 400;
   font-size: 1.1rem;
+  margin: 2rem 0 0 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: end;
 }
 
-.nav-link{
+.nav-element{
+  border: red;
   color: #7d869c;
   margin-bottom: 2rem;
 }
 
-.nav-link:hover{
+.nav-element:hover{
   text-decoration: underline;
 }
 
