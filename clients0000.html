@@ -97,29 +97,29 @@
       });
     </script>
 
-<!-- Import CSV -->
-<script>
-  $(document).ready(function(){
-    $.ajax({
-      type: "GET",
-      url: "clients.csv",
-      dataType: "text",
-      success: function(data) {
-        var csvData = $.csv.toArrays(data);
-        var table = '<table>';
-        for (var row in csvData) {
-           table += '<tr>';
-           for (var item in csvData[row]) {
-               table += '<td>' + csvData[row][item] + '</td>';
-           }
-           table += '</tr>';
-        }
-        table += '</table>';
-        $('#csvTable').html(table);
-      }
-    });
-  });
-</script>
+    <!-- Import CSV -->
+    <script>
+      $(document).ready(function(){
+        $.ajax({
+          type: "GET",
+          url: "clients.csv",
+          dataType: "text",
+          success: function(data) {
+            var csvData = $.csv.toArrays(data);
+            var table = '<table>';
+            for (var row in csvData) {
+               table += '<tr>';
+               for (var item in csvData[row]) {
+                   table += '<td>' + csvData[row][item] + '</td>';
+               }
+               table += '</tr>';
+            }
+            table += '</table>';
+            $('#csvTable').html(table);
+          }
+        });
+      });
+    </script>
 
     <!-- FUNCTIONS END -->
 
