@@ -97,7 +97,7 @@ main {
 .nav-link-group{
 /* makes nav flex column with even spacing */
   display: flex;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
   font-family: lato;
   font-weight: 400;
   font-size: 1.1rem;
@@ -110,7 +110,7 @@ main {
 
 .nav-element{
   color: #7d869c;
-  margin-bottom: 2rem;
+  padding: 5%;
   border: 2px solid #be0eeb;
 }
 
