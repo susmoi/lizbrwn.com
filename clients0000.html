@@ -106,7 +106,7 @@
           dataType: "text",
           success: function(data) {
             var csvData = $.csv.toArrays(data);
-            var table = '<table>';
+            var table = '<table class="table">';
             for (var row in csvData) {
                table += '<tr>';
                for (var item in csvData[row]) {
