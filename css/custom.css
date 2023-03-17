@@ -130,6 +130,10 @@ main {
 
 
 /* TEXT */
+.index-header{
+  margin-top: 30%;
+}
+
 p {
   margin: 0 auto 1em;
 }
