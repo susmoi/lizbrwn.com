@@ -246,14 +246,14 @@ p {
 
 /* FOOTER */
 
-footer {
+.footer {
   /* put on bottom */
   position: sticky;
   bottom: 0;
   left: 0;
   /* colors the darn thing */
   color: white;
-  background: #7d869c;
+  background: #1C3738;
   /* pads the thing */
   padding: 3em;
   font-size: .5em;
