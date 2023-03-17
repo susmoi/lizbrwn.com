@@ -209,6 +209,10 @@ p {
   margin-top: 16rem;
 }
 
+.resourses{
+  
+}
+
 .resource-list-group{
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Set 3 columns with equal width */
