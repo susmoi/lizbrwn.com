@@ -14,3 +14,9 @@ navLinks.forEach(link => {
     link.classList.remove('active');
   }
 });
+
+if (navLinks.length > 0) {
+  console.log(`Successfully found ${navLinks.length} element(s) with class 'nav-element'`);
+} else {
+  console.log(`No elements found with class 'nav-element'`);
+}
