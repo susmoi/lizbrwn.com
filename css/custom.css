@@ -128,6 +128,10 @@ main {
   color: #2D7653;
 }
 
+.nav-element.active{
+  background-color: red;
+}
+
 
 /* TEXT */
 .index-header{
