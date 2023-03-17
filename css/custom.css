@@ -101,12 +101,11 @@ main {
   font-family: lato;
   font-weight: 400;
   font-size: 1.1rem;
-  margin: 0 0 0 2rem;
   position: fixed;
   top: 0;
   width: 100%;
   text-align: end;
-  background-color: white;
+  background-color: #995309;
   z-index: 1;
   border-bottom: 2px solid #995309;
 
@@ -114,6 +113,7 @@ main {
 
 .nav-element{
   padding: 2%;
+  color: #995309;
 }
 
 
