@@ -201,9 +201,20 @@ p {
   margin-top: 16rem;
 }
 
-.list-group-item {
+.list-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.list-item {
   border: none;
   margin-top: 30%;
+  padding: .75rem 1.25rem;
+  border-radius: .25rem;
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
 }
 
 
