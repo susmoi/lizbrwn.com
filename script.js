@@ -20,6 +20,6 @@ $(document).ready(function(){
   if (navLinks.length > 0) {
     console.log(`Successfully found ${navLinks.length} element(s) with class 'nav-element'`);
   } else {
-    console.log(`No elements found with class 'nav-element'`);
+    console.log(`Elements not found with class 'nav-element'`);
   }
 });
