@@ -237,11 +237,8 @@ p {
 
 .resource-item {
   border: none;
-  margin-top: 30%;
-  padding: .75rem 1.25rem;
   border-radius: .25rem;
-  grid-column: span 1; /* Set each item to span 1 column */
-  grid-row: span 1; /* Set each item to span 1 row */
+  margin-bottom: 3rem;
 }
 
 .resource-link:hover{
