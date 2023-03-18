@@ -219,10 +219,6 @@ p {
   font-size: calc(16px + 7vw)
 }
 
-.clients {
-  margin-top: 16rem;
-}
-
 .resourses{
   margin: 10rem 4rem 0 4rem;
 }
@@ -261,6 +257,11 @@ p {
 
 .most-frequent{
   padding: 0 10% 5% 10%;
+}
+
+/* CLIENTS */
+.clients{
+  margin: 10rem 4rem 0 4rem;
 }
 
 
