@@ -238,7 +238,18 @@ p {
 .resource-item {
   border: none;
   border-radius: .25rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  height: 120px;
+  display: block;
+}
+
+.resource-name{
+  font-size: .7rem;
+  color: red;
+}
+
+.resource-text{
+  font-size: 12px;
 }
 
 .resource-link:hover{
