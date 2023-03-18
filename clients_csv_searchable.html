@@ -135,7 +135,7 @@
           dataType: "text",
           success: function(data) {
             var csvData = $.csv.toArrays(data);
-            var table = '<table class="table table-striped table-hover table-bordered table-small table-responsive">';
+            var table = '<table id=table_id class="table table-striped table-hover table-bordered table-small table-responsive">';
             for (var row in csvData) {
                table += '<tr>';
                for (var item in csvData[row]) {
