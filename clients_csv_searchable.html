@@ -129,25 +129,33 @@
     <!-- Import CSV -->
     <script type="text/javascript" >
       $(document).ready(function(){
+
         $.ajax({
           type: "GET",
           url: "./files/clients.csv",
           dataType: "text",
           success: function(data) {
-            var csvData = $.csv.toArrays(data);
-            var table = '<table id=table_id class="table tablesorter">';
-            for (var row in csvData) {
-               table += '<tr>';
-               for (var item in csvData[row]) {
-                   table += '<td>' + csvData[row][item] + '</td>';
-               }
-               table += '</tr>';
-            }
-            table += '</table>';
-            $('#csvTable').html(table);
+              var csvData = $.csv.toArrays(data);
+              var table = '<table id="table_id" class="table tablesorter">';
+              // Add thead and first row of th tags
+              table += '<thead><tr>';
+              for (var item in csvData[0]) {
+                  table += '<th>' + csvData[0][item] + '</th>';
+              }
+              table += '</tr></thead>';
+              // Add tbody
+              table += '<tbody>';
+              for (var row = 1; row < csvData.length; row++) {
+                  table += '<tr>';
+                  for (var item in csvData[row]) {
+                      table += '<td>' + csvData[row][item] + '</td>';
+                  }
+                  table += '</tr>';
+              }
+              table += '</tbody></table>';
+              $('#csvTable').html(table);
           }
-        });
-
+      });
 
         $('#table_id').DataTable({
             "lengthMenu": [[5, 10, 25, -1], [5, 10, 25, "All"]],
@@ -161,9 +169,6 @@
         });
       });
 
-    </script>
-
-    <script type="text/javascript">
     $(function() {
         $("table").tablesorter();
     });
