@@ -127,7 +127,7 @@
     </script>
 
     <!-- Import CSV -->
-    <script>
+    <script type="text/javascript" >
       $(document).ready(function(){
         $.ajax({
           type: "GET",
@@ -147,24 +147,20 @@
             $('#csvTable').html(table);
           }
         });
-      });
-    </script>
 
-    <!-- table functions -->
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('#table_id').DataTable( {
+
+        $('#table_id').DataTable({
             "lengthMenu": [[5, 10, 25, -1], [5, 10, 25, "All"]],
             "pagingType": "full_numbers",
-            "columnDefs": [ {
+            "columnDefs": [{
                 "targets": 'no-sort',
                 "orderable": false,
-            } ],
+            }],
             "searching": true,
             "ordering": true
-        } );
+        });
+      });
 
-    } );
     </script>
 
     <script type="text/javascript">
