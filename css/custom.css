@@ -126,6 +126,7 @@ main {
 
 .nav-element:hover{
   color: #2D7653;
+  text-decoration: none;
 }
 
 .nav-element.active{
@@ -223,7 +224,7 @@ p {
 }
 
 .resourses{
-
+  margin: 10rem 3rem 0 3rem;
 }
 
 .resource-list-group{
@@ -243,9 +244,12 @@ p {
   display: block;
 }
 
+.resource-category {
+  color: #4B9395;
+}
+
 .resource-name{
   font-size: .7rem;
-  color: red;
 }
 
 .resource-text{
