@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>CLIENTS - SEARCHABLE TABLE - NO CSV IMPORT</title>
 
 
     <!-- style sheets & images -->
@@ -17,26 +17,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- scripts -->
-    <script src="script.js"></script>
-
-    <!-- jQ -->
+    <script src="https://kit.fontawesome.com/bb7ea3d4ab.js" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- tablesorter -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js" integrity="sha512-qzgd5cYSZcosqpzpn7zF2ZId8f/8CHmFKZ8j7mU4OUXTNRd5g+ZHBPsgKEwoqxCtdQvExE5LprwwPAgoicguNg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
+    <script src="script.js"></script>
 
-    <!-- ajax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-
-    <!-- bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    </script>
-
-    <!-- data tables -->
-    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 
 
   </head>
@@ -170,14 +157,14 @@
     </div>
     <!-- FOOTER END -->
 
-    <!-- SCRIPTS
+    <!-- SCRIPTS -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </script>
     <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script> -->
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 
 
 
@@ -237,30 +224,20 @@
     </script>
 
     <!-- table functions -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#table_id').DataTable( {
+            "lengthMenu": [[5, 10, 25, -1], [5, 10, 25, "All"]],
+            "pagingType": "full_numbers",
+            "columnDefs": [ {
+                "targets": 'no-sort',
+                "orderable": false,
+            } ],
+            "searching": true,
+            "ordering": true
+        } );
 
-    <!-- Import CSV -->
-
-    <script>
-      $(document).ready(function(){
-        $.ajax({
-          type: "GET",
-          url: "clients.csv",
-          dataType: "text",
-          success: function(data) {
-            var csvData = $.csv.toArrays(data);
-            var table = '<table>';
-            for (var row in csvData) {
-               table += '<tr>';
-               for (var item in csvData[row]) {
-                   table += '<td>' + csvData[row][item] + '</td>';
-               }
-               table += '</tr>';
-            }
-            table += '</table>';
-            $('#csvTable').html(table);
-          }
-        });
-      });
+    } );
     </script>
 
     <script type="text/javascript">

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>CLIENTS - NO TABLE - CSV IMPORT</title>
 
 
     <!-- style sheets & images -->
@@ -125,7 +125,7 @@
       $(document).ready(function(){
         $.ajax({
           type: "GET",
-          url: "clients.csv",
+          url: "./files/clients.csv",
           dataType: "text",
           success: function(data) {
             var csvData = $.csv.toArrays(data);

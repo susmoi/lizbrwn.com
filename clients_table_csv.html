@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>CLIENTS - TABLE and CSV IMPORT</title>
 
 
     <!-- style sheets & images -->
@@ -236,22 +236,32 @@
         });
     </script>
 
-    <!-- table functions
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('#table_id').DataTable( {
-            "lengthMenu": [[5, 10, 25, -1], [5, 10, 25, "All"]],
-            "pagingType": "full_numbers",
-            "columnDefs": [ {
-                "targets": 'no-sort',
-                "orderable": false,
-            } ],
-            "searching": true,
-            "ordering": true
-        } );
+    <!-- table functions -->
 
-    } );
-    </script> -->
+    <!-- Import CSV -->
+
+    <script>
+      $(document).ready(function(){
+        $.ajax({
+          type: "GET",
+          url: "./files/clients.csv",
+          dataType: "text",
+          success: function(data) {
+            var csvData = $.csv.toArrays(data);
+            var table = '<table>';
+            for (var row in csvData) {
+               table += '<tr>';
+               for (var item in csvData[row]) {
+                   table += '<td>' + csvData[row][item] + '</td>';
+               }
+               table += '</tr>';
+            }
+            table += '</table>';
+            $('#csvTable').html(table);
+          }
+        });
+      });
+    </script>
 
     <script type="text/javascript">
     $(function() {

@@ -2,14 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>CLIENTS - TABLE - NO CSV IMPORT</title>
 
 
     <!-- style sheets & images -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="images" href="images">
-    <link rel="stylesheet" href="/path/to/theme.default.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,11 +18,8 @@
     <!-- scripts -->
     <script src="https://kit.fontawesome.com/bb7ea3d4ab.js" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js" integrity="sha512-qzgd5cYSZcosqpzpn7zF2ZId8f/8CHmFKZ8j7mU4OUXTNRd5g+ZHBPsgKEwoqxCtdQvExE5LprwwPAgoicguNg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
-
 
 
   </head>
@@ -43,7 +39,8 @@
         <div class="clients col-7 offset-2 mb-5">
           <h1 class= > </h1>
 
-             <table id="table_id" class="table tablesorter">
+
+             <table class="table">
 
              <thead>
                <tr>
@@ -141,8 +138,10 @@
              </tbody>
            </table>
 
+
         </div>
         <!-- CLIENT WORK END -->
+
 
       </div>
       <!-- CLIENT PAGE END -->
@@ -158,16 +157,11 @@
     <!-- FOOTER END -->
 
     <!-- SCRIPTS -->
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-
-
-
     <!-- SCRIPTS END -->
 
 
@@ -222,30 +216,6 @@
           );
         });
     </script>
-
-    <!-- table functions -->
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('#table_id').DataTable( {
-            "lengthMenu": [[5, 10, 25, -1], [5, 10, 25, "All"]],
-            "pagingType": "full_numbers",
-            "columnDefs": [ {
-                "targets": 'no-sort',
-                "orderable": false,
-            } ],
-            "searching": true,
-            "ordering": true
-        } );
-
-    } );
-    </script>
-
-    <script type="text/javascript">
-    $(function() {
-        $("table").tablesorter();
-    });
-    </script>
-
     <!-- FUNCTIONS END -->
 
 
