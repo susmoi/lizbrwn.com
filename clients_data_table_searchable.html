@@ -149,7 +149,9 @@
         }],
         "ajax": {
           "url": "./files/clients.csv",
-          "dataSrc": "data"
+          "dataSrc": function(data){
+            var parsedData = $.csv.toArrays(data);
+            return parsedData.slice(1);}
         },
         "columns": [
           { "data": "Company" },
