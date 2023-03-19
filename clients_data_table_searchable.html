@@ -148,10 +148,8 @@
           "orderable": false,
         }],
         "ajax": {
-          "url": "./files/clients.csv",
-          "dataSrc": function(data){
-            var parsedData = $.csv.toArrays(data);
-            return parsedData.slice(1);}
+          "url": "./files/clients.json",
+          "dataSrc": data
         },
         "columns": [
           { "data": "Company" },
