@@ -105,7 +105,7 @@ main {
 .nav-link-group{
 /* makes nav flex column with even spacing */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-family: lato;
   font-weight: 400;
   font-size: 1.1rem;
