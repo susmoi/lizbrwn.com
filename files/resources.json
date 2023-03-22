@@ -104,6 +104,14 @@
 },
 
 {
+"Resource link": "https://www.internetsociety.org/resources/",
+"Resource name": "Internet Society",
+"Resource description": "A global nonprofit organization working to keep the Internet open, globally connected, secure, and trustworthy.",
+"Resource tag": "Reports",
+"Resource placement": " ",
+},
+
+{
 "Resource link": "https://ourworldindata.org/",
 "Resource name": "Our World in Data",
 "Resource description": "A database that reports numbers related to a range of 'global problems.'",
@@ -130,8 +138,17 @@
 {
 "Resource link": "https://encyclopediadramatica.online/Main_Page",
 "Resource name": "Encyclopedia Dramatica",
-"Resource description": "'A catalog for drama and memes. Cousin-site to 4chan and other hells.'",
+"Resource description": "A catalog for drama and memes. Cousin-site to 4chan and other hells.",
 "Resource tag": "wiki-encyclopedia",
 "Resource placement": " ",
 }
+
+{
+"Resource link": "https://www.flickr.com/creativecommons/by-nc-sa-2.0/tags/?q=",
+"Resource name": "Creative Commons",
+"Resource description": "Creative Commons is a non-profit that offers copyright-free permissions for creative works.",
+"Resource tag": "Open-source Images",
+"Resource placement": " ",
+}
+
 ]
