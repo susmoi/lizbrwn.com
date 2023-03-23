@@ -36,23 +36,28 @@ async function fetchJsonFiles() {
     // List of JSON filenames to import
     const jsonFilenames = ['tools.json', 'guides.json', 'content.json', 'statistics',];
     // creates an array of promises based on the jasonFilenames array.
-    //
     //const jsonFiles = await Promise.all(jsonFilenames.map(async (filename) => {
+
+    for (const filename of jsonFilenames) {
+      console.log(filename);
+
       const response = await fetch(`files/resources/${filename}`);
       if (response.ok) {
         return await response.json();
-      } else {
+      }
+      else {
         throw new Error(`>>>fetching ${filename}: ${response.statusText}<<<`);
+            }
       }
     //}));
 
     return jsonFiles;
 
-  } catch (error) {
-    console.error('*Error fetching JSON files:*', error);
-    return [];
-  }
-}
+        } catch (error) {
+          console.error('*Error fetching JSON files:*', error);
+          return [];
+        }
+      }
 
 // Function to process JSON dictionaries
 async function processJsonFiles() {
