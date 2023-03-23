@@ -37,19 +37,19 @@ async function fetchJsonFiles() {
     const jsonFilenames = ['tools.json', 'guides.json', 'content.json', 'statistics',];
     // creates an array of promises based on the jasonFilenames array.
     //
-    const jsonFiles = await Promise.all(jsonFilenames.map(async (filename) => {
-      const response = await fetch(`files/resources/${filename}.json`);
+    //const jsonFiles = await Promise.all(jsonFilenames.map(async (filename) => {
+      const response = await fetch(`files/resources/${filename}`);
       if (response.ok) {
         return await response.json();
       } else {
         throw new Error(`>>>fetching ${filename}: ${response.statusText}<<<`);
       }
-    }));
+    //}));
 
     return jsonFiles;
 
   } catch (error) {
-    console.error('Error fetching JSON files:', error);
+    console.error('*Error fetching JSON files:*', error);
     return [];
   }
 }
