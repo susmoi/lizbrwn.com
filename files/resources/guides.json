@@ -4,7 +4,7 @@
 "Resource name": "The Data Visualisation Catalogue",
 "Resource description": "List of the common approaches to data visualisation.",
 "Resource tag": "Catalogue",
-"Resource placement": "n/a",
+"Resource placement": "n/a"
 },
 
 {
@@ -12,14 +12,14 @@
 "Resource name": "Periodic Table of NLP Tasks",
 "Resource description": "A list of Natural Language Processing tasks from simple to complex.",
 "Resource tag": "Guide",
-"Resource placement": "n/a",
+"Resource placement": "n/a"
 },
 
 {
 "Resource link": "https://developer.mozilla.org/en-US/",
 "Resource name": "Mozilla Developer Network Guides",
 "Resource description": "Documentation for popular web technologies, including CSS, HTML, and JavaScript.",
-"Resource tag": "Guides",
+"Resource tag": "Guides"
 },
 
 {
@@ -27,7 +27,7 @@
 "Resource name": "Influence Watch",
 "Resource description": "Descriptions of public policy individuals and organizations, conceived by the Capital Research Center.",
 "Resource tag": "Guides",
-"Resource placement": "n/a",
+"Resource placement": "n/a"
 },
 
 {
@@ -35,6 +35,6 @@
 "Resource name": "The Linux Documentation Project",
 "Resource description": "A document that describes the working basics of computers, Unix OS, and the Internet in non-technical language.",
 "Resource tag": "Guides",
-"Resource placement": "n/a",
+"Resource placement": "n/a"
 }
 ]

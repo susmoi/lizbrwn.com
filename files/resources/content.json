@@ -4,7 +4,7 @@
 "Resource name": "Hacker News",
 "Resource description": "Anything that good hackers would find interesting.",
 "Resource tag": "News",
-"Resource placement": "Most frequent",
+"Resource placement": "Most frequent"
 },
 
 {
@@ -13,7 +13,7 @@
 "Resource description": "Ideas worth spreading.",
 "Resource tag": "Talks",
 "Resource placement": "n/a",
-"Resource placement": "Most frequent",
+"Resource placement": "Most frequent"
 },
 
 {
@@ -21,7 +21,7 @@
 "Resource name": "Lighthouse Reports",
 "Resource description": "Public interest investigations about migration, climate, conflict, and corruption.",
 "Resource tag": "Reports",
-"Resource placement": "n/a",
+"Resource placement": "n/a"
 },
 
 {
@@ -29,7 +29,7 @@
 "Resource name": "Cultural Atlas",
 "Resource description": "Information about global cultures and religions, from the perspective of Australia.",
 "Resource tag": "Educational",
-"Resource placement": "n/a",
+"Resource placement": "n/a"
 },
 
 {
@@ -37,7 +37,7 @@
 "Resource name": "Slide Share",
 "Resource description": "Informational decks from professional organizations.",
 "Resource tag": "Slides",
-"Resource placement": "n/a",
+"Resource placement": "n/a"
 },
 
 {
@@ -45,7 +45,7 @@
 "Resource name": "Internet Society",
 "Resource description": "A global nonprofit organization working to keep the Internet open, globally connected, secure, and trustworthy.",
 "Resource tag": "Reports",
-"Resource placement": "n/a",
+"Resource placement": "n/a"
 },
 
 {
@@ -53,6 +53,6 @@
 "Resource name": "Encyclopedia Dramatica",
 "Resource description": "A catalog for drama and memes. Cousin-site to 4chan and other hells.",
 "Resource tag": "wiki-encyclopedia",
-"Resource placement": "n/a",
+"Resource placement": "n/a"
 }
 ]
