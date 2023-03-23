@@ -1,17 +1,14 @@
-[
-{
-"Resource link": "https://ourworldindata.org/",
-"Resource name": "Our World in Data",
-"Resource description": "A database that reports numbers related to a range of 'global problems.'",
-"Resource tag": "Charts and data",
-"Resource placement": "n/a"
-},
+[{
+		"Resource link": "https://ourworldindata.org/",
+		"Resource name": "Our World in Data",
+		"Resource description": "A database that reports numbers related to a range of 'global problems.'",
+		"Resource tag": "Charts and data"
+	},
 
-{
-"Resource link": "http://data.uis.unesco.org/Index.aspx",
-"Resource name": "UNESCO Institute for Statistics",
-"Resource description": "Internationally-comparable data on education, science, culture, and communication.",
-"Resource tag": "database",
-"Resource placement": "n/a"
-}
+	{
+		"Resource link": "http://data.uis.unesco.org/Index.aspx",
+		"Resource name": "UNESCO Institute for Statistics",
+		"Resource description": "Internationally-comparable data on education, science, culture, and communication.",
+		"Resource tag": "database"
+	}
 ]

@@ -1,17 +1,10 @@
-[
-{
-"Resource link": "https://www.thewallgroup.com/",
-"Resource name": "The Wall Group",
-"Resource description": "n/a",
-"Resource tag": "n/a",
-"Resource placement": "n/a"
-},
+[{
+		"Resource link": "https://www.thewallgroup.com/",
+		"Resource name": "The Wall Group"
+	},
 
-{
-"Resource link": "https://lalaland-artists.com",
-"Resource name": "Lalaland Artists",
-"Resource description": "n/a",
-"Resource tag": "n/a",
-"Resource placement": "n/a"
-}
+	{
+		"Resource link": "https://lalaland-artists.com",
+		"Resource name": "Lalaland Artists"
+	}
 ]

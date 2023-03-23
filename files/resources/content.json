@@ -1,58 +1,54 @@
-[
-{
-"Resource link": "https://news.ycombinator.com/",
-"Resource name": "Hacker News",
-"Resource description": "Anything that good hackers would find interesting.",
-"Resource tag": "News",
-"Resource placement": "Most frequent"
-},
+[{
+		"Resource link": "https://news.ycombinator.com/",
+		"Resource name": "Hacker News",
+		"Resource description": "Anything that good hackers would find interesting.",
+		"Resource tag": "News",
+		"Resource placement": "Most frequent 1"
+	},
 
-{
-"Resource link": "https://www.ted.com/talks",
-"Resource name": "TED",
-"Resource description": "Ideas worth spreading.",
-"Resource tag": "Talks",
-"Resource placement": "n/a",
-"Resource placement": "Most frequent"
-},
+	{
+		"Resource link": "https://www.ted.com/talks",
+		"Resource name": "TED",
+		"Resource description": "Ideas worth spreading.",
+		"Resource tag": "Talks",
+		"Resource placement": "Most frequent 2"
+	},
 
-{
-"Resource link": "https://www.lighthousereports.com/investigations/",
-"Resource name": "Lighthouse Reports",
-"Resource description": "Public interest investigations about migration, climate, conflict, and corruption.",
-"Resource tag": "Reports",
-"Resource placement": "n/a"
-},
+	{
+		"Resource link": "https://www.lighthousereports.com/investigations/",
+		"Resource name": "Lighthouse Reports",
+		"Resource description": "Public interest investigations about migration, climate, conflict, and corruption.",
+		"Resource tag": "Reports"
 
-{
-"Resource link": "https://culturalatlas.sbs.com.au/",
-"Resource name": "Cultural Atlas",
-"Resource description": "Information about global cultures and religions, from the perspective of Australia.",
-"Resource tag": "Educational",
-"Resource placement": "n/a"
-},
+	},
 
-{
-"Resource link": "https://www.slideshare.net/",
-"Resource name": "Slide Share",
-"Resource description": "Informational decks from professional organizations.",
-"Resource tag": "Slides",
-"Resource placement": "n/a"
-},
+	{
+		"Resource link": "https://culturalatlas.sbs.com.au/",
+		"Resource name": "Cultural Atlas",
+		"Resource description": "Information about global cultures and religions, from the perspective of Australia.",
+		"Resource tag": "Educational"
 
-{
-"Resource link": "https://www.internetsociety.org/resources/",
-"Resource name": "Internet Society",
-"Resource description": "A global nonprofit organization working to keep the Internet open, globally connected, secure, and trustworthy.",
-"Resource tag": "Reports",
-"Resource placement": "n/a"
-},
+	},
 
-{
-"Resource link": "https://encyclopediadramatica.online/Main_Page",
-"Resource name": "Encyclopedia Dramatica",
-"Resource description": "A catalog for drama and memes. Cousin-site to 4chan and other hells.",
-"Resource tag": "wiki-encyclopedia",
-"Resource placement": "n/a"
-}
+	{
+		"Resource link": "https://www.slideshare.net/",
+		"Resource name": "Slide Share",
+		"Resource description": "Informational decks from professional organizations.",
+		"Resource tag": "Slides"
+
+	},
+
+	{
+		"Resource link": "https://www.internetsociety.org/resources/",
+		"Resource name": "Internet Society",
+		"Resource description": "A global nonprofit organization working to keep the Internet open, globally connected, secure, and trustworthy.",
+		"Resource tag": "Reports"
+	},
+
+	{
+		"Resource link": "https://encyclopediadramatica.online/Main_Page",
+		"Resource name": "Encyclopedia Dramatica",
+		"Resource description": "A catalog for drama and memes. Cousin-site to 4chan and other hells.",
+		"Resource tag": "wiki-encyclopedia"
+	}
 ]
