@@ -38,7 +38,7 @@ async function fetchJsonFiles() {
     // creates an array of promises based on the jasonFilenames array.
     //
     const jsonFiles = await Promise.all(jsonFilenames.map(async (filename) => {
-      const response = await fetch(`files/resources/${filename}`);
+      const response = await fetch(`files/resources/${filename}.json`);
       if (response.ok) {
         return await response.json();
       } else {
