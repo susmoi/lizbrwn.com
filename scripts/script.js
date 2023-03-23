@@ -42,7 +42,7 @@ async function fetchJsonFiles() {
       if (response.ok) {
         return await response.json();
       } else {
-        throw new Error(`Error fetching ${filename}: ${response.statusText}`);
+        throw new Error(`>>>fetching ${filename}: ${response.statusText}<<<`);
       }
     }));
 
