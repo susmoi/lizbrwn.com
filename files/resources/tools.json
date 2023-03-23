@@ -4,7 +4,7 @@
 "Resource name": "Perplexity",
 "Resource description": "A conversational interface that delivers intuitive search results.",
 "Resource tag": "AI search and summary",
-"Resource placement": " ",
+"Resource placement": "n/a",
 },
 
 {
@@ -12,7 +12,7 @@
 "Resource name": "Marginalia",
 "Resource description": "An independent search engine that favors non-commercial, text-heavy sites over modern web sites.",
 "Resource tag": "DIY search engine",
-"Resource placement": " ",
+"Resource placement": "n/a",
 },
 
 {
@@ -20,7 +20,7 @@
 "Resource name": "Parts of Speech Tagging Tool",
 "Resource description": "Assigns parts of speech such as noun, verb, adjective to sentences and words.",
 "Resource tag": "Tool",
-"Resource placement": " ",
+"Resource placement": "n/a",
 },
 
 {
@@ -36,7 +36,7 @@
 "Resource name": "Creative Commons",
 "Resource description": "Creative Commons is a non-profit that offers copyright-free permissions for creative works.",
 "Resource tag": "Open-source Images",
-"Resource placement": " ",
+"Resource placement": "n/a",
 }
 
 {
@@ -44,7 +44,7 @@
 "Resource name": "Transvribe",
 "Resource description": "Video and YouTube search. Enter URL then ask a question about the video",
 "Resource tag": "AI video search",
-"Resource placement": " ",
+"Resource placement": "n/a",
 }
 
 ]
