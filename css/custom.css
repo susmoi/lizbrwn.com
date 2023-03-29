@@ -239,7 +239,11 @@ p {
 }
 
 .resource-category {
-  color: #4B9395;
+
+}
+
+.resource-category-header{
+  color: #FFF;
 }
 
 .resource-name{
