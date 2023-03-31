@@ -24,7 +24,7 @@ $(document).ready(function() {
 
     console.log("HTML generated");
 
-    $("#resources-test").html(resourcesHtml);
+    $("#resources").html(resourcesHtml);
     console.log("HTML inserted into page");
   }).fail(function() {
     console.log("Failed to retrieve JSON data");
