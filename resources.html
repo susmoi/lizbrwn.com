@@ -23,7 +23,7 @@
     <script src="https://kit.fontawesome.com/bb7ea3d4ab.js" crossorigin="anonymous">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="scripts/resources-script.js"></script>
 
 
   </head>
@@ -31,7 +31,7 @@
     <!-- MAIN -->
     <main>
 
-      <!--RESOURCE PAGE -->
+      <!--RESOURCE Container -->
       <div class="container-fulid main-container">
 
         <!-- NAV -->
@@ -41,7 +41,7 @@
         <!-- NAV END -->
         <div class="w-100"></div>
 
-        <!-- RESOURCE LIST -->
+        <!-- RESOURCE Dynamic list -->
           <div class="resourses">
 
             <!-- MOST FREQUENT -->
@@ -58,8 +58,6 @@
                 </div>
                 </a>
               </div>
-
-
               <!-- Hacker News -->
               <div class="col-4 most-frequent-two">
                <a href="https://news.ycombinator.com/" class="resource-link" target="_blank">
@@ -72,7 +70,6 @@
                </div>
                </a>
               </div>
-
               <!-- Prodcut Hunt -->
               <div class="col-4 most-frequent-three">
                 <a href="https://www.producthunt.com/" class="resource-link" target="_blank">
@@ -90,265 +87,45 @@
 
             <!-- Categories -->
             <div class="row categories mt-5">
-
               <!-- Tools -->
               <div class="col-3 resource-category tools">
-                <h5 class="resource-category-header">Tools</h5>
-
-                <!-- 1 -->
-                <a href="https://www.perplexity.ai/" class="resource-link" target="_blank">
-                    <div class="resource-item list-group-item-action">
-                   <div class="d-flex w-100 justify-content-between">
-                     <h2 class="resource-name mb-1">Perplexity</h2>
-                   </div>
-                   <p class="resource-text mb-1">A conversational interface that  delivers intuitive search results.</p>
-                   <small class="text-muted">AI search and summary</small>
-                 </div>
-                 </a>
-
-               <!-- 2 -->
-               <a href="https://search.marginalia.nu/" class="resource-link" target="_blank">
-                 <div class="resource-item list-group-item-action">
-                   <div class="d-flex w-100 justify-content-between">
-                     <h2 class="resource-name mb-1">Marginalia</h2>
-                   </div>
-                   <p class="resource-text mb-1">An independent search engine that favors non-commercial, text-heavy sites over modern web sites.</p>
-                   <small class="text-muted">DIY search engine</small>
-                 </div>
-                 </a>
-
-                <!-- 3 -->
-                <a href="https://parts-of-speech.info/" class="resource-link" target="_blank">
-                <div class="resource-item list-group-item-action">
-                 <div class="d-flex w-100 justify-content-between">
-                   <h2 class="resource-name mb-1">Parts of Speech Tagging Tool</h2>
-                 </div>
-                 <p class="resource-text mb-1">Assigns parts of speech such as noun, verb, adjective to sentences and words.</p>
-                 <small class="text-muted">Tool</small>
-               </div>
-               </a>
-
-               <!-- 4 -->
-               <a href="https://www.producthunt.com/" class="resource-link" target="_blank">
-                 <div class="resource-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                  <h2 class="resource-name mb-1">Product Hunt</h2>
+                <h5>Tools</h5>
+                <div id="tools-resources">
                 </div>
-                <p class="resource-text mb-1">A place to share the latest mobile apps, websites, hardware projects, and tech creations.</p>
-                <small class="text-muted">List</small>
+
               </div>
-              </a>
-
-              <!-- 5 -->
-              <a href="https://www.flickr.com/creativecommons/by-nc-sa-2.0/tags/?q=" class="resource-link" target="_blank">
-                <div class="resource-item list-group-item-action">
-               <div class="d-flex w-100 justify-content-between">
-                 <h2 class="resource-name mb-1">Creative Commons</h2>
-               </div>
-               <p class="resource-text mb-1">Creative Commons is a non-profit that offers copyright-free permissions for creative works.</p>
-               <small class="text-muted">Open-source Images</small>
-             </div>
-             </a>
-
-             <!-- 6 -->
-             <a href="https://www.transvribe.com/" class="resource-link" target="_blank">
-               <div class="resource-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h2 class="resource-name mb-1">Transvribe</h2>
-              </div>
-              <p class="resource-text mb-1">Video and YouTube search. Enter URL then ask a question about the video.</p>
-              <small class="text-muted">AI video search</small>
-             </div>
-             </a>
-
-               <!-- Tools end -->
-              </div>
-
+              <!-- Tools end -->
               <!-- Guides -->
               <div class="col-3 resource-category guides">
-                <h5 class="resource-category-header">Guides</h5>
-                <!-- 1 -->
-                <a href="https://datavizcatalogue.com/index.html" class="resource-link" target="_blank">
-                <div class="resource-item list-group-item-action">
-                 <div class="d-flex w-100 justify-content-between">
-                   <h2 class="resource-name mb-1">The Data Visualisation Catalogue </h2>
-                 </div>
-                 <p class="resource-text mb-1">List of the common approaches to data visualisation.</p>
-                 <small class="text-muted">Catalogue</small>
-               </div>
-               </a>
-                <!-- 2 -->
-                <a href="https://www.innerdoc.com/periodic-table-of-nlp-tasks/" class="resource-link" target="_blank">
-                  <div class="resource-item list-group-item-action">
-                 <div class="d-flex w-100 justify-content-between">
-                   <h2 class="resource-name mb-1">Periodic Table of NLP Tasks</h2>
-                 </div>
-                 <p class="resource-text mb-1">A list of Natural Language Processing tasks from simple to complex.</p>
-                 <small class="text-muted">Guide</small>
-               </div>
-               </a>
-
-                <!-- 3 -->
-                <a href="https://developer.mozilla.org/en-US/" class="resource-link" target="_blank">
-                 <div class="resource-item list-group-item-action">
-                 <div class="d-flex w-100 justify-content-between">
-                   <h2 class="resource-name mb-1">Mozilla Developer Network Guides</h2>
-                 </div>
-                 <p class="resource-text mb-1">Documentation for popular web technologies, including CSS, HTML, and JavaScript.</p>
-                 <small class="text-muted">Guides</small>
+                <h5>Guides</h5>
+                <div id="guides-resources">
                 </div>
-                </a>
-
-                <!-- 4 -->
-                <a href="https://www.influencewatch.org/" class="resource-link" target="_blank">
-                <div class="resource-item list-group-item-action">
-                 <div class="d-flex w-100 justify-content-between">
-                   <h2 class="resource-name mb-1">Influence Watch</h2>
-                 </div>
-                 <p class="resource-text mb-1">Descriptions of public policy individuals and organizations, conceived by the Capital Research Center.</p>
-                 <small class="text-muted">Guides</small>
-               </div>
-               </a>
-
-               <!-- 5 -->
-               <a href="https://tldp.org/HOWTO/Unix-and-Internet-Fundamentals-HOWTO/index.html" class="resource-link" target="_blank">
-               <div class="resource-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                  <h2 class="resource-name mb-1">The Linux Documentation Project</h2>
-                </div>
-                <p class="resource-text mb-1">A document that describes the working basics of computers, Unix OS, and the Internet in non-technical language.</p>
-                <small class="text-muted">Guides</small>
-               </div>
-               </a>
-
-
-
               </div>
-
+              <!-- Guides end -->
               <!-- Content -->
               <div class="col-3 resource-category content">
-                <h5 class="resource-category-header">Content</h5>
-                <!-- 1 -->
-                <a href="https://news.ycombinator.com/" class="resource-link" target="_blank">
-                <div class="resource-item list-group-item-action">
-                 <div class="d-flex w-100 justify-content-between">
-                   <h2 class="resource-name mb-1">Hacker News</h2>
-                 </div>
-                 <p class="resource-text mb-1">Anything that good hackers would find interesting.</p>
-                 <small class="text-muted">News</small>
+                <h5>Content</h5>
+                <div id="content-resources">
                 </div>
-                </a>
-
-                <!-- 2 -->
-                <a href="https://www.ted.com/talks" class="resource-link" target="_blank">
-                  <div class="resource-item list-group-item-action">
-                 <div class="d-flex w-100 justify-content-between">
-                   <h2 class="resource-name mb-1">TED</h2>
-                 </div>
-                 <p class="resource-text mb-1">Ideas worth spreading.</p>
-                 <small class="text-muted">Talks</small>
-               </div>
-               </a>
-
-
-                <!-- 3 -->
-                <a href="https://www.lighthousereports.com/investigations/" class="resource-link" target="_blank">
-                 <div class="resource-item list-group-item-action">
-                 <div class="d-flex w-100 justify-content-between">
-                   <h2 class="resource-name mb-1">Lighthouse Reports</h2>
-                 </div>
-                 <p class="resource-text mb-1">Public interest investigations about migration, climate, conflict, and corruption.</p>
-                 <small class="text-muted">Reports</small>
-               </div>
-               </a>
-
-
-                <!-- 4 -->
-                <a href="https://culturalatlas.sbs.com.au/" class="resource-link" target="_blank">
-                  <div class="resource-item list-group-item-action">
-                 <div class="d-flex w-100 justify-content-between">
-                   <h2 class="resource-name mb-1">Cultural Atlas</h2>
-                 </div>
-                 <p class="resource-text mb-1">Information about global cultures and religions, from the perspective of Australia.</p>
-                 <small class="text-muted">Educational</small>
-               </div>
-               </a>
-
-
-                <!-- 5 -->
-                <a href="https://www.slideshare.net/" class="resource-link" target="_blank">
-                 <div class="resource-item list-group-item-action">
-                 <div class="d-flex w-100 justify-content-between">
-                   <h2 class="resource-name mb-1">Slide Share</h2>
-                 </div>
-                 <p class="resource-text mb-1">Informational decks from  professional organizations.</p>
-                 <small class="text-muted">Slides</small>
-                </div>
-                </a>
-
-
-              <!-- 6 -->
-              <a href="https://www.internetsociety.org/resources/" class="resource-link" target="_blank">
-               <div class="resource-item list-group-item-action">
-               <div class="d-flex w-100 justify-content-between">
-                 <h2 class="resource-name mb-1">Internet Society</h2>
-               </div>
-               <p class="resource-text mb-1">A global nonprofit organization working to keep the Internet open, globally connected, secure, and trustworthy.</p>
-               <small class="text-muted">Reports</small>
               </div>
-              </a>
-
-            </div>
               <!-- Content end -->
-
-
               <!-- Statistics -->
               <div class="col-3 resource-category statistics">
-                <h5 class="resource-category-header">Statistics</h5>
-                <!-- 1 -->
-                <a href="https://ourworldindata.org/" class="resource-link" target="_blank">
-                <div class="resource-item list-group-item-action">
-                 <div class="d-flex w-100 justify-content-between">
-                   <h2 class="resource-name mb-1">Our World in Data</h2>
-                 </div>
-                 <p class="resource-text mb-1">A database that reports numbers related to a range of 'global problems.'</p>
-                 <small class="text-muted">Charts and data</small>
+                <h5>Statistics</h5>
+                <div id="statistics-resources">
                 </div>
-                </a>
-
-                <!-- 2 -->
-                <a href="http://data.uis.unesco.org/Index.aspx" class="resource-link" target="_blank">
-                <div class="resource-item list-group-item-action">
-                 <div class="d-flex w-100 justify-content-between">
-                   <h2 class="resource-name mb-1">UNESCO Institute for Statistics</h2>
-                 </div>
-                 <p class="resource-text mb-1">Internationally-comparable data on education, science, culture, and communication.</p>
-                 <small class="text-muted">database</small>
-               </div>
-               </a>
-
-                <!-- 3 -->
-                <a href="https://encyclopediadramatica.online/Main_Page" class="resource-link" target="_blank">
-                 <div class="resource-item list-group-item-action">
-                 <div class="d-flex w-100 justify-content-between">
-                   <h2 class="resource-name mb-1">Encyclopedia Dramatica</h2>
-                 </div>
-                 <p class="resource-text mb-1">'A catalog for drama and memes. Cousin-site to 4chan and other hells.'</p>
-                 <small class="text-muted">wiki-encyclopedia</small>
-               </div>
-               </a>
-
-               <!-- 4 -->
-
               </div>
+              <!-- Statistics end -->
             </div>
+            <!-- Categories end -->
 
           </div>
-        <!-- RESOURCE WORK END -->
+
+        <!-- RESOURCE Dynamic list END -->
 
 
       </div>
-      <!-- RESOURCE PAGE END -->
+      <!-- RESOURCE Container -->
 
     </main>
     <!-- END OF MAIN -->
