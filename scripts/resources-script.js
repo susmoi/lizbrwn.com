@@ -10,20 +10,20 @@ $(document).ready(function() {
 
     var resourcesHtml = "";
 
-    $.each(data, function(key, val) {
-        resourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
-        resourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
-        resourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
-        resourcesHtml += "<h5 class='mb-1' style='color:#FF6600'>" + val['Resource name'] + "</h5>";
-        resourcesHtml += "</div>";
-        resourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
-        resourcesHtml += "<small class='text-muted'>" + val['Resource tag'] + "</small>";
-        resourcesHtml += "</div>";
-        resourcesHtml += "</a>";
-      });
-
+    //Iterate through the file and input the values as HTML elements
+  $.each(data, function(key, val) {
+      resourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
+      resourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
+      resourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
+      resourcesHtml += "<h5 class='mb-1' style='color:#FF6600'>" + val['Resource name'] + "</h5>";
+      resourcesHtml += "</div>";
+      resourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
+      resourcesHtml += "<small class='text-muted'>" + val['Resource tag'] + "</small>";
+      resourcesHtml += "</div>";
+      resourcesHtml += "</a>";
+    });
     console.log("HTML generated");
-
+      //input the HTML in the element with the #content-resources ID
     $("#content-resources").html(resourcesHtml);
     console.log("HTML inserted into page");
   }).fail(function() {
@@ -36,6 +36,7 @@ $(document).ready(function() {
 
     var resourcesHtml = "";
 
+    //Iterate through the file and input the values as HTML elements
     $.each(data, function(key, val) {
       resourcesHtml += "<div class='resource'>";
       resourcesHtml += "<a href='" + val['Resource link'] + "'>" + val['Resource name'] + "</a>";
@@ -45,12 +46,10 @@ $(document).ready(function() {
       if (val['Resource placement']) {
         resourcesHtml += "<span>" + val['Resource placement'] + "</span>";
       }
-
       resourcesHtml += "</div>";
     });
-
     console.log("HTML generated");
-
+    //input the HTML in the element with the #tools-resources ID
     $("#tools-resources").html(resourcesHtml);
     console.log("HTML inserted into page");
   }).fail(function() {
@@ -59,11 +58,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
+// END of functions
   console.log("End of document ready function");
 });
