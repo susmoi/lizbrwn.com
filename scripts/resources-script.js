@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     console.log("HTML generated");
 
-    $("#resources").html(resourcesHtml);
+    $("#content-resources").html(resourcesHtml);
     console.log("HTML inserted into page");
   }).fail(function() {
     console.log("Failed to retrieve JSON data");
@@ -52,7 +52,7 @@ $(document).ready(function() {
 
     console.log("HTML generated");
 
-    $("#resources").html(resourcesHtml);
+    $("#tools-resources").html(resourcesHtml);
     console.log("HTML inserted into page");
   }).fail(function() {
     console.log("Failed to retrieve JSON data");
