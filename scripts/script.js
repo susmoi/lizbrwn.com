@@ -45,7 +45,7 @@ async function fetchJsonFiles() {
       if (response.ok) {
         return await response.json();
       }
-      
+
       else {
         throw new Error(`>>>fetching ${filename}: ${response.statusText}<<<`);
             }

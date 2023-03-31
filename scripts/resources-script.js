@@ -18,6 +18,9 @@ $.getJSON("files/resources/content.json", function(data) {
     resourcesHtml += "<a href='" + val['Resource link'] + "'>" + val['Resource name'] + "</a>";
     resourcesHtml += "<p>" + val['Resource description'] + "</p>";
     resourcesHtml += "<span>" + val['Resource tag'] + "</span>";
+    if (resource['Resource placement']) {
+      resourcesHtml += "<span>" + resource['Resource placement'] + "</span>";
+    }
     resourcesHtml += "</div>";
   });
 
