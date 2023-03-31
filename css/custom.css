@@ -236,6 +236,9 @@ p {
   border-radius: .25rem;
   margin-bottom: 5rem;
   display: block;
+  padding: 10% 10% 10% 10%;
+  height: 10rem;
+  background-color: #FCFCFC;
 }
 
 .resource-category {
@@ -243,7 +246,7 @@ p {
 }
 
 .resource-category-header{
-  color: #FFF;
+  color: #1C3738;
 }
 
 .resource-name{
