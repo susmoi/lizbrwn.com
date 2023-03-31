@@ -17,7 +17,7 @@ $(document).ready(function() {
       resourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
       resourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
       resourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
-      resourcesHtml += "<h2 class='mb-1' style='color:#FF6600'>" + val['Resource name'] + "</h2>";
+      resourcesHtml += "<h2 class=' resource-name mb-1' >" + val['Resource name'] + "</h2>";
       resourcesHtml += "</div>";
       resourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
       resourcesHtml += "<small class='text-muted'>" + val['Resource tag'] + "</small>";
@@ -44,7 +44,7 @@ $(document).ready(function() {
         resourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
         resourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
         resourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
-        resourcesHtml += "<h2 class='mb-1' style='color:#FF6600'>" + val['Resource name'] + "</h2>";
+        resourcesHtml += "<h2 class='resource-name mb-1'>" + val['Resource name'] + "</h2>";
         resourcesHtml += "</div>";
         resourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
         resourcesHtml += "<small class='text-muted'>" + val['Resource tag'] + "</small>";
@@ -73,7 +73,7 @@ $(document).ready(function() {
         resourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
         resourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
         resourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
-        resourcesHtml += "<h2 class='mb-1' style='color:#FF6600'>" + val['Resource name'] + "</h2>";
+        resourcesHtml += "<h2 class='resource-name mb-1'>" + val['Resource name'] + "</h2>";
         resourcesHtml += "</div>";
         resourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
         resourcesHtml += "<small class='text-muted'>" + val['Resource tag'] + "</small>";
@@ -99,7 +99,7 @@ $(document).ready(function() {
           resourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
           resourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
           resourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
-          resourcesHtml += "<h2 class='mb-1' style='color:#FF6600'>" + val['Resource name'] + "</h2>";
+          resourcesHtml += "<h2 class='resource-name mb-1'>" + val['Resource name'] + "</h2>";
           resourcesHtml += "</div>";
           resourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
           resourcesHtml += "<small class='text-muted'>" + val['Resource tag'] + "</small>";
