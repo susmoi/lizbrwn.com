@@ -11,17 +11,16 @@ $(document).ready(function() {
     var resourcesHtml = "";
 
     $.each(data, function(key, val) {
-      resourcesHtml += "<div class='resource'>";
-      resourcesHtml += "<a href='" + val['Resource link'] + "'>" + val['Resource name'] + "</a>";
-      resourcesHtml += "<p>" + val['Resource description'] + "</p>";
-      resourcesHtml += "<span>" + val['Resource tag'] + "</span>";
-
-      if (val['Resource placement']) {
-        resourcesHtml += "<span>" + val['Resource placement'] + "</span>";
-      }
-
-      resourcesHtml += "</div>";
-    });
+        resourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
+        resourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
+        resourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
+        resourcesHtml += "<h5 class='mb-1' style='color:#FF6600'>" + val['Resource name'] + "</h5>";
+        resourcesHtml += "</div>";
+        resourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
+        resourcesHtml += "<small class='text-muted'>" + val['Resource tag'] + "</small>";
+        resourcesHtml += "</div>";
+        resourcesHtml += "</a>";
+      });
 
     console.log("HTML generated");
 
