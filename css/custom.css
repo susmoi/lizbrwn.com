@@ -86,6 +86,16 @@ main {
   /* padding: 10rem 10rem; */
 }
 
+.main-container {
+  container-type: inline-size;
+}
+
+@container(min-width: 700px){
+  index-header{
+    font-size: 10rem;
+  }
+}
+
 .row{
   /* removes default right margin on rows */
   margin-right: 0;
