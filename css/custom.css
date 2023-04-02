@@ -49,6 +49,9 @@ p{ font-family: 'Arial', sans-serif;
     margin-top: none;
   }
 
+.index-body p, h3 {
+  font-size: 2rem;
+}
 
 .section-link {
   font-family: 'Lato', sans-serif;
@@ -90,12 +93,12 @@ main {
   container-type: inline-size;
 }
 
-@container(max-width: 900px){
+@media(max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 2dppx){
   .index-header{
     max-width: 66%;
   }
   .index-body{
-    max-width: 66%;
+    max-width: 66.666667%;
   }
 }
 
