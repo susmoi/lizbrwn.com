@@ -90,9 +90,9 @@ main {
   container-type: inline-size;
 }
 
-@container(min-width: 700px){
+@container(max-width: 700px){
   .index-header{
-    font-size: 10rem;
+    font-size: 4rem;
   }
 }
 
