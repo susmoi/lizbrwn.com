@@ -91,7 +91,7 @@ main {
 }
 
 @container(min-width: 700px){
-  index-header{
+  .index-header{
     font-size: 10rem;
   }
 }
