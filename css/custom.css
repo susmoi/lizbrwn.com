@@ -85,6 +85,10 @@ main {
   /* padding: 10rem 10rem; */
 }
 
+.index-header{
+  margin-top: 30%;
+}
+
 .index-body > p, h3{
   font-size: 1rem;
   color: powderblue;
@@ -93,6 +97,9 @@ main {
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
   .container{
     max-width: 66.666667%;
+  }
+  .{
+    font-size: 1.5rem;
   }
   .index-body > p, h3{
     font-size: 0.8rem;
@@ -148,11 +155,26 @@ main {
   color: #FFF;
 }
 
+/* Nav Media Queries */
+@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
+  nav {
+    position: fixed;
+    z-index: 300;
+    bottom: 0;
+    width: 100%;
+  }
+  .nav-link-group {
+    display: grid;
+    justify-content: inherit;
+    font-size: .7rem;
+    text-align: center;
+    border-bottom: none;
+  }
+}
+
 
 /* TEXT */
-.index-header{
-  margin-top: 30%;
-}
+
 
 p {
   margin: 0 auto 1em;
