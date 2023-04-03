@@ -166,6 +166,7 @@ main {
     z-index: 300;
     bottom: 0;
     width: 100%;
+    top: auto;
   }
   .nav-link-group {
     display: grid;
