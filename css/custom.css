@@ -49,10 +49,6 @@ p{ font-family: 'Arial', sans-serif;
     margin-top: none;
   }
 
-.index-body p, h3 {
-  font-size: 2rem;
-}
-
 .section-link {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -89,16 +85,18 @@ main {
   /* padding: 10rem 10rem; */
 }
 
-.main-container {
-  container-type: inline-size;
+.index-body > p, h3{
+  font-size: 1rem;
+  color: powderblue;
 }
 
-@media(max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 2dppx){
-  .index-header{
-    max-width: 66%;
-  }
-  .index-body{
+@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
+  .container{
     max-width: 66.666667%;
+  }
+  .index-body > p, h3{
+    font-size: 0.8rem;
+    color: orchid;
   }
 }
 
