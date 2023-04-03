@@ -123,6 +123,14 @@ main {
 
 /* Nav stylings */
 
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 300;
+  bottom: inherit;
+}
+
 .nav-link-group{
 /* makes nav flex column with even spacing */
   display: flex;
@@ -130,12 +138,8 @@ main {
   font-family: lato;
   font-weight: 400;
   font-size: 1.1rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
   text-align: end;
   background-color: #FFF;
-  z-index: 1;
   border-bottom: 5px solid #1C3738;
 }
 
@@ -169,9 +173,6 @@ main {
     font-size: .7rem;
     text-align: center;
     border-bottom: none;
-    position: inherit;
-    top: none;
-    z-index: inherit;
   }
 }
 
