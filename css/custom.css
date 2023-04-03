@@ -169,6 +169,9 @@ main {
     font-size: .7rem;
     text-align: center;
     border-bottom: none;
+    position: inherit;
+    top: none;
+    z-index: inherit;
   }
 }
 
