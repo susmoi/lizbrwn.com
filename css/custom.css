@@ -82,7 +82,10 @@ main {
   /* put on top of footer*/
   position: relative;
   z-index: 1;
-  /* padding: 10rem 10rem; */
+}
+
+.index-container{
+  margin: 3rem;
 }
 
 .index-header{
