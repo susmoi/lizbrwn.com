@@ -89,7 +89,9 @@ main {
 }
 
 .index-header{
-  margin-top: 30%;
+  font-size: 2.488rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
 }
 
 .index-body > p, h3{
@@ -104,6 +106,12 @@ main {
   .{
     font-size: 1.5rem;
   }
+
+.index-header {
+  font-size: 1.5rem;
+
+}
+
   .index-body > p, h3{
     font-size: 0.8rem;
     color: orchid;
