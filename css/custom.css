@@ -112,7 +112,7 @@ main {
 
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
   main {
-    margin-top: ;
+    margin-top: 0;
   }
 
   .container{
@@ -310,12 +310,12 @@ p {
   margin-bottom: 5rem;
   display: block;
   padding: 10% 10% 10% 10%;
-  height: 15rem;
   background-color: #FCFCFC;
+  color: black;
 }
 
 .resource-category {
-
+  color: white;
 }
 
 .resource-category-header{
@@ -324,6 +324,7 @@ p {
 
 .resource-name{
   font-size: .7rem;
+  font-weight: 600;
 }
 
 .resource-text{
