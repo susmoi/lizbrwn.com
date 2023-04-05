@@ -91,11 +91,10 @@ main {
   position: relative;
   z-index: 1;
   background-color: black;
-  margin-top: 10rem;
 }
 
 .index-container{
-  margin: 3rem;
+  margin: 7rem, 3rem;
 }
 
 .index-header{
@@ -112,7 +111,7 @@ main {
 
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
   main {
-    margin-top: 0;
+
   }
 
   .container{
