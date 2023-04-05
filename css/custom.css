@@ -359,8 +359,8 @@ p {
   position: sticky;
   bottom: 0;
   left: 0;
-  color: black;
-  background: #1C3738;
+  color: white;
+  background: black;
   padding: 3em;
   font-size: .5em;
   text-align: center;
@@ -376,13 +376,13 @@ p {
 
 /* selects footer icons */
 .fab, .far{
-  color: black;
+  color: white;
 }
 
 /* selects :hover footer icons */
 .fab:hover, .far:hover{
   opacity: 40%;
-  color: white;
+  color: orchid;
   text-decoration: none;
 }
 
