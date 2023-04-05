@@ -49,7 +49,7 @@ h3{
 /* h4{} */
 
 p{ font-family: "clearSans", "Arial", sans-serif;
-    font-weight: 100;
+    font-weight: ;
     font-size: 0.7rem;
     margin-bottom: 0;
     line-height: none;
@@ -58,7 +58,7 @@ p{ font-family: "clearSans", "Arial", sans-serif;
 
 .section-link {
   font-family: "clearSans", "Arial", sans-serif;
-  font-weight: 300;
+  font-weight: ;
   font-size: 2rem;
   color: #0B0D3D
 }
@@ -154,7 +154,7 @@ main {
   display: flex;
   justify-content: space-evenly;
   font-family: "clearSans", "Arial", sans-serif;
-  font-weight: 400;
+  font-weight: ;
   font-size: 1.1rem;
   text-align: end;
   background-color: #FFF;
