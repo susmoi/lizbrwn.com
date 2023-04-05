@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 
 //GET TOOLS
-  $.getJSON("files/resources/tools.json", function(data) {
+  $.getJSON("files/resources/resources-A-Z.json", function(data) {
     console.log("JSON retrieved successfully");
 
     var resourcesHtml = "";
@@ -25,8 +25,8 @@ $(document).ready(function() {
       resourcesHtml += "</a>";
     });
     console.log("HTML generated");
-    //input the HTML in the element with the #tools-resources ID
-    $("#tools-resources").html(resourcesHtml);
+    //input the HTML in the element with the #az-resources ID
+    $("#az-resources").html(resourcesHtml);
     console.log("HTML inserted into page");
   }).fail(function() {
     console.log("Failed to retrieve JSON data");

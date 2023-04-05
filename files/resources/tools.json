@@ -27,17 +27,10 @@
 	},
 
 	{
-		"Resource link": "https://www.flickr.com/creativecommons/by-nc-sa-2.0/tags/?q=",
-		"Resource name": "Creative Commons",
-		"Resource description": "Creative Commons is a non-profit that offers copyright-free permissions for creative works.",
-		"Resource tag": "Open-source Images"
-	},
-
-	{
 		"Resource link": "https://www.transvribe.com/",
 		"Resource name": "Transvribe",
 		"Resource description": "Video and YouTube search. Enter URL then ask a question about the video",
-		"Resource tag": "AI video search"
+		"Resource tag": "AI video search",
 	}
 
 ]
