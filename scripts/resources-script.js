@@ -89,7 +89,7 @@ $(document).ready(function() {
     });
 
     //GET STATISTICS
-      $.getJSON("files/resources/statistics.json", function(data) {
+      $.getJSON("files/resources/stats.json", function(data) {
         console.log("JSON retrieved successfully");
 
         var resourcesHtml = "";
@@ -111,7 +111,7 @@ $(document).ready(function() {
         $("#statistics-resources").html(resourcesHtml);
         console.log("HTML inserted into page");
       }).fail(function() {
-        console.log("Failed to retrieve JSON data");
+        console.log("Failed to retrieve STATS JSON data");
       });
 
 
