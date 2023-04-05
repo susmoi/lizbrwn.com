@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 
 //GET TOOLS
-  $.getJSON("files/resources/alpha.json", function(data) {
+  $.getJSON("files/resources/guides.json", function(data) {
     console.log("ALPHA.JSON retrieved successfully");
 
     var resourcesHtml = "";
@@ -28,9 +28,9 @@ $(document).ready(function() {
     //input the HTML in the element with the #az-resources ID
     $("#az-resources").html(resourcesHtml);
     console.log("Alpha. JSON HTML inserted into page");
-  }).fail(function() {
-    console.log("Failed to retrieve ALPHA JSON data");
-  });
+    }).fail(function() {
+      console.log("Failed to retrieve ALPHA JSON data");
+    });
 
 
   //GET GUIDES
