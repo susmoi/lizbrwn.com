@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-size: 16px;
   background-image: image('images\edited-profile-pic.png');
+  background-color: black;
 }
 
 /*Heading styling*/
@@ -89,6 +90,7 @@ main {
   /* put on top of footer*/
   position: relative;
   z-index: 1;
+  background-color: black;
 }
 
 .index-container{
@@ -99,11 +101,12 @@ main {
   font-size: 2.488rem;
   font-weight: 500;
   margin-bottom: 2.1rem;
+  color: white;
 }
 
 .index-body > p, h3{
   font-size: 1rem;
-  color: powderblue;
+  color: white;
 }
 
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
@@ -121,7 +124,7 @@ main {
 
   .index-body > p, h3{
     font-size: 0.8rem;
-    color: orchid;
+    color: white;
   }
 }
 
@@ -157,14 +160,15 @@ main {
   font-weight: ;
   font-size: 1.1rem;
   text-align: end;
-  background-color: #FFF;
-  border-bottom: 5px solid #1C3738;
+  background-color: black;
+  border-bottom: 5px solid orchid;
 }
 
 
 .nav-element{
   padding: 2%;
-  color: #1C3738;
+  color: #white;
+  background-color: black;
 }
 
 .nav-element:hover{
@@ -173,7 +177,7 @@ main {
 }
 
 .nav-element.active{
-  background-color: #1C3738;
+  background-color: orchid;
   color: #FFF;
 }
 
@@ -352,14 +356,11 @@ p {
 /* FOOTER */
 
 .footer {
-  /* put on bottom */
   position: sticky;
   bottom: 0;
   left: 0;
-  /* colors the darn thing */
-  color: white;
+  color: black;
   background: #1C3738;
-  /* pads the thing */
   padding: 3em;
   font-size: .5em;
   text-align: center;
@@ -375,7 +376,7 @@ p {
 
 /* selects footer icons */
 .fab, .far{
-  color: white;
+  color: black;
 }
 
 /* selects :hover footer icons */
