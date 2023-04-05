@@ -7,8 +7,8 @@ $(document).ready(function() {
 
 
 //GET TOOLS
-  $.getJSON("files/resources/resources-A-Z.json", function(data) {
-    console.log("JSON retrieved successfully");
+  $.getJSON("files/resources/alpha.json", function(data) {
+    console.log("ALPHA.JSON retrieved successfully");
 
     var resourcesHtml = "";
 
@@ -27,9 +27,9 @@ $(document).ready(function() {
     console.log("HTML generated");
     //input the HTML in the element with the #az-resources ID
     $("#az-resources").html(resourcesHtml);
-    console.log("HTML inserted into page");
+    console.log("Alpha. JSON HTML inserted into page");
   }).fail(function() {
-    console.log("Failed to retrieve JSON data");
+    console.log("Failed to retrieve ALPHA JSON data");
   });
 
 
