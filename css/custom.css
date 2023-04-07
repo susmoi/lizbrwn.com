@@ -116,6 +116,7 @@ main {
   .container{
 
   }
+
   .{
     font-size: 1.5rem;
   }
@@ -126,7 +127,7 @@ main {
 }
 
   .index-body > p {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     color: white;
   }
 }
