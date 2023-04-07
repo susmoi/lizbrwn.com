@@ -112,7 +112,7 @@ $(document).ready(function() {
 //         console.log("HTML inserted into page");
 //       }).fail(function() {
 //         console.log("Failed to retrieve STATS JSON data");
-      });
+//      });
 
 
 
