@@ -103,8 +103,8 @@ main {
   color: white;
 }
 
-.index-body > p, h3{
-  font-size: .6rem;
+.index-body > p {
+  font-size: .9rem;
   color: white;
 }
 
@@ -125,8 +125,8 @@ main {
 
 }
 
-  .index-body > p, h3{
-    font-size: 0.4rem;
+  .index-body > p {
+    font-size: 0.5rem;
     color: white;
   }
 }

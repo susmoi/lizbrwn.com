@@ -14,20 +14,6 @@
   		"Resource tag": "Catalogue"
   	},
 
-    {
-      "Resource link": "https://tldp.org/HOWTO/Unix-and-Internet-Fundamentals-HOWTO/index.html",
-      "Resource name": "The Linux Documentation Project",
-      "Resource description": "A document that describes the working basics of computers, Unix OS, and the Internet in non-technical language.",
-      "Resource tag": "Linux guides"
-    },
-
-    {
-      "Resource link": "https://developer.mozilla.org/en-US/",
-      "Resource name": "Mozilla Developer Network Guides",
-      "Resource description": "Documentation for popular web technologies, including CSS, HTML, and JavaScript.",
-      "Resource tag": "Web development guides"
-    },
-
   {
 		"Resource link": "https://encyclopediadramatica.online/Main_Page",
 		"Resource name": "Encyclopedia Dramatica",
@@ -65,10 +51,24 @@
   },
 
   {
+    "Resource link": "https://tldp.org/HOWTO/Unix-and-Internet-Fundamentals-HOWTO/index.html",
+    "Resource name": "Linux Documentation Project (The)",
+    "Resource description": "A document that describes the working basics of computers, Unix OS, and the Internet in non-technical language.",
+    "Resource tag": "Linux guides"
+  },
+
+  {
     "Resource link": "https://search.marginalia.nu/",
     "Resource name": "Marginalia",
     "Resource description": "An independent search engine that favors non-commercial, text-heavy sites over modern web sites.",
     "Resource tag": "DIY search engine"
+  },
+
+  {
+    "Resource link": "https://developer.mozilla.org/en-US/",
+    "Resource name": "Mozilla Developer Network Guides",
+    "Resource description": "Documentation for popular web technologies, including CSS, HTML, and JavaScript.",
+    "Resource tag": "Web development guides"
   },
 
   {
