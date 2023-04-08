@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 //GET TOOLS
   $.getJSON("files/resources/alpha.json", function(data) {
-    console.log("ALPHA.JSON retrieved successfully");
+    console.log("Retrieved successfully: alpha.json");
 
     var resourcesHtml = "";
 
@@ -24,7 +24,7 @@ $(document).ready(function() {
       resourcesHtml += "</a>";
       resourcesHtml += "</div>";
     });
-    console.log("HTML generated");
+    console.log("A-Z resources HTML generated");
     //input the HTML in the element with the #az-resources ID
     $("#az-resources").html(resourcesHtml);
 
@@ -45,7 +45,7 @@ $(document).ready(function() {
         writingResourcesHtml += "</div>";
       }
     });
-    console.log("HTML generated for writing resources");
+    console.log("writing resources HTML generated");
     // input the HTML in the element with the #writing-resources ID
     $("#writing-resources").html(writingResourcesHtml);
     console.log("Writing resources HTML inserted into page");
@@ -53,7 +53,7 @@ $(document).ready(function() {
     //create Writing resources HTML
     var mostFrequentResourcesHtml = "";
     $.each(data, function(key, val) {
-      if (val['Resource tag'] === "mostfrequent") {
+      if (val['Resource placement'] === "mostfrequent") {
         mostFrequentResourcesHtml += "<div>";
         mostFrequentResourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
         mostFrequentResourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
@@ -67,7 +67,7 @@ $(document).ready(function() {
         mostFrequentResourcesHtml += "</div>";
       }
     });
-    console.log("HTML generated for writing resources");
+    console.log("Most Frequent resources HTML generated");
     // input the HTML in the element with the #writing-resources ID
     $("#most-frequent-resources").html(mostFrequentResourcesHtml);
     console.log("Most Frequent resources HTML inserted into page");
