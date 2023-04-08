@@ -22,7 +22,7 @@
     "Resource name": "Hacker News",
     "Resource description": "Anything that good hackers would find interesting.",
     "Resource tag": "News",
-    "Resource placement": "Most frequent 1"
+    "Resource placement": "mostfrequent"
   },
   {
     "Resource link": "https://www.influencewatch.org/",
@@ -101,7 +101,6 @@
     "Resource name": "TED",
     "Resource description": "Ideas worth spreading.",
     "Resource tag": "News",
-    "Resource placement": "Most frequent 2"
   },
   {
     "Resource link": "https://www.transvribe.com/",

@@ -14,7 +14,7 @@ $(document).ready(function() {
     $.each(data, function(key, val) {
       resourcesHtml += "<div>";
       resourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
-      resourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
+      resourcesHtml += "<div class='resource-item list-group-item-action'>";
       resourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
       resourcesHtml += "<h2 class=' resource-name mb-1' >" + val['Resource name'] + "</h2>";
       resourcesHtml += "</div>";
@@ -34,7 +34,7 @@ $(document).ready(function() {
       if (val['Resource tag'] === "Writing") {
         writingResourcesHtml += "<div>";
         writingResourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
-        writingResourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
+        writingResourcesHtml += "<div class='resource-item list-group-item-action'>";
         writingResourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
         writingResourcesHtml += "<h2 class='resource-name mb-1'>" + val['Resource name'] + "</h2>";
         writingResourcesHtml += "</div>";
@@ -49,6 +49,28 @@ $(document).ready(function() {
     // input the HTML in the element with the #writing-resources ID
     $("#writing-resources").html(writingResourcesHtml);
     console.log("Writing resources HTML inserted into page");
+
+    //create Writing resources HTML
+    var mostFrequentResourcesHtml = "";
+    $.each(data, function(key, val) {
+      if (val['Resource tag'] === "mostfrequent") {
+        mostFrequentResourcesHtml += "<div>";
+        mostFrequentResourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
+        mostFrequentResourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
+        mostFrequentResourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
+        mostFrequentResourcesHtml += "<h2 class='resource-name mb-1'>" + val['Resource name'] + "</h2>";
+        mostFrequentResourcesHtml += "</div>";
+        mostFrequentResourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
+        mostFrequentResourcesHtml += "<small class='text-muted'>" + val['Resource tag'] + "</small>";
+        mostFrequentResourcesHtml += "</div>";
+        mostFrequentResourcesHtml += "</a>";
+        mostFrequentResourcesHtml += "</div>";
+      }
+    });
+    console.log("HTML generated for writing resources");
+    // input the HTML in the element with the #writing-resources ID
+    $("#most-frequent-resources").html(mostFrequentResourcesHtml);
+    console.log("Most Frequent resources HTML inserted into page");
 
     console.log("Alpha. JSON HTML inserted into page");
     }).fail(function() {
