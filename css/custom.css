@@ -243,6 +243,12 @@ main {
   .nav-element {
     padding: 1.5rem;
   }
+
+  .nav-mobile-wrapper{
+    background-color: black;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 
