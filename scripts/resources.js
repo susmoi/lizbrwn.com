@@ -2,7 +2,7 @@
 // import files/resources JSON files
 
 $(document).ready(function() {
-  console.log("Document ready");
+  console.log("RESOURCES: Document ready");
 
 //GET TOOLS
   $.getJSON("files/resources/alpha.json", function(data) {
@@ -24,9 +24,10 @@ $(document).ready(function() {
       resourcesHtml += "</a>";
       resourcesHtml += "</div>";
     });
-    console.log("A-Z resources HTML generated");
+    console.log("Generated successfully: A-Z resources");
     //input the HTML in the element with the #az-resources ID
     $("#az-resources").html(resourcesHtml);
+    console.log("Inserted successfully: A-Z resources");
 
     //create Writing resources HTML
     var writingResourcesHtml = "";
@@ -45,10 +46,10 @@ $(document).ready(function() {
         writingResourcesHtml += "</div>";
       }
     });
-    console.log("writing resources HTML generated");
+    console.log("Generated successfully: Writing resources");
     // input the HTML in the element with the #writing-resources ID
     $("#writing-resources").html(writingResourcesHtml);
-    console.log("Writing resources HTML inserted into page");
+    console.log("Inserted successfully: Writing resources");
 
     //create Writing resources HTML
     var mostFrequentResourcesHtml = "";
@@ -67,16 +68,15 @@ $(document).ready(function() {
         mostFrequentResourcesHtml += "</div>";
       }
     });
-    console.log("Most Frequent resources HTML generated");
+    console.log("Generated successfully: Most Frequent resources");
     // input the HTML in the element with the #writing-resources ID
     $("#most-frequent-resources").html(mostFrequentResourcesHtml);
-    console.log("Most Frequent resources HTML inserted into page");
+    console.log("Inserted successfully: Most Frequent resources");
 
-    console.log("Alpha. JSON HTML inserted into page");
     }).fail(function() {
-      console.log("Failed to retrieve ALPHA JSON data. Validate JSON using this editor: https://jsoneditoronline.org/");
+      console.log("Failed to retrieve: alpha.json (Validate JSON using this editor: https://jsoneditoronline.org/)");
     });
 
 // END of functions
-  console.log("End of document ready function");
+  console.log("RESOURCES: End of document ready function");
 });
