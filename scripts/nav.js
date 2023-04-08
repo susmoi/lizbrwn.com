@@ -1,14 +1,14 @@
 // Places nav on desktop and mobile
 
 $(document).ready(function() {
-  console.log("Document ready");
+  console.log("NAV: Document ready");
 
   $(function() {
     // Loads the mobile nav
     // Checks if screen matches media query on page load
     if (window.matchMedia("(max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx)").matches) {
       $('#nav-mobile').load('cc-nav.html', function() {
-        console.log(`MOBILE NAV LOADED`);
+        console.log(`Loaded successfully: Mobile Nav`);
 
         // Get the current URL of the page
         const currentUrl = window.location.href;
@@ -26,16 +26,16 @@ $(document).ready(function() {
         });
 
         if (navLinks.length > 0) {
-          console.log(`MOBILE NAV: Successfully found ${navLinks.length} element(s) with class 'nav-element'`);
+          console.log(`Found Successfully: ${navLinks.length} element(s) with class 'nav-element'`);
         } else {
-          console.log(`MOBILE NAV ELEMENTS NOT FOUND! 'nav-element'`);
+          console.log(`Failed to find: 'nav-element'`);
         }
       });
     }
     // loads the desktop nav
     else{
     $('#nav').load('cc-nav.html', function() {
-        console.log(`DESKTOP NAV LOADED`);
+        console.log(`Loaded successfully: Desktop Nav`);
         // Get the current URL of the page
         const currentUrl = window.location.href;
 
@@ -52,9 +52,9 @@ $(document).ready(function() {
         });
 
         if (navLinks.length > 0) {
-          console.log(`DESKTOP NAV: Successfully found ${navLinks.length} element(s) with class 'nav-element'`);
+          console.log(`Found Successfully: ${navLinks.length} element(s) with class 'nav-element'`);
         } else {
-          console.log(`DESKTOP NAV ELEMENTS NOT FOUND! 'nav-element'`);
+          console.log(`Failed to find: 'nav-element'`);
         }
       });
     }
@@ -62,5 +62,5 @@ $(document).ready(function() {
 
 
   // END of functions
-  console.log("End of document ready function");
+  console.log("NAV: End of document ready function");
 });

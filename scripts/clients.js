@@ -2,7 +2,7 @@
 // JavaScript
 
   $(document).ready(function() {
-    console.log("Document ready");
+    console.log("CLIENTS: Document ready");
 
     $('#table_id').DataTable({
       "pagingType": "full_numbers",
@@ -25,5 +25,5 @@
     });
 
   // END of functions
-  console.log("End of document ready function");
+  console.log("CLIENTS: End of document ready function");
 });
