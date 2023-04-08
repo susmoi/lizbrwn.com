@@ -27,7 +27,7 @@ $(document).ready(function() {
     $("#az-resources").html(resourcesHtml);
     console.log("Alpha. JSON HTML inserted into page");
     }).fail(function() {
-      console.log("Failed to retrieve ALPHA JSON data. Validate JSON.");
+      console.log("Failed to retrieve ALPHA JSON data. Validate JSON using this editor: https://jsoneditoronline.org/");
     });
 
 // END of functions

@@ -4,116 +4,98 @@
     "Resource name": "Cultural Atlas",
     "Resource description": "Information about global cultures and religions, from the perspective of Australia.",
     "Resource tag": "Educational"
-
   },
-
   {
-  		"Resource link": "https://datavizcatalogue.com/index.html",
-  		"Resource name": "Data Visualisation Catalogue",
-  		"Resource description": "List of the common approaches to data visualisation.",
-  		"Resource tag": "Catalogue"
-  	},
-
+    "Resource link": "https://datavizcatalogue.com/index.html",
+    "Resource name": "Data Visualisation Catalogue",
+    "Resource description": "List of the common approaches to data visualisation.",
+    "Resource tag": "Catalogue"
+  },
   {
-		"Resource link": "https://encyclopediadramatica.online/Main_Page",
-		"Resource name": "Encyclopedia Dramatica",
-		"Resource description": "A catalog for drama and memes. Cousin-site to 4chan and other hells.",
-		"Resource tag": "wiki-encyclopedia"
-	},
-
+    "Resource link": "https://encyclopediadramatica.online/Main_Page",
+    "Resource name": "Encyclopedia Dramatica",
+    "Resource description": "A catalog for drama and memes. Cousin-site to 4chan and other hells.",
+    "Resource tag": "Wiki-encyclopedia"
+  },
   {
-  		"Resource link": "https://news.ycombinator.com/",
-  		"Resource name": "Hacker News",
-  		"Resource description": "Anything that good hackers would find interesting.",
-  		"Resource tag": "News",
-  		"Resource placement": "Most frequent 1"
-  	},
-
-    {
-      "Resource link": "https://www.influencewatch.org/",
-      "Resource name": "Influence Watch",
-      "Resource description": "Descriptions of public policy individuals and organizations, conceived by the Capital Research Center.",
-      "Resource tag": "Influencers"
-    },
-
+    "Resource link": "https://news.ycombinator.com/",
+    "Resource name": "Hacker News",
+    "Resource description": "Anything that good hackers would find interesting.",
+    "Resource tag": "News",
+    "Resource placement": "Most frequent 1"
+  },
   {
-		"Resource link": "https://www.internetsociety.org/resources/",
-		"Resource name": "Internet Society",
-		"Resource description": "A global nonprofit organization working to keep the Internet open, globally connected, secure, and trustworthy.",
-		"Resource tag": "Reports"
-	},
-
+    "Resource link": "https://www.influencewatch.org/",
+    "Resource name": "Influence Watch",
+    "Resource description": "Descriptions of public policy individuals and organizations, conceived by the Capital Research Center.",
+    "Resource tag": "Influencers"
+  },
+  {
+    "Resource link": "https://www.internetsociety.org/resources/",
+    "Resource name": "Internet Society",
+    "Resource description": "A global nonprofit organization working to keep the Internet open, globally connected, secure, and trustworthy.",
+    "Resource tag": "Reports"
+  },
   {
     "Resource link": "https://www.lighthousereports.com/investigations/",
     "Resource name": "Lighthouse Reports",
     "Resource description": "Public interest investigations about migration, climate, conflict, and corruption.",
     "Resource tag": "Reports"
   },
-
   {
     "Resource link": "https://tldp.org/HOWTO/Unix-and-Internet-Fundamentals-HOWTO/index.html",
     "Resource name": "Linux Documentation Project (The)",
     "Resource description": "A document that describes the working basics of computers, Unix OS, and the Internet in non-technical language.",
     "Resource tag": "Linux guides"
   },
-
   {
     "Resource link": "https://search.marginalia.nu/",
     "Resource name": "Marginalia",
     "Resource description": "An independent search engine that favors non-commercial, text-heavy sites over modern web sites.",
     "Resource tag": "DIY search engine"
   },
-
   {
     "Resource link": "https://developer.mozilla.org/en-US/",
     "Resource name": "Mozilla Developer Network Guides",
     "Resource description": "Documentation for popular web technologies, including CSS, HTML, and JavaScript.",
     "Resource tag": "Web development guides"
   },
-
   {
-  		"Resource link": "https://ourworldindata.org/",
-  		"Resource name": "Our World in Data",
-  		"Resource description": "A database that reports numbers related to a range of 'global problems.'",
-  		"Resource tag": "Charts and data"
-  	},
-
-    {
-      "Resource link": "https://parts-of-speech.info/",
-      "Resource name": "Parts of Speech Tagging Tool",
-      "Resource description": "Assigns parts of speech such as noun, verb, adjective to sentences and words.",
-      "Resource tag": "Grammar tool"
-    },
-
+    "Resource link": "https://ourworldindata.org/",
+    "Resource name": "Our World in Data",
+    "Resource description": "A database that reports numbers related to a range of 'global problems.'",
+    "Resource tag": "Charts and data"
+  },
+  {
+    "Resource link": "https://parts-of-speech.info/",
+    "Resource name": "Parts of Speech Tagging Tool",
+    "Resource description": "Assigns parts of speech such as noun, verb, adjective to sentences and words.",
+    "Resource tag": "Grammar tool"
+  },
   {
     "Resource link": "https://www.innerdoc.com/periodic-table-of-nlp-tasks/",
     "Resource name": "Periodic Table of NLP Tasks",
     "Resource description": "A list of Natural Language Processing tasks from simple to complex.",
     "Resource tag": "NLP guide"
   },
-
   {
-  		"Resource link": "https://www.perplexity.ai/",
-  		"Resource name": "Perplexity",
-  		"Resource description": "A conversational interface that delivers intuitive search results.",
-  		"Resource tag": "AI search and summary"
-  	},
-
-    {
-      "Resource link": "https://www.producthunt.com/",
-      "Resource name": "Product Hunt",
-      "Resource description": "A place to share the latest mobile apps, websites, hardware projects, and tech creations.",
-      "Resource tag": "List"
-    },
-
+    "Resource link": "https://www.perplexity.ai/",
+    "Resource name": "Perplexity",
+    "Resource description": "A conversational interface that delivers intuitive search results.",
+    "Resource tag": "AI search and summary"
+  },
+  {
+    "Resource link": "https://www.producthunt.com/",
+    "Resource name": "Product Hunt",
+    "Resource description": "A place to share the latest mobile apps, websites, hardware projects, and tech creations.",
+    "Resource tag": "List"
+  },
   {
     "Resource link": "https://www.slideshare.net/",
     "Resource name": "Slide Share",
     "Resource description": "Informational decks from professional organizations.",
     "Resource tag": "Slides"
-
   },
-
   {
     "Resource link": "https://www.ted.com/talks",
     "Resource name": "TED",
@@ -121,18 +103,22 @@
     "Resource tag": "Talks",
     "Resource placement": "Most frequent 2"
   },
-
   {
     "Resource link": "https://www.transvribe.com/",
     "Resource name": "Transvribe",
     "Resource description": "Video and YouTube search. Enter URL then ask a question about the video",
     "Resource tag": "AI video search"
   },
-
   {
     "Resource link": "http://data.uis.unesco.org/Index.aspx",
     "Resource name": "UNESCO Institute for Statistics",
     "Resource description": "Internationally-comparable data on education, science, culture, and communication.",
-    "Resource tag": "database"
+    "Resource tag": "Database"
+  },
+  {
+    "Resource link": "https://webstersdictionary1828.com/",
+    "Resource name": "Dictionary",
+    "Resource description": "Online edition of Noah Webster's 1828 English Dictionary.",
+    "Resource tag": "Dictionary"
   }
 ]
