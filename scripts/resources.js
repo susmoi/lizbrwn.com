@@ -27,6 +27,29 @@ $(document).ready(function() {
     console.log("HTML generated");
     //input the HTML in the element with the #az-resources ID
     $("#az-resources").html(resourcesHtml);
+
+    //create Writing resources HTML
+    var writingResourcesHtml = "";
+    $.each(data, function(key, val) {
+      if (val['Resource tag'] === "Writing") {
+        writingResourcesHtml += "<div>";
+        writingResourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
+        writingResourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
+        writingResourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
+        writingResourcesHtml += "<h2 class='resource-name mb-1'>" + val['Resource name'] + "</h2>";
+        writingResourcesHtml += "</div>";
+        writingResourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
+        writingResourcesHtml += "<small class='text-muted'>" + val['Resource tag'] + "</small>";
+        writingResourcesHtml += "</div>";
+        writingResourcesHtml += "</a>";
+        writingResourcesHtml += "</div>";
+      }
+    });
+    console.log("HTML generated for writing resources");
+    // input the HTML in the element with the #writing-resources ID
+    $("#writing-resources").html(writingResourcesHtml);
+    console.log("Writing resources HTML inserted into page");
+
     console.log("Alpha. JSON HTML inserted into page");
     }).fail(function() {
       console.log("Failed to retrieve ALPHA JSON data. Validate JSON using this editor: https://jsoneditoronline.org/");
