@@ -350,12 +350,8 @@ p {
   color: black;
 }
 
-.resource-category {
-  color: white;
-}
-
-.resource-category-header{
-  color: #1C3738;
+.A-Z-resource-header{
+  color: #white;
 }
 
 .resource-name{
