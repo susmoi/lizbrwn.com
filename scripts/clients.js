@@ -1,6 +1,5 @@
-// Places nav on desktop and mobile
+
 // JavaScript
-// import files/resources JSON files
 
   $(document).ready(function() {
     console.log("Document ready");
