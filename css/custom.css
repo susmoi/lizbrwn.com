@@ -338,7 +338,7 @@ p {
   border-radius: .25rem;
   margin-bottom: 5rem;
   display: block;
-  padding: 10% 10% 10% 10%;
+  padding: 2rem;
   background-color: #FCFCFC;
   color: black;
 }
@@ -372,7 +372,7 @@ p {
 }
 
 .most-frequent{
-
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
@@ -383,6 +383,11 @@ p {
 
   .resource-item {
     margin-bottom: 2rem;
+  }
+
+  .resource-text{
+    font-size: 12px;
+    display: none;
   }
 
 
