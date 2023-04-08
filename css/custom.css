@@ -231,11 +231,12 @@ main {
     /* will control the position of the nav after implementing the new nav javasctipt for mobile devices that will move the inject the nav elements at the bottom of the DOM instead of the top
     position: inherit;
     */
+    margin: 3rem 0
   }
   .nav-link-group {
     display: grid;
     justify-content: inherit;
-    font-size: .7rem;
+    font-size: .9rem;
     text-align: center;
     border-bottom: none;
   }
