@@ -12,6 +12,7 @@ $(document).ready(function() {
 
     //Iterate through the file and input the values as HTML elements
     $.each(data, function(key, val) {
+      resourcesHtml += "<div>";
       resourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
       resourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
       resourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
@@ -21,6 +22,7 @@ $(document).ready(function() {
       resourcesHtml += "<small class='text-muted'>" + val['Resource tag'] + "</small>";
       resourcesHtml += "</div>";
       resourcesHtml += "</a>";
+      resourcesHtml += "</div>";
     });
     console.log("HTML generated");
     //input the HTML in the element with the #az-resources ID
