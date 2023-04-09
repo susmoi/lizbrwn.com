@@ -12,16 +12,32 @@ body {
   background-color: black;
   background-image: url('css-images/test.png');
   background-size: cover;
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
-/*Heading styling*/
+/* MAIN */
+main {
+  /* make sure to cover the screen */
+  min-height: 100vh;
+  /* put on top of footer*/
+  position: relative;
+  z-index: 1;
+}
+
+/* BOOTSTRAP */
+.row{
+  /* removes default right margin on rows */
+  margin-right: 0;
+}
+
+
+/* TEXT */
 
 * {
   box-sizing: border-box;
 }
 
-h1{ font-family: 'Arial', sans-serif;
+h1 { font-family: 'Arial', sans-serif;
     /* font-weight:;  */
     font-size: 2.488rem;
     font-weight: 500;
@@ -31,7 +47,7 @@ h1{ font-family: 'Arial', sans-serif;
     color: none;
 }
 
-h2{ font-family: 'Arial', sans-serif;
+h2 { font-family: 'Arial', sans-serif;
     font-weight: 100;
     font-size: 1.44rem;
     margin-bottom: 1.2rem;
@@ -40,7 +56,7 @@ h2{ font-family: 'Arial', sans-serif;
     color: none;
 }
 
-h3{
+h3 {
   font-family: 'Arial', sans-serif;
   font-weight: 100;
   font-size: 0.7rem;
@@ -49,9 +65,9 @@ h3{
   margin-top: none;
   color: none;
 }
-/* h4{} */
 
-p{ font-family: "clearSans", "Arial", sans-serif;
+
+p { font-family: "clearSans", "Arial", sans-serif;
     font-weight: ;
     font-size: 0.7rem;
     margin-bottom: 0;
@@ -78,25 +94,21 @@ a:active {
   text-decoration: underline;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
 
-/* MAIN */
-main {
-  /* make sure to cover the screen */
-  min-height: 100vh;
-  /* put on top of footer*/
-  position: relative;
-  z-index: 1;
-}
 
-.index-container{
+/* ~~~~~ PAGES ~~~~~ */
+
+/* INDEX */
+
+.index-container {
   margin: 7rem 3rem;
 }
 
-.index-header{
+.index-header {
   font-size: 2.488rem;
   font-weight: 500;
   margin-bottom: 2.1rem;
@@ -108,16 +120,17 @@ main {
   color: white;
 }
 
-@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
-  main {
+.index-link {
+  font-size: 2rem;
+  color: white;
+  font-family: inherit;
+}
 
-  }
 
-  .container{
+/*INDEX MEDIA QUERIES*/
+@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){ 
 
-  }
-
-  .index-container{
+  .index-container {
     margin: 4rem 3rem;
   }
 
@@ -132,211 +145,17 @@ main {
   }
 }
 
-.resume-container{
-  margin: 7rem 3rem;
-}
 
-.resume-header{
-  font-size: 2.488rem;
-  font-weight: 500;
-  margin-bottom: 2.1rem;
-  color: white;
-}
-
-.resume-body > p, h3{
-  font-size: 1rem;
-  color: white;
-}
-
-.resume-link{
-  color: white;
-}
-
-@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
-  .{
-    font-size: 1.5rem;
-  }
-
-.resume-header {
-  font-size: 1.5rem;
-
-}
-
-  .resume-body > p, h3{
-    font-size: 0.8rem;
-    color: white;
-  }
-}
-
-.row{
-  /* removes default right margin on rows */
-  margin-right: 0;
-}
-
-.logotype{
-  text-align: left;
-}
-
-.logotype-img{
-  width: 4em;
-
-}
-
-/* Nav stylings */
-
-#nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 300;
-  bottom: inherit;
-}
-
-.nav-link-group{
-/* makes nav flex column with even spacing */
-  display: flex;
-  justify-content: space-evenly;
-  font-family: "clearSans", "Arial", sans-serif;
-  font-weight: ;
-  font-size: 1.1rem;
-  text-align: end;
-  background-color: black;
-  border-bottom: 5px solid orchid;
-}
-
-
-.nav-element{
-  padding: 2%;
-  color: white;
-  background-color: black;
-}
-
-.nav-element:hover{
-  color: white;
-  text-decoration: none;
-}
-
-.nav-element.active{
-  background-color: orchid;
-  color: #FFF;
-}
-
-/* Nav Media Queries */
-@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
-  #nav {
-    position: fixed;
-    z-index: 300;
-    width: 100%;
-    top: auto;
-    /* will control the position of the nav after implementing the new nav javasctipt for mobile devices that will move the inject the nav elements at the bottom of the DOM instead of the top
-    position: inherit;
-    */
-    margin: 3rem 0
-  }
-  .nav-link-group {
-    display: grid;
-    justify-content: inherit;
-    font-size: .9rem;
-    text-align: center;
-    border-bottom: none;
-  }
-  .nav-element {
-    padding: 1.5rem;
-  }
-
-  .nav-mobile-wrapper{
-    background-color: black;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-}
-
-
-/* TEXT */
-
-
-p {
-  margin: 0 auto 1em;
-}
-
-
-.hero-p{
-  font-size: .84rem;
-}
-
-.hero-a-tag{
-  color: #7d869c;
-
-}
-
-.index-link{
-  font-size: 2rem;
-  color: white;
-  font-family: inherit;
-}
-
-.img-container {
-  width: 100em;
-  height: 100em;
-}
-
-.about-img{
-    display: block;
-    width: 70px;
-    margin: 0 0 0 0;
-    border-radius: 4px;
-    padding-left: 0px;
-  }
-
-.card{
-  border: 0;
-}
-
-.card-body {
-  padding: 0
-}
-
-.card-footer{
-  border: 0;
-  background-color: #fff;
-  padding: 0;
-}
-
-
-.btn{
-  color: #fff;
-  background-color: #3431D6;
-  border-color: #3431D6;
-  font-size: 1em;
-  padding: .5em;
-}
-
-.btn:hover{
-  color: #fff;
-  background-color: #6562fc;
-  border-color: #6562fc;
-}
-
-.btn:focus{
-  color: #fff;
-  background-color: #6562fc;
-  border-color: #6562fc;
-}
-
-.badge {
-  cursor: default;
-  font-size: .5em;
-  padding: .7em
-}
 
 
 .mono-h1 {
   font-size: calc(16px + 7vw)
 }
 
+
+/* RESOURCES */
 .resource-container{
   margin: 7rem 4rem 0 4rem;
-
 
 }
 
@@ -350,11 +169,11 @@ p {
   color: black;
 }
 
-.resource-header{
+.resource-header {
   color: white;
 }
 
-#az-resources{
+#az-resources {
   display: grid;
   /*grid-template-columns: repeat(3, 1fr); /* Set 3 columns with equal width */
   /*grid-template-rows: repeat(2, 1fr); /* Set 2 rows with equal height */
@@ -365,25 +184,25 @@ p {
   gap: 1rem;
 }
 
-.resource-name{
+.resource-name {
   font-size: 20px;
   font-weight: 600;
 }
 
-.resource-text{
+.resource-text {
   font-size: 12px;
   display: none;
 }
 
-.text-muted{
+.resource-text-muted {
   display: none;
 }
 
-.resource-link:hover{
+.resource-link:hover {
   text-decoration: none;
 }
 
-.most-frequent{
+.resource-most-frequent {
   margin-bottom: 1rem;
 }
 
@@ -402,13 +221,124 @@ p {
     display: none;
   }
 
-
 }
 
 
+/* RESUME */
+
+.resume-container {
+  margin: 7rem 3rem;
+}
+
+.resume-header {
+  font-size: 2.488rem;
+  font-weight: 500;
+  margin-bottom: 2.1rem;
+  color: white;
+}
+
+.resume-body > p, h3 {
+  font-size: 1rem;
+  color: white;
+}
+
+.resume-link {
+  color: white;
+}
+
+
+/* RESUME MEDIA QUERIES */
+
+@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
+.resume-header {
+  font-size: 1.5rem;
+
+}
+
+  .resume-body > p, h3 {
+    font-size: 0.8rem;
+    color: white;
+  }
+}
+
+
+
 /* CLIENTS */
-.clients{
+
+.clients {
   margin: 10rem 4rem 0 4rem;
+}
+
+/* NAV */
+
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 300;
+  bottom: inherit;
+}
+
+.nav-link-group {
+/* makes nav flex column with even spacing */
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "clearSans", "Arial", sans-serif;
+  font-weight: ;
+  font-size: 1.1rem;
+  text-align: end;
+  background-color: black;
+  border-bottom: 5px solid orchid;
+}
+
+.nav-element {
+  padding: 2%;
+  color: white;
+  background-color: black;
+}
+
+.nav-element:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-element.active {
+  background-color: orchid;
+  color: #FFF;
+}
+
+
+/* NAV MEDIA QUERIES */
+
+@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
+  #nav {
+    position: fixed;
+    z-index: 300;
+    width: 100%;
+    top: auto;
+    /* will control the position of the nav after implementing the new nav javasctipt for mobile devices that will move the inject the nav elements at the bottom of the DOM instead of the top
+    position: inherit;
+    */
+    margin: 3rem 0
+  }
+  
+  .nav-link-group {
+    display: grid;
+    justify-content: inherit;
+    font-size: .9rem;
+    text-align: center;
+    border-bottom: none;
+  }
+  
+  .nav-element {
+    padding: 1.5rem;
+  }
+
+  .nav-mobile-wrapper {
+    background-color: black;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 
@@ -429,45 +359,23 @@ p {
   padding: 0 1.3rem;
 }
 
-/* .icon-container{
-
-} */
 
 /* selects footer icons */
-.fab, .far{
+.fab, .far {
   color: white;
 }
 
 /* selects :hover footer icons */
-.fab:hover, .far:hover{
+.fab:hover, .far:hover {
   opacity: 40%;
   color: orchid;
   text-decoration: none;
 }
 
-
-
-.footer-p{
+.footer-p {
   cursor: default;
   padding: 0;
   margin: 0;
 }
 
 
-/* ~~~~ TEST CODE ~~~~ */
-
-.module-border-wrap{
-  padding: .5rem;
-}
-.module-border-wrap:hover,.module-border-wrap:focus{
-  padding: .5rem;
-  position: relative;
-  /* changes cursor */
-  cursor: pointer;
-  background: radial-gradient(circle at 9.44% -7.92%, #00b9e2 0, #00b9f8 3.33%, #00b8ff 6.67%, #00b6ff 10%, #00b4ff 13.33%, #00b1ff 16.67%, #00adff 20%, #00a8ff 23.33%, #00a1ff 26.67%, #0099ff 30%, #0090ff 33.33%, #4c85ff 36.67%, #8f78ff 40%, #b86aff 43.33%, #d859ff 46.67%, #f146f9 50%, #ff2ee4 53.33%, #ff00cd 56.67%, #ff00b5 60%, #ff009e 63.33%, #ff0086 66.67%, #ff006f 70%, #ff0058 73.33%, #ff2041 76.67%, #ff3b28 80%, #ff4f00 83.33%, #ff5f00 86.67%, #f36d00 90%, #e37a00 93.33%, #d18500 96.67%, #be8e00 100%);
-}
-
-.module {
-  background: #ffffff;
-  padding: .5rem;
-}
