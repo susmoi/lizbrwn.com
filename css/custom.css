@@ -302,8 +302,8 @@ a:active {
 }
 
 .nav-element.active {
-  filter: drop-shadow(0 0 30px #90BADE);
-  color: #FFF;
+  background-color: white;
+  color: black;
 }
 
 
@@ -331,6 +331,7 @@ a:active {
   
   .nav-element {
     padding: 1.5rem;
+    background-color: black;
   }
 
   .nav-mobile-wrapper {
