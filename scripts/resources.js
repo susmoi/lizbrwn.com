@@ -19,7 +19,7 @@ $(document).ready(function() {
       resourcesHtml += "<h2 class=' resource-name mb-1' >" + val['Resource name'] + "</h2>";
       resourcesHtml += "</div>";
       resourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
-      resourcesHtml += "<small class='text-muted'>" + val['Resource tag'] + "</small>";
+      resourcesHtml += "<small class='resource-text-muted'>" + val['Resource tag'] + "</small>";
       resourcesHtml += "</div>";
       resourcesHtml += "</a>";
       resourcesHtml += "</div>";
@@ -40,7 +40,7 @@ $(document).ready(function() {
         writingResourcesHtml += "<h2 class='resource-name mb-1'>" + val['Resource name'] + "</h2>";
         writingResourcesHtml += "</div>";
         writingResourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
-        writingResourcesHtml += "<small class='text-muted'>" + val['Resource tag'] + "</small>";
+        writingResourcesHtml += "<small class='resource-text-muted'>" + val['Resource tag'] + "</small>";
         writingResourcesHtml += "</div>";
         writingResourcesHtml += "</a>";
         writingResourcesHtml += "</div>";
@@ -57,12 +57,12 @@ $(document).ready(function() {
       if (val['Resource placement'] === "mostfrequent") {
         mostFrequentResourcesHtml += "<div>";
         mostFrequentResourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
-        mostFrequentResourcesHtml += "<div class='resource-item most-frequent list-group-item-action'>";
+        mostFrequentResourcesHtml += "<div class='resource-item resource-most-frequent list-group-item-action'>";
         mostFrequentResourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
         mostFrequentResourcesHtml += "<h2 class='resource-name mb-1'>" + val['Resource name'] + "</h2>";
         mostFrequentResourcesHtml += "</div>";
         mostFrequentResourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
-        mostFrequentResourcesHtml += "<small class='text-muted'>" + val['Resource tag'] + "</small>";
+        mostFrequentResourcesHtml += "<small class='resource-text-muted'>" + val['Resource tag'] + "</small>";
         mostFrequentResourcesHtml += "</div>";
         mostFrequentResourcesHtml += "</a>";
         mostFrequentResourcesHtml += "</div>";
@@ -70,7 +70,7 @@ $(document).ready(function() {
     });
     console.log("Generated successfully: Most Frequent resources");
     // input the HTML in the element with the #writing-resources ID
-    $("#most-frequent-resources").html(mostFrequentResourcesHtml);
+    $("#resource-most-frequent-resources").html(mostFrequentResourcesHtml);
     console.log("Inserted successfully: Most Frequent resources");
 
     }).fail(function() {
