@@ -31,75 +31,6 @@ main {
 }
 
 
-/* TEXT */
-
-* {
-  box-sizing: border-box;
-}
-
-h1 { font-family: 'Arial', sans-serif;
-    /* font-weight:;  */
-    font-size: 2.488rem;
-    font-weight: 500;
-    margin-bottom: 3rem;
-    line-height: none;
-    margin-top: none;
-    color: none;
-}
-
-h2 { font-family: 'Arial', sans-serif;
-    font-weight: 100;
-    font-size: 1.44rem;
-    margin-bottom: 1.2rem;
-    line-height: none;
-    margin-top: none;
-    color: none;
-}
-
-h3 {
-  font-family: 'Arial', sans-serif;
-  font-weight: 100;
-  font-size: 0.7rem;
-  margin-bottom: 0;
-  line-height: none;
-  margin-top: none;
-  color: none;
-}
-
-
-p { font-family: "clearSans", "Arial", sans-serif;
-    font-weight: ;
-    font-size: 0.7rem;
-    margin-bottom: 0;
-    line-height: none;
-    margin-top: none;
-  }
-
-.section-link {
-  font-family: "clearSans", "Arial", sans-serif;
-  font-weight: ;
-  font-size: 2rem;
-  color: #0B0D3D
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-}
-
-.hide {
-  display: none;
-}
-
-
-
 /* ~~~~~ PAGES ~~~~~ */
 
 /* INDEX */
@@ -144,14 +75,6 @@ a:active {
     color: white;
   }
 }
-
-
-
-
-.mono-h1 {
-  font-size: calc(16px + 7vw)
-}
-
 
 /* RESOURCES */
 .resource-container{
@@ -279,6 +202,10 @@ a:active {
   bottom: inherit;
 }
 
+.nav-mobile-wrapper {
+  display: none;
+}
+
 .nav-link-group {
 /* makes nav flex column with even spacing */
   display: flex;
@@ -302,8 +229,8 @@ a:active {
 }
 
 .nav-element.active {
-  background-color: white;
-  color: black;
+  filter: none;
+  text-decoration-line: underline;
 }
 
 
@@ -379,3 +306,74 @@ a:active {
 }
 
 
+/* TEXT */
+
+* {
+  box-sizing: border-box;
+}
+
+h1 { font-family: 'Arial', sans-serif;
+    /* font-weight:;  */
+    font-size: 2.488rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    line-height: none;
+    margin-top: none;
+    color: none;
+}
+
+h2 { font-family: 'Arial', sans-serif;
+    font-weight: 100;
+    font-size: 1.44rem;
+    margin-bottom: 1.2rem;
+    line-height: none;
+    margin-top: none;
+    color: none;
+}
+
+h3 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 100;
+  font-size: 0.7rem;
+  margin-bottom: 0;
+  line-height: none;
+  margin-top: none;
+  color: none;
+}
+
+
+p { font-family: "clearSans", "Arial", sans-serif;
+    font-weight: ;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+    line-height: none;
+    margin-top: none;
+  }
+
+.section-link {
+  font-family: "clearSans", "Arial", sans-serif;
+  font-weight: ;
+  font-size: 2rem;
+  color: #0B0D3D
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+
+.mono-h1 {
+  font-size: calc(16px + 7vw)
+}
