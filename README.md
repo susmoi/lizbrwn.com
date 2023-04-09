@@ -1,2 +1,2 @@
 # lizbrwn.com
-Personal portfolio and library of resources.
+Liz Brown's website and library of resources.

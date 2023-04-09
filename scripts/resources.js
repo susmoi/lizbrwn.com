@@ -69,8 +69,8 @@ $(document).ready(function() {
       }
     });
     console.log("Generated successfully: Most Frequent resources");
-    // input the HTML in the element with the #writing-resources ID
-    $("#resource-most-frequent-resources").html(mostFrequentResourcesHtml);
+    // input the HTML in the element with the #most-frequent-resources ID
+    $("#most-frequent-resources").html(mostFrequentResourcesHtml);
     console.log("Inserted successfully: Most Frequent resources");
 
     }).fail(function() {
