@@ -105,18 +105,18 @@ a:active {
 /* INDEX */
 
 .index-container {
-  margin: 7rem 3rem;
+  margin: 7rem 5rem;
 }
 
 .index-header {
-  font-size: 2.488rem;
-  font-weight: 500;
-  margin-bottom: 2.1rem;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
   color: white;
 }
 
 .index-body > p {
-  font-size: .9rem;
+  font-size: 1.3rem;
   color: white;
 }
 
@@ -287,23 +287,22 @@ a:active {
   font-weight: ;
   font-size: 1.1rem;
   text-align: end;
-  background-color: black;
-  border-bottom: 5px solid orchid;
 }
 
 .nav-element {
   padding: 2%;
   color: white;
-  background-color: black;
 }
 
 .nav-element:hover {
   color: white;
   text-decoration: none;
+  filter: drop-shadow(0 5px 15px #44280E);
+  filter: blur(25px)
 }
 
 .nav-element.active {
-  background-color: orchid;
+  filter: drop-shadow(0 0 30px #90BADE);
   color: #FFF;
 }
 
@@ -350,7 +349,7 @@ a:active {
   left: 0;
   color: white;
   background: black;
-  padding: 3em;
+  padding: 10em;
   font-size: .5em;
   text-align: center;
 }
