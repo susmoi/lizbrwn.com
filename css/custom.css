@@ -6,6 +6,7 @@
 
 
 /* BODY */
+
 body {
   margin: 0;
   font-size: 16px;
@@ -16,6 +17,7 @@ body {
 }
 
 /* MAIN */
+
 main {
   /* make sure to cover the screen */
   min-height: 100vh;
@@ -58,7 +60,7 @@ main {
 }
 
 
-/*INDEX MEDIA QUERIES*/
+/* INDEX MEDIA QUERIES */
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){ 
 
   .index-container {
@@ -192,6 +194,9 @@ main {
   margin: 10rem 4rem 0 4rem;
 }
 
+
+/* ~~~~~ JAVASCRIPT ELEMENTS ~~~~~ */
+
 /* NAV */
 
 #nav {
@@ -237,16 +242,6 @@ main {
 /* NAV MEDIA QUERIES */
 
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
-  #nav {
-    position: fixed;
-    z-index: 300;
-    width: 100%;
-    top: auto;
-    /* will control the position of the nav after implementing the new nav javasctipt for mobile devices that will move the inject the nav elements at the bottom of the DOM instead of the top
-    position: inherit;
-    */
-    margin: 3rem 0
-  }
   
   .nav-link-group {
     display: grid;
@@ -261,11 +256,13 @@ main {
     background-color: black;
   }
 
-  .nav-mobile-wrapper {
-    background-color: black;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
+.nav-element:hover {
+  color: white;
+  text-decoration: none;
+  filter: none;
+  text-decoration-line: overline;
+}
+  
 }
 
 
