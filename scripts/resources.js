@@ -16,7 +16,7 @@ $(document).ready(function() {
       resourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
       resourcesHtml += "<div class='resource-item list-group-item-action'>";
       resourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
-      resourcesHtml += "<h2 class=' resource-name mb-1' >" + val['Resource name'] + "</h2>";
+      resourcesHtml += "<h2 class=' resource-header mb-1' >" + val['Resource name'] + "</h2>";
       resourcesHtml += "</div>";
       resourcesHtml += "<p class='resource-body mb-1'>" + val['Resource description'] + "</p>";
       resourcesHtml += "<small class='resource-text-muted'>" + val['Resource tag'] + "</small>";
@@ -37,7 +37,7 @@ $(document).ready(function() {
         writingResourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
         writingResourcesHtml += "<div class='resource-item list-group-item-action'>";
         writingResourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
-        writingResourcesHtml += "<h2 class='resource-name mb-1'>" + val['Resource name'] + "</h2>";
+        writingResourcesHtml += "<h2 class='resource-header mb-1'>" + val['Resource name'] + "</h2>";
         writingResourcesHtml += "</div>";
         writingResourcesHtml += "<p class='resource-body mb-1'>" + val['Resource description'] + "</p>";
         writingResourcesHtml += "<small class='resource-text-muted'>" + val['Resource tag'] + "</small>";
@@ -59,7 +59,7 @@ $(document).ready(function() {
         mostFrequentResourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
         mostFrequentResourcesHtml += "<div class='resource-item resource-most-frequent list-group-item-action'>";
         mostFrequentResourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
-        mostFrequentResourcesHtml += "<h2 class='resource-name mb-1'>" + val['Resource name'] + "</h2>";
+        mostFrequentResourcesHtml += "<h2 class='resource-header mb-1'>" + val['Resource name'] + "</h2>";
         mostFrequentResourcesHtml += "</div>";
         mostFrequentResourcesHtml += "<p class='resource-body mb-1'>" + val['Resource description'] + "</p>";
         mostFrequentResourcesHtml += "<small class='resource-text-muted'>" + val['Resource tag'] + "</small>";

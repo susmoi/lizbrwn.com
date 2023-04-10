@@ -84,6 +84,10 @@ main {
 
 }
 
+.resource-header {
+  color: black;
+}
+
 .resource-item {
   border: none;
   border-radius: .25rem;
@@ -94,7 +98,7 @@ main {
   color: black;
 }
 
-.resource-header {
+.category-header {
   color: white;
 }
 
