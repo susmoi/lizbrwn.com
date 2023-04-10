@@ -200,11 +200,8 @@ main {
 /* NAV */
 
 #nav {
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 300;
-  bottom: inherit;
+  margin: 0 5rem;
 }
 
 .nav-mobile-wrapper {
@@ -214,16 +211,15 @@ main {
 .nav-link-group {
 /* makes nav flex column with even spacing */
   display: flex;
-  justify-content: space-evenly;
   font-family: "clearSans", "Arial", sans-serif;
-  font-weight: ;
   font-size: 1.1rem;
   text-align: center;
 }
 
 .nav-element {
-  padding: 3% 1% 1%;
+  padding: 0 0 5px 0;
   color: white;
+  margin: 3% 20px 0 0;
 }
 
 .nav-element:hover {
@@ -290,9 +286,7 @@ main {
 
 /* selects :hover footer icons */
 .fab:hover, .far:hover {
-  opacity: 25%;
-  color: #1D242B;
-  text-decoration: none;
+  filter: blur(25px);
 }
 
 .footer-p {
