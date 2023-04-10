@@ -61,7 +61,7 @@ main {
 
 
 /* INDEX MEDIA QUERIES */
-@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){ 
+@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
 
   .index-container {
     margin: 4rem 3rem;
@@ -242,7 +242,7 @@ main {
 /* NAV MEDIA QUERIES */
 
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
-  
+
   .nav-link-group {
     display: grid;
     justify-content: inherit;
@@ -250,7 +250,7 @@ main {
     text-align: center;
     border-bottom: none;
   }
-  
+
   .nav-element {
     padding: 1.5rem;
     background-color: black;
@@ -262,7 +262,7 @@ main {
   filter: none;
   border-bottom: 2px solid white;
 }
-  
+
 }
 
 
@@ -273,7 +273,6 @@ main {
   bottom: 0;
   left: 0;
   color: white;
-  background: black;
   padding: 10em;
   font-size: .5em;
   text-align: center;
@@ -291,8 +290,8 @@ main {
 
 /* selects :hover footer icons */
 .fab:hover, .far:hover {
-  opacity: 40%;
-  color: orchid;
+  opacity: 25%;
+  color: #1D242B;
   text-decoration: none;
 }
 
