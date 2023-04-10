@@ -18,7 +18,7 @@ $(document).ready(function() {
       resourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
       resourcesHtml += "<h2 class=' resource-name mb-1' >" + val['Resource name'] + "</h2>";
       resourcesHtml += "</div>";
-      resourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
+      resourcesHtml += "<p class='resource-body mb-1'>" + val['Resource description'] + "</p>";
       resourcesHtml += "<small class='resource-text-muted'>" + val['Resource tag'] + "</small>";
       resourcesHtml += "</div>";
       resourcesHtml += "</a>";
@@ -39,7 +39,7 @@ $(document).ready(function() {
         writingResourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
         writingResourcesHtml += "<h2 class='resource-name mb-1'>" + val['Resource name'] + "</h2>";
         writingResourcesHtml += "</div>";
-        writingResourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
+        writingResourcesHtml += "<p class='resource-body mb-1'>" + val['Resource description'] + "</p>";
         writingResourcesHtml += "<small class='resource-text-muted'>" + val['Resource tag'] + "</small>";
         writingResourcesHtml += "</div>";
         writingResourcesHtml += "</a>";
@@ -61,7 +61,7 @@ $(document).ready(function() {
         mostFrequentResourcesHtml += "<div class='d-flex w-100 justify-content-between'>";
         mostFrequentResourcesHtml += "<h2 class='resource-name mb-1'>" + val['Resource name'] + "</h2>";
         mostFrequentResourcesHtml += "</div>";
-        mostFrequentResourcesHtml += "<p class='resource-text mb-1'>" + val['Resource description'] + "</p>";
+        mostFrequentResourcesHtml += "<p class='resource-body mb-1'>" + val['Resource description'] + "</p>";
         mostFrequentResourcesHtml += "<small class='resource-text-muted'>" + val['Resource tag'] + "</small>";
         mostFrequentResourcesHtml += "</div>";
         mostFrequentResourcesHtml += "</a>";

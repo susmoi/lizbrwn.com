@@ -114,9 +114,9 @@ main {
   font-weight: 600;
 }
 
-.resource-text {
+.resource-body {
   font-size: 12px;
-  display: none;
+  color: black;
 }
 
 .resource-text-muted {
