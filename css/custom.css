@@ -272,14 +272,22 @@ main {
 
   .nav-element {
     padding: 1.5rem;
-    background-color: black;
+    margin: 0 0;
+    background-color: none;
+    font-weight: 600;
   }
 
 .nav-element:hover {
   color: white;
   text-decoration: none;
   filter: none;
-  border-bottom: 2px solid white;
+  border-bottom: none;
+}
+  .nav-element.active {
+  filter: none;
+  border-bottom: none;
+  color: #F8D6B2;
+  font-weight: 600;
 }
 
 }
