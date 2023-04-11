@@ -145,8 +145,7 @@ main {
     margin-bottom: 2rem;
   }
 
-  .resource-text{
-    font-size: 12px;
+  .resource-body{
     display: none;
   }
 
@@ -157,6 +156,12 @@ main {
 
 .about-resume-container {
   margin: 7rem 5rem;
+}
+
+.about-body {
+  font-size: 16px;
+  color: white;
+  margin: 0 25rem 10rem 0;
 }
 
 .resume-header {
@@ -201,7 +206,13 @@ main {
 .about-resume-container {
   margin: 10% 10%;
 }
-  
+
+  .about-body {
+  font-size: 12px;
+  color: white;
+  margin: 0 0 0 0;
+  }
+
   .resume-header {
   font-size: 12px;
 
@@ -211,13 +222,9 @@ main {
     font-size: 12px;
     color: white;
   }
-  
-  .about-body {
-  font-size: 12px;
-  color: white;
-  margin: 0 0 0 0;
-  }
-  
+
+
+
 }
 
 
