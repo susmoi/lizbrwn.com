@@ -198,15 +198,26 @@ main {
 /* RESUME MEDIA QUERIES */
 
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
-.resume-header {
-  font-size: 1.5rem;
+.about-resume-container {
+  margin: 10% 10%;
+}
+  
+  .resume-header {
+  font-size: 12px;
 
 }
 
   .resume-body {
-    font-size: 0.8rem;
+    font-size: 12px;
     color: white;
   }
+  
+  .about-body {
+  font-size: 12px;
+  color: white;
+  margin: 0 0 0 0;
+  }
+  
 }
 
 
