@@ -396,3 +396,13 @@ a:active {
   width: 100%;
   height: 100vh;
 }
+
+.expelled-container{
+  margin: 8rem 0 0 8rem
+}
+.expelled-link{
+  font-family: "clearSans", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: white
+}
