@@ -18,6 +18,12 @@
     "Resource tag": "Raresource"
   },
   {
+    "Resource link": "https://www.gartner.com/en",
+    "Resource name": "Gartner",
+    "Resource description": "Provides highly respected industry trend reports.",
+    "Resource tag": "News"
+  },
+  {
     "Resource link": "https://news.ycombinator.com/",
     "Resource name": "Hacker News",
     "Resource description": "Anything that good hackers would find interesting.",
@@ -49,6 +55,12 @@
     "Resource tag": "Computer Science"
   },
   {
+    "Resource link": "https://support.apple.com/en-us/HT201236",
+    "Resource name": "Mac Keyboard Shortcuts",
+    "Resource description": "An index of the key combinations mac computers recognize.",
+    "Resource tag": "Computer Science"
+  },
+  {
     "Resource link": "https://search.marginalia.nu/",
     "Resource name": "Marginalia",
     "Resource description": "An independent search engine that favors non-commercial, text-heavy sites over modern web sites.",
@@ -59,6 +71,12 @@
     "Resource name": "Mozilla Developer Network Guides",
     "Resource description": "Documentation for popular web technologies, including CSS, HTML, and JavaScript.",
     "Resource tag": "Computer Science"
+  },
+  {
+    "Resource link": "https://www.nist.gov/",
+    "Resource name": "National Institute of Standards and Technology",
+    "Resource tag": "News",
+    "Resource description": "Creates the measurements and reports that guide the advancement of science, standards, and technology."
   },
   {
     "Resource link": "https://ourworldindata.org/",
@@ -119,5 +137,11 @@
     "Resource name": "Webster's 1828 English Dictionary",
     "Resource description": "Online edition of Noah Webster's 1828 English Dictionary.",
     "Resource tag": "Writing"
+  },
+  {
+    "Resource link": "https://data.worldbank.org/",
+    "Resource name": "World Bank Open Data",
+    "Resource description": "National data provided by the World Bank's member countries.",
+    "Resource tag": "Numbers"
   }
 ]
