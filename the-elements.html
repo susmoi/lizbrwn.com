@@ -40,9 +40,10 @@
     <!-- MAIN -->
     <main style="font-family: clearSans;font-size: .7rem; color: white; margin: 7rem 10rem">
       <h1 style="margin: 0 0 0 0">The Elements of Style</h1>
-      <p class="center small-caps" style="">By William Strunk, Jr.</p>
-      <h2 style="margin: 3rem 0 0 0">Contents</h2>
-      <table id="toc" summary="Contents" style="">
+      <p class="center small-caps" style="">By William Strunk, Jr. with modifications By Elizabeth Brown</p>
+      <div class="table-wrapper">
+        <h2 style="margin: 3rem 0 0 0">Contents</h2>
+        <table id="toc" summary="Contents" style="">
         <tr>
             <td colspan="3">&nbsp;</td>
             <th>Page</th>
@@ -191,6 +192,7 @@
             <td class="right"><a href="#Page_50">50</a></td>
         </tr>
       </table>
+      </div>
       <div name="Introduction" style="margin: 3rem 0 3rem 0">
         <h2><a class="pagenum" name="Page_5" title="5"> </a>I. Introduction</h2>
 
@@ -221,41 +223,37 @@
       </div>
       <div name="Elementary Rules of Usage">
         <h2><a class="pagenum" name="Page_7" title="7"> </a>II. Elementary Rules of Usage</h2>
+        <div style="margin: 0 0 4rem 0">
+          <h3 style="font-size: 1rem; color: gold; font-family: clearSans; margin: 3rem 0 0 0"><a name="Rule_1">1.</a> Form the possessive singular of nouns by adding 's.</h3>
+          <p>Follow this rule whatever the final consonant. Thus
+          write:</p>
 
-        <h3><a name="Rule_1">1.</a> Form the possessive singular of nouns by adding 's.</h3>
+          <div class="example" style="margin: 20px" style="margin: 20px">
+          <p>Charles's friend</p>
+          <p>Burns's poems</p>
+          <p>the witch's malice</p>
+          </div>
 
-        <p>Follow this rule whatever the final consonant. Thus
-        write,</p>
+          <p>This is the usage of the United States Government
+          Printing Office and of the Oxford University Press.</p>
+          <br>
+          <p>Exceptions are the possessive of ancient proper names
+          in <i>-es</i> and <i>-is</i>, the possessive <i>Jesus'</i>, and such forms as
+          <i>for conscience' sake</i>, <i>for righteousness' sake</i>. But such forms
+          as <i>Achilles' heel</i>, <i>Moses' laws</i>, <i>Isis' temple</i> are commonly
+          replaced by</p>
 
-        <div class="example" style="margin: 20px" style="margin: 20px">
-        <p>Charles's friend</p>
-        <p>Burns's poems</p>
-        <p>the witch's malice</p>
+          <div class="example" style="margin: 20px">
+          <p>The heel of Achilles</p>
+          <p>The laws of Moses</p>
+          <p>The temple of Isis</p>
         </div>
 
-        <p>This is the usage of the United States Government
-        Printing Office and of the Oxford University Press.</p>
+        <p>The pronominal possessives <i>hers</i>, <i>its</i>, <i>theirs</i>, <i>yours</i>, and <i>oneself</i> have no apostrophe.</p>
+      </div>
+        <h3 style="font-size: 1rem; color: gold; font-family: clearSans; margin: 3rem 0 0 0"><a name="Rule_2">2.</a> In a series of three or more terms with a single conjunction, use a comma after each term except the last.</h3>
 
-        <p>Exceptions are the possessive of ancient proper names
-        in <i>-es</i> and <i>-is</i>, the possessive <i>Jesus'</i>, and such forms as
-        <i>for conscience' sake</i>, <i>for righteousness' sake</i>. But such forms
-        as <i>Achilles' heel</i>, <i>Moses' laws</i>, <i>Isis' temple</i> are commonly
-        replaced by</p>
-
-        <div class="example" style="margin: 20px">
-        <p>the heel of Achilles</p>
-
-        <p>the laws of Moses</p>
-
-        <p>the temple of Isis</p>
-        </div>
-
-        <p>The pronominal possessives <i>hers</i>, <i>its</i>, <i>theirs</i>, <i>yours</i>, and
-        <i>oneself</i> have no apostrophe.</p>
-
-        <h3><a name="Rule_2">2.</a> In a series of three or more terms with a single conjunction, use a comma after each term except the last.</h3>
-
-        <p>Thus write,</p>
+        <p>Thus write:</p>
 
         <div class="example" style="margin: 20px">
         <p>red, white, and blue</p>
@@ -275,7 +273,7 @@
         <p>Brown, Shipley &amp; Co.</p>
         </div>
 
-        <h3><a class="pagenum" name="Page_8" title="8"> </a><a name="Rule_3">3.</a> Enclose parenthetic expressions between commas.</h3>
+        <h3 style="font-size: 1rem; color: gold; font-family: clearSans; margin: 3rem 0 0 0"><a class="pagenum" name="Page_8" title="8"> </a><a name="Rule_3">3.</a> Enclose parenthetic expressions between commas.</h3>
 
         <div class="example" style="margin: 20px">
         <p>The best way to see a country, unless you are pressed for time, is to
@@ -394,7 +392,7 @@
         <p><a class="pagenum" name="Page_10" title="10"> </a>The writer should be careful not to set off independent
         clauses by commas: see under <a href="#Rule_5">Rule&nbsp;5</a>.</p>
 
-        <h3><a name="Rule_4">4.</a> Place a comma before a conjunction introducing a co-ordinate clause.</h3>
+        <h3 style="font-size: 1rem; color: gold; font-family: clearSans; margin: 3rem 0 0 0"><a name="Rule_4">4.</a> Place a comma before a conjunction introducing a co-ordinate clause.</h3>
 
         <div class="example" style="margin: 20px">
         <p>The early records of the city have disappeared, and the story of its
@@ -444,8 +442,7 @@
         comma before the conjunction.</p>
 
         <p><a class="pagenum" name="Page_11" title="11"> </a>If the second member is introduced by an adverb, a
-        semicolon, not a comma, is required (see <a href="#Rule_5">Rule&nbsp;5</a>). The
-        connectives <i>so</i> and <i>yet</i> may be used either as adverbs or as
+        semicolon, not a comma, is required (see <a href="#Rule_5">Rule&nbsp;5</a>). The connectives <i>so</i> and <i>yet</i> may be used either as adverbs or as
         conjunctions, accordingly as the second clause is felt to be
         co-ordinate or subordinate; consequently either mark of
         punctuation may be justified. But these uses of <i>so</i> (equivalent
@@ -482,7 +479,7 @@
         <p>He has had several years' experience and is thoroughly competent.</p>
         </div>
 
-        <h3><a name="Rule_5">5.</a> Do not join independent clauses by a comma.</h3>
+        <h3 style="font-size: 1rem; color: gold; font-family: clearSans; margin: 3rem 0 0 0"><a name="Rule_5">5.</a> Do not join independent clauses by a comma.</h3>
 
         <p>If two or more clauses, grammatically complete and not
         joined by a conjunction, are to form a single compound
@@ -551,7 +548,7 @@
         expression is inappropriate in writing, except in the dialogue
         of a story or play, or perhaps in a familiar letter.</p>
 
-        <h3><a name="Rule_6">6.</a> Do not break sentences in two.</h3>
+        <h3 style="font-size: 1rem; color: gold; font-family: clearSans; margin: 3rem 0 0 0"><a name="Rule_6">6.</a> Do not break sentences in two.</h3>
 
         <p>In other words, do not use periods for commas.</p>
 
@@ -584,7 +581,7 @@
         so thoroughly mastered that their application becomes
         second nature.</p>
 
-        <h3><a name="Rule_7">7.</a> A participial phrase at the beginning of a sentence must refer to the grammatical subject.</h3>
+        <h3 style="font-size: 1rem; color: gold; font-family: clearSans; margin: 3rem 0 0 0"><a name="Rule_7">7.</a> A participial phrase at the beginning of a sentence must refer to the grammatical subject.</h3>
 
         <div class="example" style="margin: 20px">
         <p>Walking slowly down the road, he saw a woman accompanied by
@@ -635,7 +632,7 @@
       <div name="Elementary Principles of Composition">
         <h2><a class="pagenum" name="Page_15" title="15"> </a>III. ELEMENTARY PRINCIPLES OF COMPOSITION</h2>
 
-        <h3><a name="Rule_8">8.</a> Make the paragraph the unit of composition: one paragraph to each topic.</h3>
+        <h3 style="font-size: 1rem; color: gold; font-family: clearSans; margin: 3rem 0 0 0"><a name="Rule_8">8.</a> Make the paragraph the unit of composition: one paragraph to each topic.</h3>
 
         <p>If the subject on which you are writing is of slight
         extent, or if you intend to treat it very briefly, there may
@@ -722,7 +719,7 @@
         when dialogue and narrative are combined, is best learned
         from examples in well-printed works of fiction.</p>
 
-        <h3><a class="pagenum" name="Page_17" title="17"> </a><a name="Rule_9">9.</a> As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning.</h3>
+        <h3 style="font-size: 1rem; color: gold; font-family: clearSans; margin: 3rem 0 0 0"><a class="pagenum" name="Page_17" title="17"> </a><a name="Rule_9">9.</a> As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning.</h3>
 
         <p>Again, the object is to aid the reader. The practice here
         recommended enables him to discover the purpose of each
@@ -851,7 +848,7 @@
         The break between them serves the purpose of a rhetorical
         pause, throwing into prominence some detail of the action.</p>
 
-        <h3><a name="Rule_10">10.</a> Use the active voice.</h3>
+        <h3 style="font-size: 1rem; color: gold; font-family: clearSans; margin: 3rem 0 0 0"><a name="Rule_10">10.</a> Use the active voice.</h3>
 
         <p>The active voice is usually more direct and vigorous than
         the passive:</p>
@@ -2507,14 +2504,14 @@
         agreement as to the spelling of most words. In the
         list below, for example, <i>rime</i> for <i>rhyme</i> is the only allowable
         variation; all the other forms are co-extensive with the
-        English language. At any given moment, however, a
-        relatively small number of words may be spelled in more than
-        one way. Gradually, as a rule, one of these forms comes
+        English language.
+        <br>
+        At any given moment, however, a relatively small number of words may be spelled in more than one way. Gradually, as a rule, one of these forms comes
         to be generally preferred, and the less customary form comes
         to look obsolete and is discarded. From time to time new
         forms, mostly simplifications, are introduced by innovators,
         and either win their place or die of neglect.</p>
-
+        <br>
         <p>The practical objection to unaccepted and over-simplified
         spellings is the disfavor with which they are received by the
         reader. They distract his attention and exhaust his patience.
@@ -2524,7 +2521,7 @@
         cost of a fraction of his attention. The writer has defeated
         his own purpose.</p>
 
-        <h3 style="text-align: center; font-weight: normal;">WORDS OFTEN MISSPELLED</h3>
+        <h3 style="text-align: center; font-weight: normal;">Words Often Misspelled</h3>
 
         <ul class="word-list">
         <li>accidentally</li>
@@ -2741,52 +2738,6 @@
         <p>25. But while earnings have mounted amazingly, the status of
         affairs is such as to make it impossible to predict the course events
         may take, with any degree of accuracy.</p>
-        </div>
-      </div>
-      <div name="Transcriber's Notes">
-        <div id="tnote-bottom">
-        <p class="center"><a name="tn-bottom"><b>Transcriber's Note:</b></a></p>
-        <p>The following is a list of corrections made to the original. The
-        first passage is the original passage, the second the corrected one.</p>
-
-        <ul id="corrections">
-        <li><a href="#Page_5">Page 5</a>:<br/>
-        of his <span class="correction">manuscript</span> Mr. George McLane Wood has<br/>
-        of his <span class="correction">manuscript.</span> Mr. George McLane Wood has
-        </li>
-        <li><a href="#Page_20">Page 20</a>:<br/>
-        Compare the <span class="correction">sentence.</span> &ldquo;The export of gold was prohibited,&rdquo;<br/>
-        Compare the <span class="correction">sentence,</span> &ldquo;The export of gold was prohibited,&rdquo;
-        </li>
-        <li><a href="#Page_26">Page 26</a>:<br/>
-        under Rule&nbsp;<span class="correction">10</span>. But apart from this, he should follow the<br/>
-        under Rule&nbsp;<span class="correction">9</span>. But apart from this, he should follow the
-        </li>
-        <li><a href="#Page_36">Page 36</a>:<br/>
-        in the sense, <span class="correction">&ldquo;ordered&rdquo;)</span> is <i>bade</i>.<br/>
-        in the sense, <span class="correction">&ldquo;ordered,&rdquo;</span> is <i>bade</i>.
-        </li>
-        <li><a href="#Page_39">Page 39</a>:<br/>
-         <b>Effect.</b> As noun, means <i>result</i>; as verb, means <span class="correction">t<i>o</i></span> <i>bring</i><br/>
-         <b>Effect.</b> As noun, means <i>result</i>; as verb, means <i><span class="correction">to</span> bring</i>
-        </li>
-        <li><a href="#Page_39">Page 39</a>:<br/>
-        they <span class="correction">ma ybe</span>, are not properly facts.<br/>
-        they <span class="correction">may be</span>, are not properly facts.
-        </li>
-        <li><a href="#Page_42">Page 42</a>:<br/>
-        Acts of a hostile <span class="correction">nature.</span><br/>
-        Acts of a hostile <span class="correction">nature</span>
-        </li>
-        <li><a href="#Page_45">Page 45</a>:<br/>
-        Dayton has adopted the commission system of <span class="correction">government</span><br/>
-        Dayton has adopted the commission system of <span class="correction">government.</span>
-        </li>
-        <li><a href="#Page_48">Page 48</a>:<br/>
-        <span class="correction">embarass</span><br/>
-        <span class="correction">embarrass</span>
-        </li>
-        </ul>
         </div>
       </div>
     </main>
