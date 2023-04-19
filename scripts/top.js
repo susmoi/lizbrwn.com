@@ -40,7 +40,7 @@ $(document).ready(function() {
 
   // Open top.html
   function openTopHtml() {
-    const url = 'top.html';
+    const url = 'https://lizbrwn.com/top';
     if (isValidURL(url)) {
       window.open(url, '_blank');
     } else {
