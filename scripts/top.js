@@ -26,6 +26,7 @@ $(document).ready(function() {
 
       // Check for "z" key (90: z)
       if (event.which === 90 && commandPressed) {
+        console.log('Command + Z keys pressed');
         openTopHtml();
       }
     });
