@@ -32,7 +32,7 @@ $(document).ready(function() {
     //create Writing resources HTML
     var writingResourcesHtml = "";
     $.each(data, function(key, val) {
-      if (val['Resource tag'] === "Writing") {
+      if (val['Resource placement'] === "topWriting") {
         writingResourcesHtml += "<div>";
         writingResourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
         writingResourcesHtml += "<div class='resource-item list-group-item-action'>";
@@ -51,7 +51,7 @@ $(document).ready(function() {
     $("#writing-resources").html(writingResourcesHtml);
     console.log("Inserted successfully: Writing resources");
 
-    //create Writing resources HTML
+    //create Most Frequent resources HTML
     var mostFrequentResourcesHtml = "";
     $.each(data, function(key, val) {
       if (val['Resource placement'] === "mostfrequent") {
