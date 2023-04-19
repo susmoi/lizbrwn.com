@@ -24,6 +24,12 @@
     "Resource tag": "Raresource"
   },
   {
+    "Resource name": "https://etymologeek.com/",
+    "Resource description": "A free multilingual dictionary that shows and draws word histories.",
+    "Resource tag": "Writing",
+    "Resource link": "https://etymologeek.com/"
+  },
+  {
     "Resource link": "https://www.gartner.com/en",
     "Resource name": "Gartner",
     "Resource description": "Provides highly respected industry trend reports.",
@@ -85,6 +91,12 @@
     "Resource description": "Creates the measurements and reports that guide the advancement of science, standards, and technology."
   },
   {
+    "Resource link": "https://www.etymonline.com/",
+    "Resource name": "Online Etymology Dictionary",
+    "Resource description": "A map of the wheel-ruts of modern English.",
+    "Resource tag": "Writing"
+  },
+  {
     "Resource link": "https://ourworldindata.org/",
     "Resource name": "Our World in Data",
     "Resource description": "A database that reports numbers related to a range of 'global problems.'",
@@ -142,6 +154,12 @@
     "Resource link": "https://webstersdictionary1828.com/",
     "Resource name": "Webster's 1828 English Dictionary",
     "Resource description": "Online edition of Noah Webster's 1828 English Dictionary.",
+    "Resource tag": "Writing"
+  },
+  {
+    "Resource link": "https://www.wordhippo.com/",
+    "Resource name": "Word Hippo",
+    "Resource description": "A thesaurus and other word tools.",
     "Resource tag": "Writing"
   },
   {
