@@ -24,8 +24,8 @@ $(document).ready(function() {
         commandPressed = true;
       }
 
-      // Check for "h" key (72: h)
-      if (event.which === 72 && commandPressed) {
+      // Check for "z" key (90: z)
+      if (event.which === 90 && commandPressed) {
         openTopHtml();
       }
     });
