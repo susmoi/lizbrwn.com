@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     $(document).keydown(function(event) {
       // Check for "command" key (91: left command, 93: right command on macOS, 17: control on Windows)
-      if (event.which === 91 || event.which === 93 || event.which === 17) {
+      if (event.which === 224 || event.which === 17) {
         commandPressed = true;
       }
 
