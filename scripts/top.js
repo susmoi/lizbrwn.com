@@ -42,7 +42,7 @@ $(document).ready(function() {
   function openTopHtml() {
     const url = 'https://lizbrwn.com/top';
     if (isValidURL(url)) {
-      window.open(url, '_blank');
+      window.open(url, '_self');
     } else {
       console.error('Invalid URL:', url);
     }
