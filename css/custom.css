@@ -236,6 +236,22 @@ main {
 }
 
 
+/* TOP */
+
+.top-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.top-item {
+  border: none;
+  display: block;
+  background-color: #FCFCFC;
+  color: black;
+}
+}
+
 /* ~~~~~ JAVASCRIPT ELEMENTS ~~~~~ */
 
 /* NAV */
