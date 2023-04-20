@@ -258,7 +258,13 @@ main {
 }
 
 .top-img{
-  width: 100%
+  width: 100%;
+  border-radius: .25rem;
+  opacity: 2.5%;
+}
+
+.top-img:hover{
+  opacity: 100%;
 }
 
 .top-header-wrapper {
