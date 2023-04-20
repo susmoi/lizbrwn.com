@@ -13,8 +13,8 @@
   },
   {
     "Resource link": "https://datavizcatalogue.com/index.html",
-    "Resource name": "Data Visualisation Catalogue",
-    "Resource description": "List of the common approaches to data visualisation.",
+    "Resource name": "Data Visualisation",
+    "Resource description": "A catalouge of the common approaches to data visualisation.",
     "Resource tag": "Numbers"
   },
   {
@@ -62,8 +62,8 @@
   },
   {
     "Resource link": "https://tldp.org/HOWTO/Unix-and-Internet-Fundamentals-HOWTO/index.html",
-    "Resource name": "Linux Documentation Project",
-    "Resource description": "A document that describes the working basics of computers, Unix OS, and the Internet in non-technical language.",
+    "Resource name": "Linux Documentation",
+    "Resource description": "A project that documents and describes the working basics of computers, Unix OS, and the Internet in non-technical language.",
     "Resource tag": "Computer Science"
   },
   {
@@ -80,19 +80,19 @@
   },
   {
     "Resource link": "https://developer.mozilla.org/en-US/",
-    "Resource name": "Mozilla Developer Network Guides",
+    "Resource name": "Mozilla Developer Guides",
     "Resource description": "Documentation for popular web technologies, including CSS, HTML, and JavaScript.",
     "Resource tag": "Computer Science"
   },
   {
     "Resource link": "https://www.nist.gov/",
-    "Resource name": "National Institute of Standards and Technology",
+    "Resource name": "Standards and Technology",
     "Resource tag": "News",
-    "Resource description": "Creates the measurements and reports that guide the advancement of science, standards, and technology."
+    "Resource description": "The National Institute that creates the measurements and reports that guide the advancement of science, standards, and technology."
   },
   {
     "Resource link": "https://www.etymonline.com/",
-    "Resource name": "Online Etymology Dictionary",
+    "Resource name": "Etymology Dictionary",
     "Resource description": "A map of the wheel-ruts of modern English.",
     "Resource tag": "Writing"
   },
@@ -104,13 +104,13 @@
   },
   {
     "Resource link": "https://parts-of-speech.info/",
-    "Resource name": "Parts of Speech Tagging Tool",
-    "Resource description": "Assigns parts of speech such as noun, verb, adjective to sentences and words.",
+    "Resource name": "Parts of Speech Tagging",
+    "Resource description": "A tools that assigns parts of speech such as noun, verb, adjective to sentences and words.",
     "Resource tag": "Computer Science"
   },
   {
     "Resource link": "https://www.innerdoc.com/periodic-table-of-nlp-tasks/",
-    "Resource name": "Periodic Table of NLP Tasks",
+    "Resource name": "Periodic Table of NLP",
     "Resource description": "A list of Natural Language Processing tasks from simple to complex.",
     "Resource tag": "Computer Science"
   },
@@ -146,13 +146,13 @@
   },
   {
     "Resource link": "http://data.uis.unesco.org/Index.aspx",
-    "Resource name": "UNESCO Institute for Statistics",
-    "Resource description": "Internationally-comparable data on education, science, culture, and communication.",
+    "Resource name": "Institute for Statistics",
+    "Resource description": "UNESCO's Internationally-comparable data on education, science, culture, and communication.",
     "Resource tag": "Numbers"
   },
   {
     "Resource link": "https://webstersdictionary1828.com/",
-    "Resource name": "Webster's 1828 English Dictionary",
+    "Resource name": "Webster's Dictionary",
     "Resource description": "Online edition of Noah Webster's 1828 English Dictionary.",
     "Resource tag": "Writing",
     "Resource placement": "topWriting"

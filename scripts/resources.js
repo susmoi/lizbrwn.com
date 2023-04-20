@@ -14,7 +14,7 @@ $(document).ready(function() {
     $.each(data, function(key, val) {
       resourcesHtml += "<div>";
       resourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
-      resourcesHtml += "<div class='resource-item list-group-item-action'>";
+      resourcesHtml += "<div class='resource-item'>";
       resourcesHtml += "<div class='justify-content-between'>";
       resourcesHtml += "<h2 class=' resource-header' >" + val['Resource name'] + "</h2>";
       resourcesHtml += "</div>";
@@ -35,7 +35,7 @@ $(document).ready(function() {
       if (val['Resource placement'] === "topWriting") {
         writingResourcesHtml += "<div>";
         writingResourcesHtml += "<a href='" + val['Resource link'] + "' class='resource-link' target='_blank'>";
-        writingResourcesHtml += "<div class='resource-item list-group-item-action'>";
+        writingResourcesHtml += "<div class='resource-item'>";
         writingResourcesHtml += "<div class='justify-content-between'>";
         writingResourcesHtml += "<h2 class='resource-header'>" + val['Resource name'] + "</h2>";
         writingResourcesHtml += "</div>";
