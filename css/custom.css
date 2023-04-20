@@ -249,6 +249,21 @@ main {
   display: block;
   background-color: #FCFCFC;
   color: black;
+  width: 100%;
+}
+
+.top-img-wrapper {
+
+}
+
+.top-header-wrapper {
+
+}
+
+.top-header{
+  color: black;
+  font-size: .7rem;
+  font-weight: 600;
 }
 
 
