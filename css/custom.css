@@ -86,6 +86,8 @@ main {
 
 .resource-header {
   color: black;
+  font-size: .7rem;
+  font-weight: 600;
 }
 
 .resource-item {
