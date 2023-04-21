@@ -45,13 +45,13 @@
   {
     "Resource link": "https://www.influencewatch.org/",
     "Resource name": "Influence Watch",
-    "Resource description": "Descriptions of public policy individuals and organizations, conceived by the Capital Research Center.",
+    "Resource description": "Descriptions of public policy individuals and organizations.",
     "Resource tag": "Raresource"
   },
   {
     "Resource link": "https://www.internetsociety.org/resources/",
     "Resource name": "Internet Society",
-    "Resource description": "A global nonprofit organization working to keep the Internet open, globally connected, secure, and trustworthy.",
+    "Resource description": "Reports, papers, and other documents about keeping the internet open.",
     "Resource tag": "Raresource"
   },
   {
@@ -63,7 +63,7 @@
   {
     "Resource link": "https://tldp.org/HOWTO/Unix-and-Internet-Fundamentals-HOWTO/index.html",
     "Resource name": "Linux Documentation",
-    "Resource description": "A project that documents and describes the working basics of computers, Unix OS, and the Internet in non-technical language.",
+    "Resource description": "Describes the basics of computers, Unix OS, and the Internet in non-technical language.",
     "Resource tag": "Computer Science"
   },
   {
@@ -75,7 +75,7 @@
   {
     "Resource link": "https://search.marginalia.nu/",
     "Resource name": "Marginalia",
-    "Resource description": "An independent search engine that favors non-commercial, text-heavy sites over modern web sites.",
+    "Resource description": "An independent search engine that favors non-commercial, text-heavy sites over modern sites.",
     "Resource tag": "Search"
   },
   {
@@ -88,7 +88,7 @@
     "Resource link": "https://www.nist.gov/",
     "Resource name": "Standards and Technology",
     "Resource tag": "News",
-    "Resource description": "The National Institute that creates the measurements and reports that guide the advancement of science, standards, and technology."
+    "Resource description": "Measurements and reports to guide the advancement of science, standards, and technology."
   },
   {
     "Resource link": "https://www.etymonline.com/",
@@ -105,7 +105,7 @@
   {
     "Resource link": "https://parts-of-speech.info/",
     "Resource name": "Parts of Speech Tagging",
-    "Resource description": "A tools that assigns parts of speech such as noun, verb, adjective to sentences and words.",
+    "Resource description": "A tools that assigns parts of speech such as nouns and verbs to sentences.",
     "Resource tag": "Computer Science"
   },
   {
@@ -147,7 +147,7 @@
   {
     "Resource link": "http://data.uis.unesco.org/Index.aspx",
     "Resource name": "Institute for Statistics",
-    "Resource description": "UNESCO's Internationally-comparable data on education, science, culture, and communication.",
+    "Resource description": "Data on education, science, culture, and communication.",
     "Resource tag": "Numbers"
   },
   {
