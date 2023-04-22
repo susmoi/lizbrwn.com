@@ -315,6 +315,15 @@ main {
   font-weight: 600;
 }
 
+/* TOP MEDIA QUERIES */
+
+@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx) {
+  .top-img{
+    opacity: 90%;
+  }
+
+}
+
 
 /* ~~~~~ JAVASCRIPT ELEMENTS ~~~~~ */
 
