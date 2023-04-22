@@ -30,6 +30,12 @@
     "Resource link": "https://etymologeek.com/"
   },
   {
+    "Resource link": "https://www.etymonline.com/",
+    "Resource name": "Etymology Dictionary",
+    "Resource description": "A map of the wheel-ruts of modern English.",
+    "Resource tag": "Writing"
+  },
+  {
     "Resource link": "https://www.gartner.com/en",
     "Resource name": "Gartner",
     "Resource description": "Provides highly respected industry trend reports.",
@@ -47,6 +53,12 @@
     "Resource name": "Influence Watch",
     "Resource description": "Descriptions of public policy individuals and organizations.",
     "Resource tag": "Raresource"
+  },
+  {
+    "Resource link": "http://data.uis.unesco.org/Index.aspx",
+    "Resource name": "Institute for Statistics",
+    "Resource description": "Data on education, science, culture, and communication.",
+    "Resource tag": "Numbers"
   },
   {
     "Resource link": "https://www.internetsociety.org/resources/",
@@ -85,30 +97,6 @@
     "Resource tag": "Computer Science"
   },
   {
-    "Resource link": "https://www.nist.gov/",
-    "Resource name": "Standards and Technology",
-    "Resource tag": "News",
-    "Resource description": "Measurements and reports to guide the advancement of science, standards, and technology."
-  },
-  {
-    "Resource link": "https://www.etymonline.com/",
-    "Resource name": "Etymology Dictionary",
-    "Resource description": "A map of the wheel-ruts of modern English.",
-    "Resource tag": "Writing"
-  },
-  {
-    "Resource link": "https://ourworldindata.org/",
-    "Resource name": "World Data",
-    "Resource description": "A database that reports numbers related to a range of 'global problems.'",
-    "Resource tag": "Numbers"
-  },
-  {
-    "Resource link": "https://parts-of-speech.info/",
-    "Resource name": "Tagging Speech",
-    "Resource description": "A tools that assigns parts of speech such as nouns and verbs to sentences.",
-    "Resource tag": "Computer Science"
-  },
-  {
     "Resource link": "https://www.innerdoc.com/periodic-table-of-nlp-tasks/",
     "Resource name": "NLP Table",
     "Resource description": "A list of Natural Language Processing tasks from simple to complex.",
@@ -133,6 +121,18 @@
     "Resource tag": "Raresource"
   },
   {
+    "Resource link": "https://www.nist.gov/",
+    "Resource name": "Standards and Technology",
+    "Resource tag": "News",
+    "Resource description": "Measurements and reports to guide the advancement of science, standards, and technology."
+  },
+  {
+    "Resource link": "https://parts-of-speech.info/",
+    "Resource name": "Tagging Speech",
+    "Resource description": "A tools that assigns parts of speech such as nouns and verbs to sentences.",
+    "Resource tag": "Computer Science"
+  },
+  {
     "Resource link": "https://www.ted.com/talks",
     "Resource name": "TED",
     "Resource description": "Ideas worth spreading.",
@@ -143,12 +143,6 @@
     "Resource name": "Transvribe",
     "Resource description": "Video and YouTube search. Enter URL then ask a question about the video",
     "Resource tag": "Search"
-  },
-  {
-    "Resource link": "http://data.uis.unesco.org/Index.aspx",
-    "Resource name": "Institute for Statistics",
-    "Resource description": "Data on education, science, culture, and communication.",
-    "Resource tag": "Numbers"
   },
   {
     "Resource link": "https://webstersdictionary1828.com/",
@@ -167,6 +161,12 @@
     "Resource link": "https://data.worldbank.org/",
     "Resource name": "World Bank Data",
     "Resource description": "National data provided by the World Bank's member countries.",
+    "Resource tag": "Numbers"
+  },
+  {
+    "Resource link": "https://ourworldindata.org/",
+    "Resource name": "World Data",
+    "Resource description": "A database that reports numbers related to a range of 'global problems.'",
     "Resource tag": "Numbers"
   }
 ]
