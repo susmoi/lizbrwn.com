@@ -45,13 +45,13 @@ main {
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx) {
   #skip {
     display: block;
-    margin: 10% 4rem 0 4rem;
+    margin: 10% 0 0 4rem;
   }
   #skip > a {
     color: #fff;
     font-family: clearSans;
     font-weight: 600;
-    opacity: 5%;
+    opacity: 10%;
     font-size: 12px;
   }
 }
