@@ -327,6 +327,20 @@ main {
 
 /* ~~~~~ JAVASCRIPT ELEMENTS ~~~~~ */
 
+/* Sound Manger 2 */
+
+.sm2-bar-ui {
+ font-size: 12px;
+}
+.sm2-bar-ui .sm2-main-controls,
+.sm2-bar-ui .sm2-playlist-drawer {
+ background-color: #0b4fb7; /* non-RGBA fallback */
+ background-color: rgba(11, 79, 183, 0.7);
+}
+.sm2-bar-ui .sm2-inline-texture {
+ background: transparent;
+}
+
 /* NAV */
 
 #nav {
