@@ -35,6 +35,22 @@ main {
 
 /* ~~~~~ PAGES ~~~~~ */
 
+/* ALL */
+
+#skip {
+  display: none;
+  color: red;
+}
+
+/* ALL Media Queries */
+@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx) {
+  #skip {
+    display: block;
+    color: red;
+  }
+}
+
+
 /* INDEX */
 
 .index-container {
