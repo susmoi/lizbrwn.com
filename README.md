@@ -1,2 +1,2 @@
 # lizbrwn.com
-Liz Brown's website and library of resources.
+Liz Brown's library of resources and web favors.
