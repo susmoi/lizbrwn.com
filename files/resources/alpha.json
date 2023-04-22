@@ -68,7 +68,7 @@
   },
   {
     "Resource link": "https://support.apple.com/en-us/HT201236",
-    "Resource name": "Mac Keyboard Shortcuts",
+    "Resource name": "Mac Shortcuts",
     "Resource description": "An index of the key combinations mac computers recognize.",
     "Resource tag": "Computer Science"
   },
@@ -80,7 +80,7 @@
   },
   {
     "Resource link": "https://developer.mozilla.org/en-US/",
-    "Resource name": "Mozilla Developer Guides",
+    "Resource name": "Mozilla Guides",
     "Resource description": "Documentation for popular web technologies, including CSS, HTML, and JavaScript.",
     "Resource tag": "Computer Science"
   },
@@ -98,19 +98,19 @@
   },
   {
     "Resource link": "https://ourworldindata.org/",
-    "Resource name": "Our World in Data",
+    "Resource name": "World Data",
     "Resource description": "A database that reports numbers related to a range of 'global problems.'",
     "Resource tag": "Numbers"
   },
   {
     "Resource link": "https://parts-of-speech.info/",
-    "Resource name": "Parts of Speech Tagging",
+    "Resource name": "Tagging Speech",
     "Resource description": "A tools that assigns parts of speech such as nouns and verbs to sentences.",
     "Resource tag": "Computer Science"
   },
   {
     "Resource link": "https://www.innerdoc.com/periodic-table-of-nlp-tasks/",
-    "Resource name": "Periodic Table of NLP",
+    "Resource name": "NLP Table",
     "Resource description": "A list of Natural Language Processing tasks from simple to complex.",
     "Resource tag": "Computer Science"
   },
