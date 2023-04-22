@@ -20,6 +20,11 @@ app.use(bodyParser.json())
 // serve static files from client folder (js, css, images, etc.)
 app.use(express.static(path.join(process.cwd(), 'client')))
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(process.cwd(), 'client/bot.html'));
+});
+
+
 // create http post endpoint that accepts user input
 // and sends it to OpenAI Completions API
 // then returns the response to the client
@@ -34,7 +39,7 @@ app.post('/api/openai', async (req, res) => {
         // this is using the environment variable from the .env file
         'Content-Type': 'application/json',
         //'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
-        'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+        'Authorization': `Bearer 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`,
         },
 
         // construct the request payload
@@ -75,7 +80,8 @@ app.post('/api/openai', async (req, res) => {
       //res.json({ data: data.choices[0].text });
 
       //for base model requests
-      res.json({ content: data.choices[0].message.content });
+      //res.json({ content: data.choices[0].message.content });
+      res.json({ content: data});
 
       // log the data object to the console
       //console.log(data.choices[0].message.content);

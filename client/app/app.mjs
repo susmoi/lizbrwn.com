@@ -1,35 +1,38 @@
 
 // when the window loads, add an event listener to the form
 // that calls the handleSubmitQuestion function when the form is submitted
-window.onload = () => document.getElementById('prompt-form').addEventListener('submit', (e) => {
-    // prevent the form from refreshing the page
-    e.preventDefault();
+window.onload = () => {
+  document.getElementById('prompt-form').addEventListener('submit', (e) => {
+      // prevent the form from refreshing the page
+      e.preventDefault();
 
-    // get the value of the input
-    const question = document.getElementById('prompt-input').value;
+      // get the value of the input
+      const question = document.getElementById('prompt-input').value;
 
-    // call the function that handles the fetch request to our backend
-    handleSubmitQuestion(question).then((data) => {
-        // add the chatbot's response to the DOM when the fetch request is complete
-        addBotResponseToDialogueBox(data);
-    });
-});
+      // call the function that handles the fetch request to our backend
+      handleSubmitQuestion(question).then((data) => {
+          // add the chatbot's response to the DOM when the fetch request is complete
+          addBotResponseToDialogueBox(data);
+      });
+  });
 
-window.onload = () => document.getElementById('prompt-form').addEventListener('keydown', (e) => {
-  if (e.keyCode === 13) {
-    // prevent the form from refreshing the page
-    e.preventDefault();
+//  document.getElementById('prompt-form').addEventListener('keydown', (e) => {
+  //  if (e.keyCode === 13) {
+      // prevent the form from refreshing the page
+    //  e.preventDefault();
 
-    // get the value of the input
-    const question = document.getElementById('prompt-input').value;
+      // get the value of the input
+      //const question = document.getElementById('prompt-input').value;
 
-    // call the function that handles the fetch request to our backend
-    handleSubmitQuestion(question).then((data) => {
-        // add the chatbot's response to the DOM when the fetch request is complete
-        addBotResponseToDialogueBox(data);
-    });
-  }
-});
+      // call the function that handles the fetch request to our backend
+      //handleSubmitQuestion(question).then((data) => {
+          // add the chatbot's response to the DOM when the fetch request is complete
+        //  addBotResponseToDialogueBox(data);
+      //});
+    //}
+  //});//
+};
+
 
 
 
