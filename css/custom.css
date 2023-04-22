@@ -261,6 +261,7 @@ main {
   width: 100%;
   border-radius: .25rem;
   opacity: 2.5%;
+  transition: .8s ease-in-out;
 }
 
 .top-img:hover{
@@ -268,7 +269,10 @@ main {
 }
 
 .top-watching-img{
+  width: 100%;
+  border-radius: .25rem;
   opacity: 85%;
+  transition: .8s ease-in-out;
 }
 
 .top-watching-img:hover{
