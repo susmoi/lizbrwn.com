@@ -267,6 +267,14 @@ main {
   opacity: 100%;
 }
 
+.top-watching-img{
+  opacity: 85%;
+}
+
+.top-watching-img:hover{
+  opacity: 100%;
+}
+
 .top-header-wrapper {
 
 }

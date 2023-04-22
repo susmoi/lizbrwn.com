@@ -38,8 +38,8 @@ app.post('/api/openai', async (req, res) => {
         // notice how we're using process.env here
         // this is using the environment variable from the .env file
         'Content-Type': 'application/json',
-        //'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
-        'Authorization': `Bearer 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`,
+        'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+        'Authorization': `Bearer `,
         },
 
         // construct the request payload
