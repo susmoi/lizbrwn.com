@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="images" href="images">
-    <link rel="stylesheet" href="css/bar-ui.css">
+
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,16 +26,18 @@
     <script src="https://kit.fontawesome.com/bb7ea3d4ab.js" crossorigin="anonymous">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/Users/Liz/Desktop/lizbrwn.com/node_modules/soundmanager2/scriptlots/soundmanager2-nodebug-jsmin.js"></script>
 
-
+    <!-- SM stylesheet and scripts -->
+    <link rel="stylesheet" href="css/bar-ui.css">
+    <script type="text/javascript" src="soundmanager/sm-script/soundmanager2-jsmin.js"></script>
+    <!-- <script type="" src="soundmanager/player/bar-ui.js"></script> -->
+    <script type="" src="soundmanager/player/music.js"></script>
 
     <!-- Custom JS -->
     <script src="scripts/nav.js"></script>
     <script src="scripts/footer.js"></script>
     <script src="scripts/top.js"></script>
-    <script src="scripts/music.js"></script>
-    <script src="scripts/bar-ui.js"></script>
+
 
   </head>
   <body>
@@ -115,7 +117,7 @@
 
               <div class="sm2-playlist-wrapper">
                 <ul class="sm2-playlist-bd">
-                 <li class="selected"><a href="http://freshly-ground.com/data/audio/sm2/Adrian%20Glynn%20-%20Seven%20Or%20Eight%20Days.mp3"><b>Adrian Glynn</b> - Seven Or Eight Days</a></li>
+                 <li class="selected"><a href="lizbrwn/files/music/Eat-Your-Young.mp3"><b>Adrian Glynn</b> - Seven Or Eight Days</a></li>
                 </ul>
               </div>
 
@@ -146,6 +148,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript">
+    soundManager.setup({
+      url: '/Users/Liz/Desktop/lizbrwn.com/node_modules/soundmanager2/swf',
+      onready: function() {
+        var mySound = soundManager.createSound({
+          id: 'aSound',
+          url: 'lizbrwn/files/music/Eat-Your-Young.mp3'
+        });
+        mySound.play();
+      },
+      ontimeout: function() {
+        // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
+      }
+    });
     </script>
     <!-- SCRIPTS END -->
   </body>

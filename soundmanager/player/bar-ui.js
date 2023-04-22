@@ -1,5 +1,3 @@
-import soundManager from "/Users/Liz/Desktop/lizbrwn.com/node_modules/soundmanager2/script/soundmanager2-nodebug-jsmin.js";
-
 (function(window) {
 
   /**
