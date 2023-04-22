@@ -45,14 +45,14 @@ main {
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx) {
   #skip {
     display: block;
-    text-align: center;
-    margin: 5% 0 0 0;
+    margin: 10% 4rem 0 4rem;
   }
   #skip > a {
     color: #fff;
     font-family: clearSans;
     font-weight: 600;
     opacity: 5%;
+    font-size: 12px;
   }
 }
 
@@ -157,10 +157,12 @@ main {
   margin-bottom: 1rem;
 }
 
+/* RESOURCE MEDIA QUERIES */
+
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
 
   .resource-container {
-    margin: 5rem 4rem 0 4rem;
+    margin: 1rem 4rem 0 4rem;
   }
 
   .resource-item {
