@@ -298,7 +298,7 @@ main {
   width: 100%;
   border-radius: .25rem;
   opacity: 85%;
-  transition: .8s ease-in-out;
+  transition: 350ms cubic-bezier(.55,.09,.68,.53);
 }
 
 .top-watching-img:hover{
