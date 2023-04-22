@@ -142,7 +142,9 @@ main {
   }
 
   .resource-item {
-    margin-bottom: 2rem;
+    margin-bottom: 2%;
+    text-align: center;
+    padding: 5%;
   }
 
   .resource-body{
