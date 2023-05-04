@@ -10,7 +10,7 @@ const { Configuration, OpenAIApi, } = pkg;
 import {enrichUserPromptWithContext} from "./utils.js";
 
 // load environment variables from .env file
-dotenv.config();
+dotenv.config({ path:'./doNotDeploy/.env' });
 // initialize express app
 export const app = express()
 
@@ -54,12 +54,12 @@ app.post('/api/openai', async (req, res) => {
 
         // passing in an 'enriched' version
         // of the user's prompt
-        //for custom chewybot
+        //for custom bot
         //prompt: enrichUserPromptWithContext(question),
 
         //for base model
         messages:[
-                  {role: "user", content: question}
+                  {role: "user", content: enrichUserPromptWithContext(question)}
                 ]
         // the maximum number of tokens/words the bot should return
         // in response to a given prompt
@@ -79,18 +79,18 @@ app.post('/api/openai', async (req, res) => {
       //res.json({ data: data.choices[0].text });
 
       //for base model requests
-      //res.json({ content: data.choices[0].message.content });
-      res.json({ content: data});
+      res.json({ content: data.choices[0].message.content });
+      //res.json({ content: data});
 
       // log the data object to the console
       //console.log(data.choices[0].message.content);
-
+      //console.log(data);
 });
 
 // set the port to listen on
 // which is either the port specified in the .env
-// or 3000 if no port is specified
-const PORT = process.env.PORT || 3000;
+// or 2626 if no port is specified
+const PORT = process.env.PORT || 2626;
 
 // start the express server
 app.listen(PORT, () => console.log(`Server listening on localhost:${PORT}!`));

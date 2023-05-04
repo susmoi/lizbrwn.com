@@ -16,21 +16,21 @@ window.onload = () => {
       });
   });
 
-//  document.getElementById('prompt-form').addEventListener('keydown', (e) => {
-  //  if (e.keyCode === 13) {
-      // prevent the form from refreshing the page
-    //  e.preventDefault();
+  document.getElementById('prompt-form').addEventListener('keydown', (e) => {
+    if (e.keyCode === 13) {
+       //prevent the form from refreshing the page
+      e.preventDefault();
 
-      // get the value of the input
-      //const question = document.getElementById('prompt-input').value;
+       //get the value of the input
+      const question = document.getElementById('prompt-input').value;
 
-      // call the function that handles the fetch request to our backend
-      //handleSubmitQuestion(question).then((data) => {
+       //call the function that handles the fetch request to our backend
+      handleSubmitQuestion(question).then((data) => {
           // add the chatbot's response to the DOM when the fetch request is complete
-        //  addBotResponseToDialogueBox(data);
-      //});
-    //}
-  //});//
+          addBotResponseToDialogueBox(data);
+      });
+    }
+  });
 };
 
 
@@ -64,6 +64,7 @@ async function handleSubmitQuestion(question) {
     return content
 
 
+
 }
 
 // add the user's question to the dialogue box
@@ -72,7 +73,7 @@ function addUserQuestionToDialogueBox(question) {
     const userQuestion = document.createElement('li');
 
     // add user-specific styling to element
-    userQuestion.classList.add('bg-indigo-500', 'text-white', 'rounded', 'p-2', 'w-fit', 'self-end', 'break-words');
+    userQuestion.classList.add('bg-indigo-900', 'text-indigo-50', 'rounded', 'p-2', 'w-fit', 'self-end', 'break-words');
 
     // add the user's question to the element
     userQuestion.innerText = question;
@@ -90,7 +91,7 @@ function addBotResponseToDialogueBox(data) {
     const botResponse = document.createElement('li');
 
     // add user-specific styling to list element
-    botResponse.classList.add('bg-gray-100', 'rounded', 'p-2', 'w-fit', 'self-start');
+    botResponse.classList.add('bg-slate-800', 'text-slate-50', 'rounded', 'p-2', 'w-fit', 'self-start');
 
     // add the bot's response to the list element
     botResponse.innerText = data;
