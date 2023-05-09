@@ -101,24 +101,6 @@ main {
 }
 
 /* RESOURCES */
-.resource-container{
-  margin: 7rem 4rem 0 4rem;
-
-}
-
-.resource-header {
-  color: black;
-  font-size: .7rem;
-  font-weight: 600;
-}
-
-.resource-item {
-  border-radius: .25rem;
-  /*display: block;*/
-  padding: 2rem;
-  background-color: #FCFCFC;
-  color: black;
-}
 
 .category-header {
   color: white;
@@ -134,6 +116,31 @@ main {
   /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
   gap: 1rem;
 }
+.resource-container{
+  margin: 7rem 4rem 0 4rem;
+
+}
+
+.resource-item {
+  border-radius: .25rem;
+  /*display: block;*/
+  padding: 2rem;
+  background-color: #FCFCFC;
+  color: black;
+}
+
+.resource-header {
+  color: black;
+  font-size: .7rem;
+  font-weight: 600;
+}
+
+.resource-body {
+  font-size: 12px;
+  color: black;
+  display: none;
+}
+
 
 .resource-name {
   font-size: 20px;
