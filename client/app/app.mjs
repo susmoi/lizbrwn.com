@@ -33,7 +33,11 @@ window.onload = () => {
   });
 };
 
-
+//automatically scrolls to the bottom of the dialogue container
+function scrollToBottom() {
+  const container = document.getElementById('dia-container');
+  container.scrollTop = container.scrollHeight;
+}
 
 
 
@@ -73,13 +77,16 @@ function addUserQuestionToDialogueBox(question) {
     const userQuestion = document.createElement('li');
 
     // add user-specific styling to element
-    userQuestion.classList.add('bg-indigo-900', 'text-indigo-50', 'rounded', 'p-2', 'w-fit', 'self-end', 'break-words');
+    userQuestion.classList.add('user-prompt');
 
     // add the user's question to the element
     userQuestion.innerText = question;
 
     // add the li element to the DOM
     document.getElementById('dialogue').appendChild(userQuestion);
+
+    // scrolls to the bottom of the dialogue container
+    scrollToBottom();
 
     // clear the input for the next question
     document.getElementById('prompt-input').value = '';
@@ -91,13 +98,16 @@ function addBotResponseToDialogueBox(data) {
     const botResponse = document.createElement('li');
 
     // add user-specific styling to list element
-    botResponse.classList.add('bg-slate-800', 'text-slate-50', 'rounded', 'p-2', 'w-fit', 'self-start');
+    botResponse.classList.add('wammy-response');
 
     // add the bot's response to the list element
     botResponse.innerText = data;
 
     // add the list element to the DOM
     document.getElementById('dialogue').appendChild(botResponse);
+
+    // scrolls to the bottom of the dialogue container
+    scrollToBottom();
 
     // clear the input for the next response
     document.getElementById('prompt-input').value = '';

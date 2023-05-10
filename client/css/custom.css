@@ -101,6 +101,24 @@ main {
 }
 
 /* RESOURCES */
+.resource-container{
+  margin: 7rem 4rem 0 4rem;
+
+}
+
+.resource-header {
+  color: black;
+  font-size: .7rem;
+  font-weight: 600;
+}
+
+.resource-item {
+  border-radius: .25rem;
+  /*display: block;*/
+  padding: 2rem;
+  background-color: #FCFCFC;
+  color: black;
+}
 
 .category-header {
   color: white;
@@ -116,32 +134,6 @@ main {
   /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
   gap: 1rem;
 }
-.resource-container{
-  margin: 7rem 4rem 0 4rem;
-
-}
-
-.resource-item {
-  border-radius: .25rem;
-  /*display: block;*/
-  padding: 2rem;
-  background-color: #FCFCFC;
-  color: black;
-}
-
-.resource-header {
-  color: black;
-  font-size: .7rem;
-  font-weight: 600;
-  margin: 0 auto;
-}
-
-.resource-body {
-  font-size: 12px;
-  color: black;
-  display: none;
-}
-
 
 .resource-name {
   font-size: 20px;
@@ -261,6 +253,98 @@ main {
 
 }
 
+/* WAMMY */
+
+.wammy-container {
+  margin: 7rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill);
+  gap: 1rem;
+
+}
+
+.wammy-header {
+  font-family: "clearSans", "Arial", sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  margin: 2rem 0 .15rem 0;
+  color: white;
+}
+
+.wammy-body {
+  font-size: 16px;
+  color: white;
+  margin: 0 0 0 0;
+  opacity: 0%;
+  transition: 300ms cubic-bezier(.42,0,.81,1.01);
+}
+
+.wammy-body:hover {
+  display: block;
+  opacity: 100%;
+  margin: 0 0 2rem 0;
+  transition: 300ms cubic-bezier(.42,0,.81,1.01);
+}
+
+
+.wammy-response {
+  font-family: "clearSans", "Arial", sans-serif;
+  font-size: 20px;
+  list-style: none;
+  margin: 1.2rem 0 0 0;
+}
+
+.user-prompt {
+  font-family: "clearSans", "Arial", sans-serif;
+  font-size: 20px;
+  text-align: right;
+  padding: 1.2rem 2rem 0 0;
+  list-style: none;
+}
+
+.dialogue-container {
+  background-color: white;
+  width: 100%;
+  height: 35vh;
+  border-radius: .25rem;
+  overflow: auto;
+  filter: drop-shadow(0 0 0.075rem #e5e8ed);
+  box-shadow: 0 0 0 2px #e5e8ed;
+}
+
+#prompt-input {
+  background-color: #FFF;
+  width: 100%;
+  border-radius: .25rem;
+  font-family: "clearSans", "Arial", sans-serif;
+  font-size: 20px;
+  min-height: 10rem;
+  padding: 1.2rem;
+  border: none;
+  filter: drop-shadow(0 0 0.075rem #e5e8ed);
+  box-shadow: 0 0 0 2px #e5e8ed;
+}
+
+.prompt-input-button {
+  display: block;
+  margin: 10px 0 0 0;
+  width: 100%;
+  height: 5rem;
+  font-family: "clearSans", "Arial", sans-serif;
+  background-color: #ff8c44;
+  color: #fff;
+  border: none;
+  filter: drop-shadow(0 0 0.075rem #f98741);
+  box-shadow: 0 0 0 2px #f98741;
+  border-radius: .25rem;
+  transition: 200ms cubic-bezier(.42,0,.81,1.01);
+}
+
+.prompt-input-button:hover {
+  background-color: #EC7224;
+  transition: 200ms cubic-bezier(.42,0,.81,1.01);
+  color: white;
+}
 
 
 /* CLIENTS */
@@ -334,20 +418,6 @@ main {
 
 
 /* ~~~~~ JAVASCRIPT ELEMENTS ~~~~~ */
-
-/* Sound Manger 2 */
-
-.sm2-bar-ui {
- font-size: 12px;
-}
-.sm2-bar-ui .sm2-main-controls,
-.sm2-bar-ui .sm2-playlist-drawer {
- background-color: #0b4fb7; /* non-RGBA fallback */
- background-color: rgba(11, 79, 183, 0.7);
-}
-.sm2-bar-ui .sm2-inline-texture {
- background: transparent;
-}
 
 /* NAV */
 

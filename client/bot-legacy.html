@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <title>Wammy</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" type="text/css" href="lizbrwn.com/css/custom.css"> </link>
+</head>
+
+<body class="bg-slate-900">
+<div id="root" class="flex flex-col min-h-screen p-16">
+
+    <!-- code goes below -->
+
+    <main class="grow flex flex-col items-center justify-center">
+        <h1 class="text-center text-2xl mt-5 font-bold text-slate-300">Wammy</h1>
+        <p class=" resume-header mt-1 my-20 text-slate-300">A chill bot that lives in your browser (just don't tell Wammy this)</p>
+        <section class="dialogue-section w-full max-w-3xl rounded-md p-4 overflow-scroll" style="height: 45rem">
+            <ul id="dialogue" class="flex flex-col space-y-4">
+                <li class="bg-slate-800 text-slate-50 rounded p-2 w-fit self-start break-words">
+                        Hey, I'm Wammy.
+                </li>
+            </ul>
+        </section>
+        <section class="prompt-section my-4 w-full max-w-3xl">
+            <div class="prompt-input-section flex flex-col">
+                <form id="prompt-form">
+                    <label for="prompt-input" class="block text-slate-500 text-sm mt-5 mb-3">This is where you talk to Wammy.</label>
+                    <textarea
+                      id="prompt-input"
+                      name="prompt"
+                      class="appearance-none bg-slate-800 rounded w-full py-2 px-3 text-slate-300">
+                    </textarea>
+                    <button type="submit" class="my-4 bg-indigo-800 hover:bg-indigo-900 text-white font-bold py-2 px-4 rounded">Tap enter
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- code goes above-->
+
+    <footer>
+        <div class="text-center mt-5 flex flex-col items-center space-y-2">
+            </a>
+        </div>
+    </footer>
+    <script src="app/app.mjs" type="module"></script>
+
+
+</div>
+</body>
+
+</html>
