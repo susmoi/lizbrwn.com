@@ -127,6 +127,18 @@ main {
   padding: 2rem;
   background-color: #FCFCFC;
   color: black;
+  transform: scale(1);
+  transition: 200ms cubic-bezier(.42,0,.81,1.01);
+}
+
+.resource-item:hover{
+  border-radius: .25rem;
+  padding: 2rem;
+  background-color: #FCFCFC;
+  box-shadow: -3px 3px #E5E5E5;
+  transform: scale(1.02);
+  transition: 200ms cubic-bezier(.42,0,.81,1.01);
+  color: black;
 }
 
 .resource-header {
