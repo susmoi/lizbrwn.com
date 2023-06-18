@@ -59,7 +59,11 @@ app.post('/api/openai', async (req, res) => {
 
         //for base model
         messages:[
+                  //Call 'Wammy'
                   {role: "user", content: enrichUserPromptWithContext(question)}
+
+                  //call GPT4
+                  //{role: "user", content: question}
                 ]
         // the maximum number of tokens/words the bot should return
         // in response to a given prompt
