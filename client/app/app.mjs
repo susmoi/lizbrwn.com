@@ -2,6 +2,8 @@
 // when the window loads, add an event listener to the form
 // that calls the handleSubmitQuestion function when the form is submitted
 window.onload = () => {
+  // focus the input box
+  document.getElementById('prompt-input').focus()
   document.getElementById('prompt-form').addEventListener('submit', (e) => {
       // prevent the form from refreshing the page
       e.preventDefault();
@@ -90,6 +92,9 @@ function addUserQuestionToDialogueBox(question) {
 
     // clear the input for the next question
     document.getElementById('prompt-input').value = '';
+
+    // focus the input box
+    document.getElementById('prompt-input').focus()
 }
 
 // add the chatbot's response to the dialogue box
@@ -111,4 +116,7 @@ function addBotResponseToDialogueBox(data) {
 
     // clear the input for the next response
     document.getElementById('prompt-input').value = '';
+
+    // focus the input box
+    document.getElementById('prompt-input').focus()
 }

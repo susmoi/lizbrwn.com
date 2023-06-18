@@ -256,11 +256,15 @@ main {
 /* WAMMY */
 
 .wammy-container {
-  margin: 7rem 5rem;
+  margin: 2rem 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fill);
   gap: 1rem;
 
+}
+
+.wammy-top{
+  text-align: center;
 }
 
 .wammy-header {
@@ -272,10 +276,10 @@ main {
 }
 
 .wammy-body {
+  display: block;
   font-size: 16px;
   color: white;
-  margin: 0 0 0 0;
-  opacity: 0%;
+  margin: 0 0 2rem 0;
   transition: 300ms cubic-bezier(.42,0,.81,1.01);
 }
 
@@ -285,7 +289,6 @@ main {
   margin: 0 0 2rem 0;
   transition: 300ms cubic-bezier(.42,0,.81,1.01);
 }
-
 
 .wammy-response {
   font-family: "clearSans", "Arial", sans-serif;
@@ -327,17 +330,28 @@ main {
 
 .prompt-input-button {
   display: block;
-  margin: 0 0 0 0;
+  margin: 10px 0 0 0;
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   font-family: "clearSans", "Arial", sans-serif;
-  background-color: #ff8c44;
+  /*background-color: #ff8c44;*/
   color: #fff;
   border: none;
-  filter: drop-shadow(0 0 0.075rem #f98741);
-  box-shadow: 0 0 0 2px #f98741;
   border-radius: .25rem;
   transition: 200ms cubic-bezier(.42,0,.81,1.01);
+  background-image: linear-gradient(
+    55deg,
+    hsl(30deg 100% 44%) 0%,
+    hsl(31deg 99% 45%) 21%,
+    hsl(31deg 98% 47%) 30%,
+    hsl(31deg 97% 49%) 39%,
+    hsl(32deg 97% 50%) 46%,
+    hsl(32deg 100% 53%) 54%,
+    hsl(32deg 100% 56%) 61%,
+    hsl(32deg 100% 58%) 69%,
+    hsl(33deg 100% 60%) 79%,
+    hsl(34deg 100% 62%) 100%
+  );
 }
 
 .prompt-input-button:hover {
@@ -345,8 +359,8 @@ main {
   transition: 200ms cubic-bezier(.42,0,.81,1.01);
   filter: drop-shadow(0 0 0.075rem #f99456);
   color: white;
-  border-color: #f99456;
-  box-shadow: 0 0 0 2px #f99456;
+  border-radius: 2rem;
+  transform: scale(1.02);
 }
 
 .skate-rail {

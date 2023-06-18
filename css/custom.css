@@ -206,6 +206,7 @@ main {
   font-size: 16px;
   color: white;
   margin: 0 50% 5rem 0;
+  text-shadow: #000 .1px .1px;
 }
 
 .resume-header {
@@ -214,11 +215,13 @@ main {
   font-weight: 900;
   margin: 2rem 0 .5rem 0;
   color: white;
+  text-shadow: #000 .1px .1px;
 }
 
 .resume-body {
   font-size: 16px;
   color: white;
+  text-shadow: #000 .1px .1px;
 }
 
 .resume-link-container {
@@ -229,6 +232,7 @@ main {
   font-family: "clearSans", "Arial", sans-serif;
   color: white;
   padding: 0 3rem 0 0;
+  text-shadow: #000 .1px .1px;
 }
 
 .resume-link:hover {
@@ -237,11 +241,7 @@ main {
   text-decoration: none;
 }
 
-.about-body {
-  font-size: 16px;
-  color: white;
-  margin: 0 25rem 10rem 0;
-}
+
 
 
 /* RESUME MEDIA QUERIES */
@@ -266,9 +266,6 @@ main {
     font-size: 12px;
     color: white;
   }
-
-
-
 }
 
 
@@ -345,20 +342,6 @@ main {
 
 /* ~~~~~ JAVASCRIPT ELEMENTS ~~~~~ */
 
-/* Sound Manger 2 */
-
-.sm2-bar-ui {
- font-size: 12px;
-}
-.sm2-bar-ui .sm2-main-controls,
-.sm2-bar-ui .sm2-playlist-drawer {
- background-color: #0b4fb7; /* non-RGBA fallback */
- background-color: rgba(11, 79, 183, 0.7);
-}
-.sm2-bar-ui .sm2-inline-texture {
- background: transparent;
-}
-
 /* NAV */
 
 #nav {
@@ -418,17 +401,17 @@ main {
   }
 
 .nav-element:hover {
-  color: white;
-  text-decoration: none;
-  filter: none;
-  border-bottom: none;
-}
+    color: white;
+    text-decoration: none;
+    filter: none;
+    border-bottom: none;
+  }
   .nav-element.active {
-  filter: none;
-  border-bottom: none;
-  color: #F8D6B2;
-  font-weight: 600;
-}
+    filter: none;
+    border-bottom: none;
+    color: #F8D6B2;
+    font-weight: 600;
+  }
 
 }
 
@@ -473,23 +456,25 @@ main {
   box-sizing: border-box;
 }
 
-h1 { font-family: 'Arial', sans-serif;
-    /* font-weight:;  */
-    font-size: 2.488rem;
-    font-weight: 500;
-    margin-bottom: 3rem;
-    line-height: none;
-    margin-top: none;
-    color: white;
+h1 {
+  font-family: 'Arial', sans-serif;
+  /* font-weight:;  */
+  font-size: 2.488rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  line-height: none;
+  margin-top: none;
+  color: white;
 }
 
-h2 { font-family: 'Arial', sans-serif;
-    font-weight: 100;
-    font-size: 1.44rem;
-    margin-bottom: 1.2rem;
-    line-height: none;
-    margin-top: none;
-    color: white;
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 100;
+  font-size: 1.44rem;
+  margin-bottom: 1.2rem;
+  line-height: none;
+  margin-top: none;
+  color: white;
 }
 
 h3 {
@@ -547,6 +532,7 @@ a:active {
 .expelled-container{
   margin: 8rem 0 0 1rem
 }
+
 .expelled-link{
   font-family: "clearSans", "Arial", sans-serif;
   font-weight: 500;
