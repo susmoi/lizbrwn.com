@@ -267,17 +267,17 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
-  padding: 30px 0 30px 20px;
+  padding: 60px 0 60px 100px;
   background-color: #202121;
-  border-radius: .25rem .25rem 0 0;
+  /*border-radius: .25rem .25rem 0 0;*/
+  border-radius: 3rem 3rem 0 0;
 }
 
 .wammylogoimage{
   width: 6rem;
   display: inline;
   margin: 0 0 0 0;
-  align-items: center;
-  opacity: 80%;
+  opacity: 100%;
 
 }
 
@@ -296,13 +296,32 @@ main {
   display: inline;
 }*/
 
+.top-gradient{
+  width: 100%;
+  height: 6vh;
+  background-image: linear-gradient(
+    0deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(344deg 0% 79%) 39%,
+    hsl(180deg 0% 49%) 61%,
+    hsl(180deg 2% 13%) 100%
+  );
+  display: none;
+}
+
+.bottom-gradient{
+  width: 100%;
+  height: 6vh;
+  display: none;
+}
+
 .dialogue-container {
   background-color: white;
   width: 100%;
   height: 45vh;
-  border-radius: .25rem .25rem 0 0;
+  border-radius: 0;
   overflow: auto;
-  padding: 1rem;
+  padding: 3rem 4rem;
 }
 
 ul {
@@ -319,7 +338,7 @@ ul {
   margin: 0 0 1rem 0;
   list-style: none;
   background-color: #F5F5F7;
-  border-radius: .25rem;
+  border-radius: .25rem 5rem 5rem 5rem;
   width: max-content;
   max-width: 100%;
 }
@@ -332,7 +351,7 @@ ul {
   margin: 0 0 1rem 0;
   list-style: none;
   background-color: #333332;
-  border-radius: .25rem;
+  border-radius: 5rem 5rem .25rem 5rem;
   width: max-content;
   max-width: 100%;
   align-self: flex-end;
@@ -346,15 +365,16 @@ ul {
 #prompt-input {
   background-color: #FFF;
   width: 100%;
-  border-radius: 0 0 0 .25rem;
+  min-height: 8rem;
+  border-radius: 0 0 0 3rem;
   font-family: "clearSans", "Arial", sans-serif;
-  font-size: 20px;
-  min-height: 5rem;
-  padding: 1.2rem;
-  border: none;
-  background-color: #E9E9ED;
-  resize: none;
+  font-size: 26px;
+  padding: 2rem 3rem 0 3rem ;
   margin: 0;
+  border: none;
+  /*background-color: #E9E9ED;*/
+  background-color: hsl(32deg 97% 50%);
+  resize: none;
 }
 
 #prompt-input:focus{
@@ -367,7 +387,7 @@ ul {
   font-family: "clearSans", "Arial", sans-serif;
   color: #000;
   border: none;
-  border-radius: 0 0 .25rem 0;
+  border-radius: 0 0 3rem 0;
   transition: 300ms cubic-bezier(.42,0,.81,1.01);
   background-color: #E9E9ED;
 }

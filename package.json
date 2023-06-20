@@ -1,7 +1,7 @@
 {
-  "name": "Chewybot",
-  "version": "1.0.0",
-  "description": "The server that hosts chewybot.",
+  "name": "Wammy",
+  "version": "2.0.0",
+  "description": "The server that hosts Wammy.",
   "author": "Liz Brown",
   "main": "server/main.mjs",
   "type": "module",
