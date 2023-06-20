@@ -259,12 +259,21 @@ main {
   margin: 2rem 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fill);
-  gap: 1rem;
+  /* gap: 1rem;*/
 
 }
 
 .wammy-top{
-  text-align: center;
+  text-align: start;
+  padding: 30px 0 30px 20px;
+  background-color: #202121;
+  border-radius: .25rem .25rem 0 0;
+}
+
+.wammylogoimage{
+  max-width: 13%;
+  display: inline;
+  margin: 0 0 5px 0;
 }
 
 .wammy-header {
@@ -276,100 +285,124 @@ main {
 }
 
 .wammy-body {
-  display: block;
   font-size: 16px;
   color: white;
-  margin: 0 0 2rem 0;
-  transition: 300ms cubic-bezier(.42,0,.81,1.01);
+  margin: 30px 0 30px 0;
+  display: inline;
 }
 
-.wammy-body:hover {
-  display: block;
-  opacity: 100%;
-  margin: 0 0 2rem 0;
-  transition: 300ms cubic-bezier(.42,0,.81,1.01);
+.dialogue-container {
+  background-color: white;
+  width: 100%;
+  height: 45vh;
+  border-radius: .25rem .25rem 0 0;
+  overflow: auto;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
 .wammy-response {
   font-family: "clearSans", "Arial", sans-serif;
   font-size: 20px;
   list-style: none;
-  margin: 1.2rem 0 0 0;
+  background-color: #F5F5F7;
+  color: black;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  border-radius: .25rem;
+  width: max-content;
+  max-width: 100%;
 }
 
 .user-prompt {
   font-family: "clearSans", "Arial", sans-serif;
   font-size: 20px;
-  text-align: right;
-  padding: 1.2rem 2rem 0 0;
   list-style: none;
+  background-color: #333332;
+  color: white;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  border-radius: .25rem;
+  width: max-content;
+  max-width: 100%;
+  align-self: flex-end;
 }
 
-.dialogue-container {
-  background-color: white;
-  width: 100%;
-  height: 35vh;
-  border-radius: .25rem;
-  overflow: auto;
-  filter: drop-shadow(0 0 0.075rem #e5e8ed);
-  box-shadow: 0 0 0 2px #e5e8ed;
+#prompt-form{
+  display: grid;
+  grid-template-columns: 6fr 1fr;
 }
 
 #prompt-input {
   background-color: #FFF;
   width: 100%;
-  border-radius: .25rem;
+  border-radius: 0 0 0 .25rem;
   font-family: "clearSans", "Arial", sans-serif;
   font-size: 20px;
-  min-height: 10rem;
+  min-height: 5rem;
   padding: 1.2rem;
   border: none;
-  filter: drop-shadow(0 0 0.075rem #e5e8ed);
-  box-shadow: 0 0 0 2px #e5e8ed;
+  background-color: #E9E9ED;
+  resize: none;
+  margin: 0;
+}
+
+#prompt-input:focus{
+  outline: none;
 }
 
 .prompt-input-button {
-  display: block;
-  margin: 10px 0 0 0;
   width: 100%;
-  height: 4rem;
+  height: 100%;
   font-family: "clearSans", "Arial", sans-serif;
-  /*background-color: #ff8c44;*/
-  color: #fff;
+  color: #000;
   border: none;
-  border-radius: .25rem;
-  transition: 200ms cubic-bezier(.42,0,.81,1.01);
-  background-image: linear-gradient(
-    55deg,
-    hsl(30deg 100% 44%) 0%,
-    hsl(31deg 99% 45%) 21%,
-    hsl(31deg 98% 47%) 30%,
-    hsl(31deg 97% 49%) 39%,
-    hsl(32deg 97% 50%) 46%,
-    hsl(32deg 100% 53%) 54%,
-    hsl(32deg 100% 56%) 61%,
-    hsl(32deg 100% 58%) 69%,
-    hsl(33deg 100% 60%) 79%,
-    hsl(34deg 100% 62%) 100%
-  );
+  border-radius: 0 0 .25rem 0;
+  transition: 300ms cubic-bezier(.42,0,.81,1.01);
+  background-color: #E9E9ED;
 }
 
 .prompt-input-button:hover {
   background-color: #f99456;
-  transition: 200ms cubic-bezier(.42,0,.81,1.01);
-  filter: drop-shadow(0 0 0.075rem #f99456);
-  color: white;
-  border-radius: 2rem;
-  transform: scale(1.02);
+  transition: 300ms cubic-bezier(.42,0,.81,1.01);
+  color: #E9E9ED;
+  background-image: linear-gradient(
+  55deg,
+  hsl(30deg 100% 44%) 0%,
+  hsl(31deg 99% 45%) 21%,
+  hsl(31deg 98% 47%) 30%,
+  hsl(31deg 97% 49%) 39%,
+  hsl(32deg 97% 50%) 46%,
+  hsl(32deg 100% 53%) 54%,
+  hsl(32deg 100% 56%) 61%,
+  hsl(32deg 100% 58%) 69%,
+  hsl(33deg 100% 60%) 79%,
+  hsl(34deg 100% 62%) 100%
+);
 }
 
-.skate-rail {
-  width: 100%;
-  margin: 2rem 0 -3px 0;
-}
-
-.skate-button {
-
+.prompt-input-button:focus {
+  background-color: #f99456;
+  transition: 300ms cubic-bezier(.42,0,.81,1.01);
+  color: #E9E9ED;
+  background-image: linear-gradient(
+  55deg,
+  hsl(30deg 100% 44%) 0%,
+  hsl(31deg 99% 45%) 21%,
+  hsl(31deg 98% 47%) 30%,
+  hsl(31deg 97% 49%) 39%,
+  hsl(32deg 97% 50%) 46%,
+  hsl(32deg 100% 53%) 54%,
+  hsl(32deg 100% 56%) 61%,
+  hsl(32deg 100% 58%) 69%,
+  hsl(33deg 100% 60%) 79%,
+  hsl(34deg 100% 62%) 100%
+);
 }
 
 

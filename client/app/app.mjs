@@ -2,8 +2,6 @@
 // when the window loads, add an event listener to the form
 // that calls the handleSubmitQuestion function when the form is submitted
 window.onload = () => {
-  // focus the input box
-  document.getElementById('prompt-input').focus()
   document.getElementById('prompt-form').addEventListener('submit', (e) => {
       // prevent the form from refreshing the page
       e.preventDefault();
