@@ -264,30 +264,33 @@ main {
 }
 
 .wammy-top{
+  display: grid;
+  grid-template-columns: 3rem 1fr;
   text-align: start;
   padding: 30px 0 30px 20px;
   background-color: #202121;
   border-radius: .25rem .25rem 0 0;
+  opacity: 94%;
 }
 
 .wammylogoimage{
-  max-width: 13%;
+  width: 100%;
   display: inline;
-  margin: 0 0 5px 0;
+  margin: 0 0 0 0;
 }
 
-.wammy-header {
+/*.wammy-header {
   font-family: "clearSans", "Arial", sans-serif;
   font-size: 64px;
   font-weight: 900;
   margin: 2rem 0 .15rem 0;
   color: white;
-}
+}*/
 
 .wammy-body {
-  font-size: 16px;
+  font-size: .8rem;
   color: white;
-  margin: 30px 0 30px 0;
+  margin: 0 0 0 1.1rem;
   display: inline;
 }
 
@@ -391,18 +394,19 @@ ul {
   transition: 300ms cubic-bezier(.42,0,.81,1.01);
   color: #E9E9ED;
   background-image: linear-gradient(
-  55deg,
-  hsl(30deg 100% 44%) 0%,
-  hsl(31deg 99% 45%) 21%,
-  hsl(31deg 98% 47%) 30%,
-  hsl(31deg 97% 49%) 39%,
-  hsl(32deg 97% 50%) 46%,
-  hsl(32deg 100% 53%) 54%,
-  hsl(32deg 100% 56%) 61%,
-  hsl(32deg 100% 58%) 69%,
-  hsl(33deg 100% 60%) 79%,
-  hsl(34deg 100% 62%) 100%
-);
+    55deg,
+    hsl(30deg 100% 44%) 0%,
+    hsl(31deg 99% 45%) 21%,
+    hsl(31deg 98% 47%) 30%,
+    hsl(31deg 97% 49%) 39%,
+    hsl(32deg 97% 50%) 46%,
+    hsl(32deg 100% 53%) 54%,
+    hsl(32deg 100% 56%) 61%,
+    hsl(32deg 100% 58%) 69%,
+    hsl(33deg 100% 60%) 79%,
+    hsl(34deg 100% 62%) 100%
+  );
+  outline: none;
 }
 
 
