@@ -257,9 +257,6 @@ main {
 /* WAMMY */
 
 .wammy-container {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 
 }
 
@@ -267,16 +264,16 @@ main {
   display: grid;
   grid-template-columns:1fr;
 
+
 }
 
 .wammy-topleft{
   width: 100%;
-  height: 5rem;
   /*background-color: #202121;*/
-  background-color: #000;
-  padding: 2rem 0;
-  border-radius: 3rem 0 0 0;
-  text-align: center;
+  background-color: none;
+  padding: 1.8rem 5rem;
+  border-radius: none;
+  text-align: none;
 
 }
 
@@ -293,7 +290,6 @@ main {
 
 .wammy-topright{
   width: 100%;
-  height: 4rem;
   /*background-color: #FB8804;*/
   background-color: #000;
   padding: 0 5rem 0 0;
@@ -324,22 +320,24 @@ main {
 
 .prompt-section{
   margin: 0 0 0 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .bottom-gradient{
   width: 100%;
-  height: 6vh;
   display: none;
 }
 
 .dialogue-container {
   background-color: none;
   width: 100%;
-  height: 70vh;
+  height: 82vh;
   border-radius: 0;
   overflow: auto;
   padding: 3rem 12rem;
-  margin: 5rem 0;
+  margin: 0 0 5rem 0;
   border-radius: 3rem;
 }
 
@@ -369,14 +367,19 @@ ul {
   color: white;
   font-family: "clearSans", "Arial", sans-serif;
   font-size: 1.3rem;
-  padding: .5rem;
+  padding: .5rem 1rem;
   margin: 0 0 1rem 0;
   list-style: none;
-
   border-radius: 5rem;
   width: max-content;
   max-width: 100%;
   align-self: center;
+  transition: 300ms cubic-bezier(.42,0,.81,1.01);
+}
+
+.wammy-response:hover{
+  background-color: #FB8804;
+  color: black;
 }
 
 #prompt-form{
@@ -385,6 +388,7 @@ ul {
 }
 
 #prompt-input {
+  transition: 300ms cubic-bezier(.42,0,.81,1.01);
   background-color: #E9E9ED;
   width: 100%;
   min-height: 8rem;
@@ -397,11 +401,17 @@ ul {
   margin: 0;
 }
 
+#prompt-input:hover{
+  background-color: #FB8804;
+
+}
+
 #prompt-input:focus{
   outline: none;
 }
 
 .prompt-input-button {
+  transition: 5000ms cubic-bezier(.42,0,.81,1.01);
   background-color: #E9E9ED;
   width: 100%;
   height: 100%;
@@ -409,13 +419,10 @@ ul {
   color: #000;
   border: none;
   border-radius: 0 0 3rem 0;
-  transition: 300ms cubic-bezier(.42,0,.81,1.01);
+
 }
 
 .prompt-input-button:hover {
-  background-color: #f99456;
-  transition: 300ms cubic-bezier(.42,0,.81,1.01);
-  color: #E9E9ED;
   background-image: linear-gradient(
   55deg,
   hsl(30deg 100% 44%) 0%,
@@ -429,12 +436,10 @@ ul {
   hsl(33deg 100% 60%) 79%,
   hsl(34deg 100% 62%) 100%
 );
+
 }
 
 .prompt-input-button:focus {
-  background-color: #f99456;
-  transition: 300ms cubic-bezier(.42,0,.81,1.01);
-  color: #E9E9ED;
   background-image: linear-gradient(
     55deg,
     hsl(30deg 100% 44%) 0%,
