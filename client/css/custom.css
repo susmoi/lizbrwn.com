@@ -11,16 +11,17 @@ body {
   margin: 0;
   font-size: 16px;
   background-color: black;
-  background-image: url('css-images/test.png');
+  /*background-image: url('css-images/test.png');*/
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 /* MAIN */
 
 main {
   /* make sure to cover the screen */
-  min-height: 100vh;
+
   /* put on top of footer*/
   position: relative;
   z-index: 1;
@@ -256,29 +257,54 @@ main {
 /* WAMMY */
 
 .wammy-container {
-  margin: 8rem 5rem 0 5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill);
-  /* gap: 1rem;*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 
 }
 
 .wammy-top{
   display: grid;
-  grid-template-columns: 1fr;
-  text-align: center;
-  padding: 60px 0 60px 100px;
-  background-color: #202121;
-  /*border-radius: .25rem .25rem 0 0;*/
-  border-radius: 3rem 3rem 0 0;
+  grid-template-columns:1fr;
+
 }
 
-.wammylogoimage{
-  width: 6rem;
-  display: inline;
-  margin: 0 0 0 0;
-  opacity: 100%;
+.wammy-topleft{
+  width: 100%;
+  height: 5rem;
+  /*background-color: #202121;*/
+  background-color: #000;
+  padding: 2rem 0;
+  border-radius: 3rem 0 0 0;
+  text-align: center;
 
+}
+
+.wammy-logoimage{
+  width: 6rem;
+}
+
+.wammy-body{
+  font-family: "clearSans", "Arial", sans-serif;
+  font-size: .6rem;
+  margin: 0;
+  padding: .3rem 0 0 0;
+}
+
+.wammy-topright{
+  width: 100%;
+  height: 4rem;
+  /*background-color: #FB8804;*/
+  background-color: #000;
+  padding: 0 5rem 0 0;
+  border-radius: 0 3rem 0 0;
+  /*background-image: linear-gradient(
+    0deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(344deg 0% 79%) 39%,
+    hsl(180deg 0% 49%) 61%,
+    hsl(180deg 2% 13%) 100%
+  );*/
 }
 
 /*.wammy-header {
@@ -296,17 +322,8 @@ main {
   display: inline;
 }*/
 
-.top-gradient{
-  width: 100%;
-  height: 6vh;
-  background-image: linear-gradient(
-    0deg,
-    hsl(0deg 0% 100%) 0%,
-    hsl(344deg 0% 79%) 39%,
-    hsl(180deg 0% 49%) 61%,
-    hsl(180deg 2% 13%) 100%
-  );
-  display: none;
+.prompt-section{
+  margin: 0 0 0 0;
 }
 
 .bottom-gradient{
@@ -316,12 +333,14 @@ main {
 }
 
 .dialogue-container {
-  background-color: white;
+  background-color: none;
   width: 100%;
-  height: 45vh;
+  height: 70vh;
   border-radius: 0;
   overflow: auto;
   padding: 3rem 4rem;
+  margin: 5rem 0;
+  border-radius: 3rem;
 }
 
 ul {
@@ -330,31 +349,34 @@ ul {
   padding: 0;
 }
 
-.wammy-response {
-  font-family: "clearSans", "Arial", sans-serif;
-  font-size: 1.3rem;
-  color: black;
-  padding: 2.5rem;
-  margin: 0 0 1rem 0;
-  list-style: none;
-  background-color: #F5F5F7;
-  border-radius: .25rem 5rem 5rem 5rem;
-  width: max-content;
-  max-width: 100%;
-}
-
 .user-prompt {
   font-family: "clearSans", "Arial", sans-serif;
   font-size: 1.3rem;
   color: white;
-  padding: 2.5rem;
-  margin: 0 0 1rem 0;
+  padding: .5rem;
+  margin-top: 10rem;
+  margin-bottom: 1rem;
   list-style: none;
-  background-color: #333332;
-  border-radius: 5rem 5rem .25rem 5rem;
+  /*background-color: #E9E9ED;*/
+  border-radius: 5rem;
   width: max-content;
   max-width: 100%;
-  align-self: flex-end;
+  align-self: center;
+}
+
+.wammy-response {
+  background-color: #000;
+  color: white;
+  font-family: "clearSans", "Arial", sans-serif;
+  font-size: 1.3rem;
+  padding: .5rem;
+  margin: 0 0 1rem 0;
+  list-style: none;
+
+  border-radius: 5rem;
+  width: max-content;
+  max-width: 100%;
+  align-self: center;
 }
 
 #prompt-form{
@@ -363,18 +385,16 @@ ul {
 }
 
 #prompt-input {
-  background-color: #FFF;
+  background-color: #E9E9ED;
   width: 100%;
   min-height: 8rem;
   border-radius: 0 0 0 3rem;
   font-family: "clearSans", "Arial", sans-serif;
   font-size: 26px;
   padding: 2rem 3rem 0 3rem ;
-  margin: 0;
   border: none;
-  /*background-color: #E9E9ED;*/
-  background-color: hsl(32deg 97% 50%);
   resize: none;
+  margin: 0;
 }
 
 #prompt-input:focus{
@@ -382,6 +402,7 @@ ul {
 }
 
 .prompt-input-button {
+  background-color: #E9E9ED;
   width: 100%;
   height: 100%;
   font-family: "clearSans", "Arial", sans-serif;
@@ -389,7 +410,6 @@ ul {
   border: none;
   border-radius: 0 0 3rem 0;
   transition: 300ms cubic-bezier(.42,0,.81,1.01);
-  background-color: #E9E9ED;
 }
 
 .prompt-input-button:hover {

@@ -1,6 +1,6 @@
 {
   "name": "Wammy",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "The server that hosts Wammy.",
   "author": "Liz Brown",
   "main": "server/main.mjs",

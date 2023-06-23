@@ -7,7 +7,8 @@ import pkg from 'openai';
 const { Configuration, OpenAIApi, } = pkg;
 
 
-import {enrichUserPromptWithContext} from "./utils.js";
+import {enrichWithWammy} from "./utils.js";
+
 
 // load environment variables from .env file
 dotenv.config({ path:'./doNotDeploy/.env' });
@@ -24,7 +25,6 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(process.cwd(), 'client/bot.html'));
 });
 
-
 // create http post endpoint that accepts user input
 // and sends it to OpenAI Completions API
 // then returns the response to the client
@@ -39,7 +39,7 @@ app.post('/api/openai', async (req, res) => {
         // this is using the environment variable from the .env file
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
-        },
+      },
 
         // construct the request payload
         // to be sent to the OpenAI API,
@@ -47,7 +47,7 @@ app.post('/api/openai', async (req, res) => {
         body: JSON.stringify({
 
         // Sends request to custom chewybot model
-        //model: 'davinci:ft-liz:v2chewybot-2023-03-17-21-58-11',
+        model: 'davinci:ft-liz:v2chewybot-2023-03-17-21-58-11',
 
         // Sends request to gpt-4
         model: 'gpt-4',
@@ -55,12 +55,12 @@ app.post('/api/openai', async (req, res) => {
         // passing in an 'enriched' version
         // of the user's prompt
         //for custom bot
-        //prompt: enrichUserPromptWithContext(question),
+        //prompt: enrichWithWammy(question),
 
         //for base model
         messages:[
                   //Call 'Wammy'
-                  {role: "user", content: enrichUserPromptWithContext(question)}
+                  {role: "user", content: enrichWithWammy(question)}
 
                   //call GPT4
                   //{role: "user", content: question}

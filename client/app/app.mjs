@@ -43,33 +43,30 @@ function scrollToBottom() {
 
 // handle when the user submits a question through the form
 async function handleSubmitQuestion(question) {
+  // input validation
+  if (!question) {
+      return alert('Please enter your support question');
+  }
 
-    // input validation
-    if (!question) {
-        return alert('Please enter your support question');
-    }
+  // add the user's question to the DOM
+  addUserQuestionToDialogueBox(question);
 
-    // add the user's question to the DOM
-    addUserQuestionToDialogueBox(question);
+  // logs the response of a fetch request to the openai completions api.
+  const response = await fetch('/api/openai', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      },
+    body: JSON.stringify({ question }),
+  });
 
-
-    // logs the response of a fetch request to the openai completions api.
-    const response = await fetch('/api/openai', {
-
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ question }),
-    });
-
-    // parse the response as json
-    const { content } = await response.json();
-    return content
-
-
-
+  // parse the response as json
+  const { content } = await response.json();
+  return content
 }
+
+
+
 
 // add the user's question to the dialogue box
 function addUserQuestionToDialogueBox(question) {
