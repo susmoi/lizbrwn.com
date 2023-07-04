@@ -260,32 +260,40 @@ main {
 
 }
 
-.wammy-top{
+.wammy-top {
   display: grid;
   grid-template-columns:1fr;
-
-
 }
 
-.wammy-topleft{
+#wammyLogo {
+  display: none;
+  position: fixed;
+  bottom: 24rem;
+  opacity: 0;
   width: 100%;
   /*background-color: #202121;*/
   background-color: none;
   padding: 1.8rem 5rem;
   border-radius: none;
-  text-align: none;
-
+  text-align: center;
+  transition: 500ms cubic-bezier(1,1.65,.95,1.02);
 }
 
 .wammy-logoimage{
-  width: 6rem;
+  width: 18rem;
+  margin-bottom: .8rem;
 }
 
 .wammy-body{
+  display: inline-block;
+  background-color: #FB8804;
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .6rem;
-  margin: 0;
-  padding: .3rem 0 0 0;
+  padding: .6rem 1rem .6rem 1rem;
+  margin-right: 24px;
+  border-radius: 5rem;
+  width: max-content;
+  text-align: center;
 }
 
 .wammy-topright{
@@ -310,13 +318,7 @@ main {
   margin: 2rem 0 .15rem 0;
   color: white;
 }
-
-.wammy-body {
-  font-size: .8rem;
-  color: #202121;
-  margin: 0 0 0 1.1rem;
-  display: inline;
-}*/
+*/
 
 .prompt-section{
   margin: 0 0 0 0;
@@ -330,14 +332,15 @@ main {
   display: none;
 }
 
-.dialogue-container {
+#dia-container {
+  display: block;
   background-color: none;
   width: 100%;
-  height: 82vh;
+  height: 90vh;
   border-radius: 0;
   overflow: auto;
-  padding: 3rem 12rem;
-  margin: 0 0 5rem 0;
+  padding: 6rem 3rem 10rem 3rem;
+  margin: 0 0 0 0;
   border-radius: 3rem;
 }
 
@@ -349,14 +352,13 @@ ul {
 
 .user-prompt {
   font-family: "clearSans", "Arial", sans-serif;
-  font-size: 1.3rem;
+  font-size: .8rem;
+  line-height: 1.4;
   color: white;
-  padding: .5rem;
-  margin-top: 10rem;
-  margin-bottom: 1rem;
+  padding: 1.5rem 2rem;
   list-style: none;
   /*background-color: #E9E9ED;*/
-  border-radius: 5rem;
+  border-radius: 1rem;
   width: max-content;
   max-width: 100%;
   align-self: center;
@@ -366,11 +368,12 @@ ul {
   background-color: #000;
   color: white;
   font-family: "clearSans", "Arial", sans-serif;
-  font-size: 1.3rem;
-  padding: .5rem 1rem;
-  margin: 0 0 1rem 0;
+  font-size: .8rem;
+  line-height: 1.4;
+  padding: 1.5rem 2rem;
+  margin: 0 0 3.5rem 0;
   list-style: none;
-  border-radius: 5rem;
+  border-radius: 1rem;
   width: max-content;
   max-width: 100%;
   align-self: center;
@@ -387,27 +390,39 @@ ul {
   grid-template-columns: 6fr 1fr;
 }
 
-#prompt-input {
-  transition: 300ms cubic-bezier(.42,0,.81,1.01);
-  background-color: #E9E9ED;
+.prompt-input-background{
+  background-color: #FB8804;
   width: 100%;
-  min-height: 8rem;
+  max-height:100%;
   border-radius: 0 0 0 3rem;
-  font-family: "clearSans", "Arial", sans-serif;
-  font-size: 26px;
-  padding: 2rem 3rem 0 3rem ;
-  border: none;
-  resize: none;
+  padding: 1rem 2rem 1rem 3rem ;
   margin: 0;
+  border: none;
 }
 
-#prompt-input:hover{
-  background-color: #FB8804;
+#prompt-input {
+  font-family: "clearSans", "Arial", sans-serif;
+  font-size: .8rem;
+  line-height: 1.4;
+  width: 100%;
+  height: 58px;
+  background-color: #E9E9ED;
+  border-radius: 10rem;
+  border: 100px red;
+  margin: 0;
+  padding: .9rem 2rem ;
+  /*orange*/
+  /*box-shadow: 0 0 15px 3px hsl(32, 96%, 45%);*/
+  /*white*/
+  box-shadow: inset 0 0 14px 3px hsl(240, 2%, 80%);
+  resize: none;
+  overflow: hidden;
 
 }
 
 #prompt-input:focus{
   outline: none;
+  box-shadow: inset 0 0 100px 5px #E9E9ED;
 }
 
 .prompt-input-button {
@@ -456,7 +471,95 @@ ul {
   outline: none;
 }
 
+/* WAMMY MEDIA QUERIES */
 
+@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx) {
+
+  .wammy-container{
+    max-width: 100%;
+  }
+
+  .wammy-top{
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: inherit;
+    width: 100%;
+    margin: 0;
+  }
+
+  .wammy-topleft{
+    padding: 0;
+    margin: 0;
+    text-align: end;
+  }
+
+  .wammy-logoimage{
+    width: 2rem;
+    padding: .6rem .8rem 0 0;
+    margin: 0;
+    opacity: 50%;
+  }
+
+  .wammy-body{
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .wammy-topright{
+    display: none;
+    background-color: red;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dialogue-container{
+    display: block;
+    background-color: inherit;
+    width: inherit;
+    padding: 0;
+    margin: 0;
+  }
+
+  .wammy-response{
+    background-color: inherit;
+    font-size: .8rem;
+  }
+
+  .user-prompt{
+    background-color: inherit;
+    font-size: .8rem;
+    margin: 3rem 0 0 0;
+  }
+
+  .prompt-section{
+    position: absolute;
+    bottom: inherit;
+    padding: 0;
+    margin: 0;
+  }
+
+  #prompt-form{
+    display: block;
+  }
+
+  #prompt-input{
+    background-color: #E9E9ED;
+    border-radius: 0;
+    font-size: .8rem;
+    padding: .5rem 0 0 .9rem;
+    height: 2rem;
+    min-height: 0;
+  }
+
+  .prompt-input-button{
+    display: none;
+    background-color: grey;
+    border-radius: 0;
+  }
+}
 
 /* CLIENTS */
 

@@ -9,7 +9,6 @@ const { Configuration, OpenAIApi, } = pkg;
 
 import {enrichWithWammy} from "./utils.js";
 
-
 // load environment variables from .env file
 dotenv.config({ path:'./doNotDeploy/.env' });
 // initialize express app
@@ -22,7 +21,7 @@ app.use(bodyParser.json())
 app.use(express.static(path.join(process.cwd(), 'client')))
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(process.cwd(), 'client/bot.html'));
+  res.sendFile(path.join(process.cwd(), 'client/bot-app.html'));
 });
 
 // create http post endpoint that accepts user input
