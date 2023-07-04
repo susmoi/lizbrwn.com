@@ -404,13 +404,16 @@ ul {
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .8rem;
   line-height: 1.4;
-  width: 100%;
+  width: 80vw;
   height: 58px;
+  max-height: 30vh;
   background-color: #E9E9ED;
-  border-radius: 10rem;
+  /* border-radius: 10rem; */
+  border-radius: calc(2vw + 2vh);
   border: 100px red;
   margin: 0;
-  padding: .9rem 2rem ;
+  /* padding: .9rem 2rem ; */
+  padding: calc(1vw + 1vh) calc(2.5vw + 2.5vh);
   /*orange*/
   /*box-shadow: 0 0 15px 3px hsl(32, 96%, 45%);*/
   /*white*/
