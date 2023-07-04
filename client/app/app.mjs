@@ -1,25 +1,18 @@
 /////// JAVASCRIPT ///////
 
 /////// 9 Functions ///////
-  // 1. setTimeout
+  // 1. resetTimer
   // 2. onload
   // 3. scrollToBottom
   // 4. autoResize
   // 5. handleSubmitQuestion
   // 6. addUserQuestionToDialogueBox
   // 7. addBotResponseToDialogueBox
-  // 8. displayScreenSaver
-  // 9. removeScreenSaver
 
 
-//displays the screen saver after ten minutes of inactivity
-// const screensaver = setTimeout (() => {
-//    document.getElementById('dia-container').classList.add('screenSaverActive')
-//    document.getElementById('dia-container').style.display ='none';
-//    document.getElementById('wammyLogo').style.display = 'block'; document.getElementById('wammyLogo').style.opacity = '100%';
-//   }, 5000);
-
+// 1. Listens for the document's content to load
 document.addEventListener('DOMContentLoaded', (event) => {
+
   //create the timer variable
   let timer;
 
@@ -36,9 +29,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
       document.getElementById('wammyLogo').style.display = 'block'; document.getElementById('wammyLogo').style.opacity = '100%';
       console.log('function ran');
     }, 600000);
-
   }
 
+  // Listens for mouse movement
   document.addEventListener('mousemove', (e) => {
     console.log('mousemove');
     document.getElementById('dia-container').style.display ='block';
@@ -46,6 +39,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     resetTimer();
   })
 
+  // Listens for key presses
   document.addEventListener('keydown', (e) => {
     console.log('keydown');
     document.getElementById('dia-container').style.display ='block';
@@ -53,12 +47,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     resetTimer();
   })
 
-
   resetTimer();
 });
 
 
-/////// Sends the prompt to the server then adds the response to the bot's frontend.
+// 2. Sends prompt to server then adds the response to the bot's frontend.
 // when the window loads, add an event listener to the form
 // that calls the handleSubmitQuestion function when the form is submitted
 window.onload = () => {
@@ -94,13 +87,13 @@ window.onload = () => {
 };
 
 
-//automatically scroll to the bottom of the dialogue container
+// 3. automatically scroll to the bottom of the dialogue container
 function scrollToBottom() {
   const container = document.getElementById('dia-container');
   container.scrollTop = container.scrollHeight;
 }
 
-// Get the prompt input element and resize it's height as the content grows
+// 4. Get the prompt input element and resize it's height as the content grows
 let textarea = document.getElementById('prompt-input');
 
 textarea.addEventListener('input', autoResize, false);
@@ -111,7 +104,7 @@ function autoResize() {
 }
 
 
-// handle when the user submits a question through the form
+// 5. handle when the user submits a question through the form
 async function handleSubmitQuestion(question) {
   // input validation
   if (!question) {
@@ -135,7 +128,7 @@ async function handleSubmitQuestion(question) {
   return content
 }
 
-// add the user's question to the dialogue box
+// 6. add the user's question to the dialogue box
 function addUserQuestionToDialogueBox(question) {
     // create a new li element
     const userQuestion = document.createElement('li');
@@ -156,10 +149,11 @@ function addUserQuestionToDialogueBox(question) {
     document.getElementById('prompt-input').value = '';
 
     // focus the input box
-    document.getElementById('prompt-input').focus()
+    document.getElementById('prompt-input').focus();
+
 }
 
-// add the chatbot's response to the dialogue box
+// 7. add the chatbot's response to the dialogue box
 function addBotResponseToDialogueBox(data) {
     // create a new li element
     const botResponse = document.createElement('li');

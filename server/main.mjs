@@ -46,7 +46,7 @@ app.post('/api/openai', async (req, res) => {
         body: JSON.stringify({
 
         // Sends request to custom chewybot model
-        model: 'davinci:ft-liz:v2chewybot-2023-03-17-21-58-11',
+        //model: 'davinci:ft-liz:v2chewybot-2023-03-17-21-58-11',
 
         // Sends request to gpt-4
         model: 'gpt-4',
@@ -63,7 +63,7 @@ app.post('/api/openai', async (req, res) => {
 
                   //call GPT4
                   //{role: "user", content: question}
-                ]
+                ],
         // the maximum number of tokens/words the bot should return
         // in response to a given prompt
         //for custom models
