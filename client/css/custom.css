@@ -364,7 +364,7 @@ ul {
 }
 
 
-.prompt-section{
+.prompt-container{
   display: inline-block;
   margin: 0 0 0 0;
   position: fixed;
@@ -373,12 +373,33 @@ ul {
   text-align: center;
 }
 
+#prompt-library-container{
+  display: none;
+  background-color: yellow;
+  width: 100%;
+  font-family: "clearSans", "Arial", sans-serif;
+}
+
+.prompt-library-top {
+  display: block;
+  background-color: orange;
+  height: 2rem;
+}
+
+.prompt-library-list {
+  display: block;
+  background-color: red;
+  height: 100%;
+}
+
+
+
 #prompt-form{
   display: grid;
   grid-template-columns: 6fr 1fr;
 }
 
-.prompt-input-background{
+.prompt-text-area-container{
   /* background-color: #FB8804; */
   background-color: #000;
   box-shadow: inset 0 0 120px 15px hsl(240, 2%, 20%);
@@ -391,7 +412,7 @@ ul {
   border: none;
 }
 
-#prompt-input {
+#prompt-text-area {
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .8rem;
   line-height: 1.4;
@@ -414,12 +435,12 @@ ul {
 
 }
 
-#prompt-input:focus{
+#prompt-text-area:focus{
   outline: none;
   box-shadow: inset 0 0 100px 5px #E9E9ED;
 }
 
-.prompt-input-button {
+.prompt-button {
   transition: 5000ms cubic-bezier(.42,0,.81,1.01);
   background-color: #E9E9ED;
   width: 100%;
@@ -430,7 +451,7 @@ ul {
   border-radius: 0 0 0 0;
 }
 
-.prompt-input-button:hover {
+.prompt-button:hover {
   background-image: linear-gradient(
   55deg,
   hsl(30deg 100% 44%) 0%,
@@ -447,7 +468,7 @@ ul {
 
 }
 
-.prompt-input-button:focus {
+.prompt-button:focus {
   background-image: linear-gradient(
     55deg,
     hsl(30deg 100% 44%) 0%,

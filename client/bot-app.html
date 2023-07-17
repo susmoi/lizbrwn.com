@@ -45,20 +45,32 @@
       <ul id="dialogue" class="">
       </ul>
     </div>
-    <div class="bottom-gradient">
-    </div>
-    <div class="prompt-section">
-      <div class="prompt-input-section">
+
+    <div class="prompt-container">
+      <div id="prompt-library-container">
+        <div class="prompt-library-top">
+          <h3 class="prompt-library-header">Prompt Library</h3>
+        </div>
+        <div class="prompt-library-list">
+          <ul>
+            <li>/p phrase change is the command to alter a phrase</li>
+            <li>/p origin seeker is the command to find the origins of a word</li>
+            <li>/p screen saver turns on the screen saver</li>
+          </ul>
+        </div>
+      </div>
+      <div class="prompt-form-container">
         <form id="prompt-form">
-          <div class="prompt-input-background">
-            <textarea id="prompt-input" autofocus="autofocus" name="user-prompt" class=" "></textarea>
+          <div class="prompt-text-area-container">
+            <textarea id="prompt-text-area" autofocus="autofocus" name="user-prompt" class=" "></textarea>
           </div>
-          <div class="prompt-input-button-container">
-            <button type="submit" class="prompt-input-button">
+          <div class="prompt-button-container">
+            <button type="submit" class="prompt-button">
               <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 576 512">
                 <style>svg{fill:#000000}</style>
                 <path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z"/>
-              </svg></button>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
