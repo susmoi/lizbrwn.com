@@ -4,8 +4,8 @@
 
 
 // Screen saver //
-  // resetTimer - Listens for the document's content to load
-  document.addEventListener('DOMContentLoaded', (event) => {
+    // resetTimer - Listens for the document's content to load
+    document.addEventListener('DOMContentLoaded', (event) => {
 
     //create the timer variable
     let timer;
@@ -109,32 +109,34 @@
       // listens for to the prompt input for '/'
       input.addEventListener("keydown", (e) => {
         // NEEDS: to only run the 'if statment' when the prompt-input value equals '/'
-        if (e.keyCode === 191) {
+        if (e.keyCode === 191 && input.value.length === 0) {
 
+            // select the prompt library
+            const promptLibrary = document.getElementById('prompt-library-container');
 
-          // select the prompt library
-          const promptLibrary = document.getElementById('prompt-library-container');
+            // displays prompt library
+            promptLibrary.classList.add('open');
+            promptLibrary.style.display = "grid";
 
+            // waits and listens for the user to select a command by focusing, clicking or typing the command
+            document.addEventListener("keydown" , (e) => {
+              if (e.keyCode === 9) {
+                console.log("you used the tab key!!")
+              }
+            });
 
-          // displays prompt library
-          promptLibrary.classList.add('open');
-          promptLibrary.style.display = "grid";
+            // updates the value of the prompt input with the value of the item selected from the prompt library
 
-          // waits and listens for the user to select a command by clicking or by typing the command
-
-          // updates the value of the prompt input with the value of the item selected from the prompt library
-
-          // closes the prompt library and clears the prompt text area
-          input.addEventListener("keydown", (e) => {
-            if (e.keyCode === 27) {
-              promptLibrary.style.display = 'none';
-              input.value = '';
-            }
-          });
+            // closes the prompt library and clears the prompt text area
+            input.addEventListener("keydown", (e) => {
+              if (e.keyCode === 27) {
+                promptLibrary.style.display = 'none';
+                input.value = '';
+              }
+            });
         }
       });
     }
-
 
 // User question //
     // add the user's question to the dialogue box
