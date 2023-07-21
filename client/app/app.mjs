@@ -14,13 +14,11 @@ const userQuestion = document.createElement('li');
 const botResponse = document.createElement('li');
 
 // Screen saver //
-    // resetTimer - Listens for the document's content to load
+    // Listens for the document's content to load
     document.addEventListener('DOMContentLoaded', (event) => {
 
-    //create the timer variable
     let timer;
 
-    //create the function that resets the timer
     function resetTimer() {
 
       // clear the time
