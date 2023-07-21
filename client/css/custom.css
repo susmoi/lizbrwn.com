@@ -375,7 +375,6 @@ ul {
 
 #prompt-library-container{
   display: none;
-  background-color: yellow;
   width: 100%;
   font-family: "clearSans", "Arial", sans-serif;
 }
@@ -393,43 +392,24 @@ ul {
 }
 
 
-
 #prompt-form{
-  display: grid;
-  grid-template-columns: 6fr 1fr;
+  display: flex;
+  margin: 0 40px 40px 40px;
 }
 
-.prompt-text-area-container{
-  /* background-color: #FB8804; */
-  background-color: #000;
-  box-shadow: inset 0 0 120px 15px hsl(240, 2%, 20%);
-  /* box-shadow: 0 0 20px 0 #fff; */
-  width: ;
-  max-height:100%;
-  border-radius: 0 0 0 0;
-  padding: 1rem 2rem 1rem 3rem ;
-  margin: ;
-  border: none;
-}
 
 #prompt-text-area {
   font-family: "clearSans", "Arial", sans-serif;
-  font-size: .8rem;
+  font-size: 14px;
   line-height: 1.4;
-  width: 80%;
-  height: 58px;
+  width: 100%;
+  height: 28px;
   max-height: 30vh;
-  background-color: #E9E9ED;
-  /* border-radius: 10rem; */
-  border-radius: calc(1.2vw + 1.2vh);
-  border: 100px red;
+  border-radius: 40px 0 0 40px;
+  border: 1.5px solid red;
   margin: 0;
-  /* padding: .9rem 2rem ; */
-  padding: calc(1vw + 1vh) calc(2.5vw + 2.5vh);
-  /*orange*/
-  /*box-shadow: 0 0 15px 3px hsl(32, 96%, 45%);*/
-  /*white*/
-  box-shadow: inset 0 0 14px 3px hsl(240, 2%, 80%);
+  /* padding: calc(1vw + 1vh) calc(2.5vw + 2.5vh); */
+  padding: 4px 4px 4px 16px;
   resize: none;
   overflow: hidden;
 
@@ -437,21 +417,19 @@ ul {
 
 #prompt-text-area:focus{
   outline: none;
-  box-shadow: inset 0 0 100px 5px #E9E9ED;
 }
 
-.prompt-button {
+#prompt-button {
   transition: 5000ms cubic-bezier(.42,0,.81,1.01);
   background-color: #E9E9ED;
-  width: 100%;
-  height: 100%;
+  height: 24px;
   font-family: "clearSans", "Arial", sans-serif;
   color: #000;
-  border: none;
-  border-radius: 0 0 0 0;
+  border: 1.5px solid red;
+  border-radius: 0 40px 40px 0;
 }
 
-.prompt-button:hover {
+#prompt-button:hover {
   background-image: linear-gradient(
   55deg,
   hsl(30deg 100% 44%) 0%,
@@ -468,7 +446,7 @@ ul {
 
 }
 
-.prompt-button:focus {
+#prompt-button:focus {
   background-image: linear-gradient(
     55deg,
     hsl(30deg 100% 44%) 0%,
