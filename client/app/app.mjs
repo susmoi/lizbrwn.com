@@ -2,6 +2,16 @@
 // Modules
 // from { promptLibrary } import { saved-prompts }
 
+/// CONSTANTS
+const dialogueBox = document.getElementById('dia-container');
+const form = document.getElementById('prompt-form');
+const input = document.getElementById('prompt-text-area');
+const promptLibrary = document.getElementById('prompt-library-container');
+const message = document.getElementsByTagName("li");
+const wammyLogo = document.getElementById('wammyLogo');
+
+const userQuestion = document.createElement('li');
+const botResponse = document.createElement('li');
 
 // Screen saver //
     // resetTimer - Listens for the document's content to load
@@ -18,93 +28,61 @@
 
       // set the new timer
       timer = setTimeout(() => {
-        document.getElementById('dia-container').classList.add('screenSaverActive');
-        document.getElementById('dia-container').style.display ='none';
-        document.getElementById('wammyLogo').style.display = 'block'; document.getElementById('wammyLogo').style.opacity = '100%';
-        console.log('function ran');
+        dialogueBox.classList.add('screenSaverActive');
+        dialogueBox.style.display ='none';
+        wammyLogo.style.display = 'block';
+        wammyLogo.style.opacity = '100%';
       }, 600000);
     }
 
     // Listens for mouse movement
     document.addEventListener('mousemove', (e) => {
-      console.log('mousemove');
-      document.getElementById('dia-container').style.display ='block';
-      document.getElementById('wammyLogo').style.opacity = '0%';
+      dialogueBox.style.display ='block';
+      wammyLogo.style.opacity = '0%';
       resetTimer();
     });
 
     // Listens for key presses
     document.addEventListener('keydown', (e) => {
-      console.log('keydown');
-      document.getElementById('dia-container').style.display ='block';
-      document.getElementById('wammyLogo').style.opacity = '0%';
+      dialogueBox.style.display ='block';
+      wammyLogo.style.opacity = '0%';
       resetTimer();
     });
 
     resetTimer();
   });
 
-
-// Start up function //
-    // onload - Sends prompt to server then adds the response to the bot's frontend.
-    // when the window loads, add an event listener to the form
-    // that calls the handleSubmitQuestion function when the form is submitted
-    window.onload = () => {
-      activateCommands();
-      document.getElementById('prompt-form').addEventListener('submit', (e) => {
-          // prevent the form from refreshing the page
-          e.preventDefault();
-
-          // get the value of the input
-          const question = document.getElementById('prompt-test-area').value;
-
-          // call the function that handles the fetch request to the server
-          handleSubmitQuestion(question).then((data) => {
-              // add the chatbot's response to the DOM when the fetch request is complete
-              addBotResponseToDialogueBox(data);
-          });
-      });
-
-      document.getElementById('prompt-form').addEventListener('keydown', (e) => {
-        if (e.keyCode === 13) {
-           //prevent the form from refreshing the page
-          e.preventDefault();
-
-           //get the value of the input
-          const question = document.getElementById('prompt-text-area').value;
-
-           //call the function that handles the fetch request to our backend
-          handleSubmitQuestion(question).then((data) => {
-              // add the chatbot's response to the DOM when the fetch request is complete
-              addBotResponseToDialogueBox(data);
-          });
-        }
-      });
-    };
-
-
 // Auto scroll dialogue container //
     // automatically scroll to the bottom of the dialogue container
     function scrollToBottom() {
-      const container = document.getElementById('dia-container');
-      container.scrollTop = container.scrollHeight;
+
+      dialogueBox.scrollTop = dialogueBox.scrollHeight;
     }
 
 
-// Prompt bar expands //
-    // Get the prompt input element and resize it's height as the content grows
-    var textarea = document.getElementById('prompt-text-area');
-    textarea.addEventListener('input', autoResize, false);
+// Auto prompt bar //
+
     function autoResize() {
-      this.style.height = '30px';
+      this.style.height = '28';
       this.style.height = this.scrollHeight + 'px';
+      form.addEventListener('submit', resetSize);
     }
+
+    function resetSize() {
+      input.style.height = '28px';
+    }
+
+    // Get the prompt input element and resize it's height as the content grows
+    input.addEventListener('input', autoResize, false);
+
+
+
 
 
 // Commands //
     function activateCommands() {
 
-      var input = document.getElementById('prompt-text-area');
+
 
       // listens for to the prompt input for '/'
       input.addEventListener("keydown", (e) => {
@@ -112,7 +90,7 @@
         if (e.keyCode === 191 && input.value.length === 0) {
 
             // select the prompt library
-            const promptLibrary = document.getElementById('prompt-library-container');
+
 
             // displays prompt library
             promptLibrary.classList.add('open');
@@ -121,7 +99,6 @@
             // waits and listens for the user to select a command by focusing, clicking or typing the command
             document.addEventListener("keydown" , (e) => {
               if (e.keyCode === 9) {
-                console.log("you used the tab key!!")
               }
             });
 
@@ -138,11 +115,24 @@
       });
     }
 
+
+
+// Quick Copy //
+    function copyMessage() {
+
+
+      message.addEventListener('click', (e) => {
+        // if (document.getElementById('prompt-text-area').value ==='') {
+        //   document.getElementById('prompt-text-area').value = userMessage.textContent;
+        // }
+      });
+    }
+
 // User question //
     // add the user's question to the dialogue box
     function addUserQuestionToDialogueBox(question) {
         // create a new li element
-        const userQuestion = document.createElement('li');
+
 
         // add user-specific styling to element
         userQuestion.classList.add('user-prompt');
@@ -157,10 +147,10 @@
         scrollToBottom();
 
         // clear the input for the next question
-        document.getElementById('prompt-text-area').value = '';
+        input.value = '';
 
         // focus the input box
-        document.getElementById('prompt-text-area').focus();
+        input.focus();
 
     }
 
@@ -169,7 +159,7 @@
     // add the chatbot's response to the dialogue box
     function addBotResponseToDialogueBox(data) {
         // create a new li element
-        const botResponse = document.createElement('li');
+
 
         // add user-specific styling to list element
         botResponse.classList.add('wammy-response');
@@ -184,10 +174,10 @@
         scrollToBottom();
 
         // clear the input for the next response
-        document.getElementById('prompt-text-area').value = '';
+        input.value = '';
 
         // focus the input box
-        document.getElementById('prompt-text-area').focus();
+        input.focus();
     }
 
 
@@ -215,3 +205,45 @@
       const { content } = await response.json();
       return content;
     }
+
+// Start up function //
+    // onload - Sends prompt to server then adds the response to the bot's frontend.
+    // when the window loads, add an event listener to the form
+    // that calls the handleSubmitQuestion function when the form is submitted
+    window.onload = () => {
+
+      //allows commands to run
+      activateCommands();
+
+      form.addEventListener('submit', (e) => {
+          // prevent the form from refreshing the page
+          e.preventDefault();
+
+          // get the value of the input
+          const question = input.value;
+
+          // call the function that handles the fetch request to the server
+          handleSubmitQuestion(question).then((data) => {
+              // add the chatbot's response to the DOM when the fetch request is complete
+              addBotResponseToDialogueBox(data);
+              copyMessage();
+          });
+      });
+
+      form.addEventListener('keydown', (e) => {
+        if (e.keyCode === 13) {
+           //prevent the form from refreshing the page
+          e.preventDefault();
+
+           //get the value of the input
+          const question = input.value;
+
+           //call the function that handles the fetch request to the server
+          handleSubmitQuestion(question).then((data) => {
+              // add the chatbot's response to the DOM when the fetch request is complete
+              addBotResponseToDialogueBox(data);
+              copyMessage();
+          });
+        }
+      });
+    };
