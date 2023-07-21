@@ -745,7 +745,6 @@ h1 { font-family: 'Arial', sans-serif;
     font-size: 2.488rem;
     font-weight: 500;
     margin-bottom: 3rem;
-    line-height: none;
     margin-top: 0;
     color: white;
 }
@@ -754,7 +753,6 @@ h2 { font-family: 'Arial', sans-serif;
     font-weight: 100;
     font-size: 1.44rem;
     margin-bottom: 1.2rem;
-    line-height: none;
     margin-top: 0;
     color: white;
 }
@@ -764,7 +762,6 @@ h3 {
   font-weight: 100;
   font-size: 0.7rem;
   margin-bottom: 0;
-  line-height: none;
   margin-top: 0;
   color: white;
 }
@@ -773,14 +770,12 @@ h3 {
 p { font-family: "clearSans", "Arial", sans-serif;
     font-size: 0.7rem;
     margin-bottom: 0;
-    line-height: none;
     margin-top: 0;
     color: white;
   }
 
 .section-link {
   font-family: "clearSans", "Arial", sans-serif;
-  font-weight: ;
   font-size: 2rem;
   color: #0B0D3D
 }
