@@ -5,7 +5,8 @@
 /// CONSTANTS
 const dialogueBox = document.getElementById('dia-container');
 const form = document.getElementById('prompt-form');
-const input = document.getElementById('prompt-text-area');
+const input = document.getElementById('prompt-input');
+const button = document.getElementById('prompt-button');
 const promptLibrary = document.getElementById('prompt-library-container');
 const message = document.getElementsByTagName("li");
 const wammyLogo = document.getElementById('wammyLogo');
@@ -63,11 +64,13 @@ const botResponse = document.createElement('li');
     function autoResize() {
       this.style.height = '28';
       this.style.height = this.scrollHeight + 'px';
+      button.style.height = input.scrollHeight + 'px';
       form.addEventListener('submit', resetSize);
     }
 
     function resetSize() {
       input.style.height = '28px';
+      button.style.height = '28px';
     }
 
     // Get the prompt input element and resize it's height as the content grows
@@ -120,8 +123,8 @@ const botResponse = document.createElement('li');
 
 
       message.addEventListener('click', (e) => {
-        // if (document.getElementById('prompt-text-area').value ==='') {
-        //   document.getElementById('prompt-text-area').value = userMessage.textContent;
+        // if (document.getElementById('prompt-input').value ==='') {
+        //   document.getElementById('prompt-input').value = userMessage.textContent;
         // }
       });
     }
