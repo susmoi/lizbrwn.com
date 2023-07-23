@@ -417,6 +417,7 @@ ul {
   color: hsl(0 0% 58%);
   line-height: 1.4;
   width: 100%;
+  min-width: 100px;
   height: 28px;
   max-height: 30vh;
   /* border: 1px solid hsl(240 18% 18%); */
@@ -427,6 +428,7 @@ ul {
   padding: 4px 4px 4px 16px;
   resize: none;
   overflow: hidden;
+  border-style: outset;
 
 }
 
@@ -434,6 +436,7 @@ ul {
   transition: 145ms cubic-bezier(.42,0,.81,1.01);
   outline: none;
   background-color: hsl(240 18% 10%);
+  border-style: outset;
 }
 
 #prompt-button {
@@ -553,10 +556,6 @@ border-color: hsl(31 100% 44%);
     bottom: inherit;
     padding: 0;
     margin: 0;
-  }
-
-  #prompt-form{
-    display: block;
   }
 
 }
