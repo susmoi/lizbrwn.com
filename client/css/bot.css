@@ -263,6 +263,9 @@ main {
   font-size: .6rem;
   padding: .6rem 1rem .6rem 1rem;
   border-radius: .5rem;
+  border-color: hsl(228 100% 65%);
+  border-style: inset;
+  border-width: 2px;
   width: max-content;
   margin: 50px 0 0 100px;
   background-color: hsl(228 100% 60%);
