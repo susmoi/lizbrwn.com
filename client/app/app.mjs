@@ -10,7 +10,6 @@ const button = document.getElementById('prompt-button');
 const promptLibrary = document.getElementById('prompt-library-container');
 const message = document.getElementsByTagName("li");
 const wammyLogo = document.getElementById('wammyLogo');
-
 const userQuestion = document.createElement('li');
 const botResponse = document.createElement('li');
 
@@ -22,7 +21,7 @@ const botResponse = document.createElement('li');
 
     function resetTimer() {
 
-      // clear the time
+      // clear time
       clearTimeout(timer);
 
       // set the new timer
@@ -59,13 +58,12 @@ const botResponse = document.createElement('li');
     }
 
 
-// Auto prompt bar //
+// Auto prompt bar size //
 
     function autoResize() {
       this.style.height = '28';
       this.style.height = this.scrollHeight + 'px';
       button.style.height = input.scrollHeight + 'px';
-      form.addEventListener('submit', resetSize);
     }
 
     function resetSize() {
@@ -82,9 +80,6 @@ const botResponse = document.createElement('li');
 
 // Commands //
     function activateCommands() {
-
-
-
       // listens for to the prompt input for '/'
       input.addEventListener("keydown", (e) => {
         // NEEDS: to only run the 'if statment' when the prompt-input value equals '/'
@@ -97,15 +92,16 @@ const botResponse = document.createElement('li');
             promptLibrary.classList.add('open');
             promptLibrary.style.display = "grid";
 
-            // waits and listens for the user to select a command by focusing, clicking or typing the command
+            // listens for the tab key user to select a command by focusing, clicking or typing the command
             document.addEventListener("keydown" , (e) => {
-              if (e.keyCode === 9) {
+              if (e.keyCode === 40) {
+                console.log('you pressed up')
               }
             });
 
             // updates the value of the prompt input with the value of the item selected from the prompt library
 
-            // closes the prompt library and clears the prompt text area
+            // Listens for the escape key and closes the prompt library and clears the prompt text area if it is inputed
             input.addEventListener("keydown", (e) => {
               if (e.keyCode === 27) {
                 promptLibrary.style.display = 'none';
@@ -220,6 +216,8 @@ const botResponse = document.createElement('li');
           // prevent the form from refreshing the page
           e.preventDefault();
 
+          resetSize()
+
           // get the value of the input
           const question = input.value;
 
@@ -236,6 +234,8 @@ const botResponse = document.createElement('li');
            //prevent the form from refreshing the page
           e.preventDefault();
 
+          resetSize()
+
            //get the value of the input
           const question = input.value;
 
@@ -244,6 +244,7 @@ const botResponse = document.createElement('li');
               // add the chatbot's response to the DOM when the fetch request is complete
               addBotResponseToDialogueBox(data);
               copyMessage();
+
           });
         }
       });

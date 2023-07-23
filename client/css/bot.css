@@ -257,6 +257,17 @@ main {
 
 }
 
+.wammy-version-tag {
+  display: inline-block;
+  font-family: "clearSans", "Arial", sans-serif;
+  font-size: .6rem;
+  padding: .6rem 1rem .6rem 1rem;
+  border-radius: .5rem;
+  width: max-content;
+  margin: 50px 0 0 100px;
+  background-color: hsl(228 100% 60%);
+}
+
 .wammy-top {
   display: grid;
   grid-template-columns:1fr;
@@ -268,9 +279,9 @@ main {
   bottom: 24rem;
   opacity: 0;
   width: 100%;
-  /*background-color: #202121;*/
-  background-color: black;
-  padding: 1.8rem 5rem;
+  background-color: hsl(240 13% 6%);
+  padding: 1.8rem 8rem;
+  margin: 0;
   border-radius: 0;
   text-align: center;
   transition: 500ms cubic-bezier(1,1.65,.95,1.02);
@@ -286,11 +297,11 @@ main {
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .6rem;
   padding: .6rem 1rem .6rem 1rem;
-  border-radius: .5rem;
+  border-radius: 1rem;
   width: max-content;
   text-align: center;
-  margin: 50px 0 0 100px;
-  background-color: hsl(228 100% 60%);
+  margin: 14px 0 0 0;
+  background-color: hsl(32 97% 50%);
 }
 
 .wammy-topright{
@@ -351,7 +362,7 @@ ul {
 }
 
 .wammy-response:hover{
-  background-color: #FB8804;
+  background-color: hsl(32 97% 50%);
   color: black;
 }
 
@@ -802,3 +813,16 @@ a:active {
   font-size: 24px;
   color: white
 }
+
+
+/* Color palette */
+
+/*
+
+  Black, #0d0d11 hsl(240 13% 6%)
+  Light Black, #111118 hsl(240 17% 8%)
+  White, #FAFAFA hsl(0 0% 98)
+  Blue, #2E58FF, hsl(228 100%, 59%)
+  Orange, #FB8804, hsl(32 97% 50%)
+
+*/
