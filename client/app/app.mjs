@@ -216,6 +216,7 @@ const botResponse = document.createElement('li');
           // prevent the form from refreshing the page
           e.preventDefault();
 
+          // resets to the defualt size of the prompt input bar
           resetSize()
 
           // get the value of the input
@@ -234,6 +235,7 @@ const botResponse = document.createElement('li');
            //prevent the form from refreshing the page
           e.preventDefault();
 
+          // resets to the defualt size of the prompt input bar
           resetSize()
 
            //get the value of the input
