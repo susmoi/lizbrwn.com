@@ -98,158 +98,6 @@ main {
   }
 }
 
-/* RESOURCES */
-.resource-container{
-  margin: 7rem 4rem 0 4rem;
-
-}
-
-.resource-header {
-  color: black;
-  font-size: .7rem;
-  font-weight: 600;
-}
-
-.resource-item {
-  border-radius: .25rem;
-  /*display: block;*/
-  padding: 2rem;
-  background-color: #FCFCFC;
-  color: black;
-}
-
-.category-header {
-  color: white;
-}
-
-#az-resources {
-  display: grid;
-  /*grid-template-columns: repeat(3, 1fr); /* Set 3 columns with equal width */
-  /*grid-template-rows: repeat(2, 1fr); /* Set 2 rows with equal height */
-  /*grid-gap: 20px; /* Add gap between grid items */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  /* This is better for small screens, once min() is better supported */
-  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
-  gap: 1rem;
-}
-
-.resource-name {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.resource-body {
-  font-size: 12px;
-  color: black;
-}
-
-.resource-text-muted {
-  display: none;
-}
-
-.resource-link:hover {
-  text-decoration: none;
-}
-
-.resource-most-frequent {
-  margin-bottom: 1rem;
-}
-
-/* RESOURCE MEDIA QUERIES */
-
-@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
-
-  .resource-container {
-    margin: 1rem 4rem 0 4rem;
-  }
-
-  .resource-item {
-    margin-bottom: 2%;
-    text-align: center;
-    padding: 5%;
-  }
-
-  .resource-body{
-    display: none;
-  }
-
-}
-
-
-/* RESUME and ABOUT */
-
-.about-resume-container {
-  margin: 7rem 5rem;
-}
-
-.about-body {
-  font-size: 16px;
-  color: white;
-  margin: 0 50% 5rem 0;
-}
-
-.resume-header {
-  font-family: "clearSans", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 900;
-  margin: 2rem 0 .5rem 0;
-  color: white;
-}
-
-.resume-body {
-  font-size: 16px;
-  color: white;
-}
-
-.resume-link-container {
-  margin: 3rem 0 0 0;
-}
-
-.resume-link {
-  font-family: "clearSans", "Arial", sans-serif;
-  color: white;
-  padding: 0 3rem 0 0;
-}
-
-.resume-link:hover {
-  color: white;
-  filter: blur(25px);
-  text-decoration: none;
-}
-
-.about-body {
-  font-size: 16px;
-  color: white;
-  margin: 0 25rem 10rem 0;
-}
-
-
-/* RESUME MEDIA QUERIES */
-
-@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
-.about-resume-container {
-  margin: 10% 10%;
-}
-
-  .about-body {
-  font-size: 12px;
-  color: white;
-  margin: 0 0 0 0;
-  }
-
-  .resume-header {
-  font-size: 12px;
-
-}
-
-  .resume-body {
-    font-size: 12px;
-    color: white;
-  }
-
-
-
-}
 
 /* WAMMY */
 
@@ -258,17 +106,14 @@ main {
 }
 
 .wammy-version-tag {
+  background-color: hsl(228 100% 60%); /* Blue */
   display: inline-block;
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .6rem;
   padding: .6rem 1rem .6rem 1rem;
   border-radius: .5rem;
-  border-color: hsl(228 100% 65%);
-  border-style: inset;
-  border-width: 2px;
   width: max-content;
   margin: 50px 0 0 100px;
-  background-color: hsl(228 100% 60%);
 }
 
 .wammy-top {
@@ -309,10 +154,22 @@ main {
 
 .wammy-topright{
   width: 100%;
-  /*background-color: #FB8804;*/
   background-color: #000;
   padding: 0 5rem 0 0;
   border-radius: 0 3rem 0 0;
+}
+
+.wammy-bottom {
+  background-color: inherit;
+  width: 100%;
+  position: fixed;
+  bottom: 20px;
+}
+
+.wammy-bottom-center {
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 
@@ -337,21 +194,25 @@ ul {
 }
 
 .user-prompt {
+  color: hsl(0 0% 98%); /* White */
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .8rem;
   line-height: 1.4;
-  color: hsl(0 0% 98%);
   padding: 1.5rem 2rem;
   list-style: none;
-  /*background-color: #E9E9ED;*/
   border-radius: 1rem;
   width: max-content;
   max-width: 100%;
   align-self: center;
+  transition: 300ms cubic-bezier(.42,0,.81,1.01);
+}
+
+.user-prompt:hover {
+  background-color: hsl(228 100% 60%); /* Blue */
 }
 
 .wammy-response {
-  color: hsl(0 0% 98%);
+  color: hsl(0 0% 98%); /* White */
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .8rem;
   line-height: 1.4;
@@ -365,7 +226,7 @@ ul {
 }
 
 .wammy-response:hover{
-  background-color: hsl(32 97% 50%);
+  background-color: hsl(32 97% 50%); /* Orange */
   color: black;
 }
 
@@ -393,7 +254,7 @@ ul {
   padding-top: 10px;
 }
 
-.prompt-library-list {
+#prompt-library-list {
   display: block;
   background-color: hsl(240 14% 15%);
   height: 100%;
@@ -403,6 +264,10 @@ ul {
   margin: 0;
 }
 
+#prompt-library-list li:focus {
+  background-color: red;
+}
+
 
 #prompt-form{
   display: flex;
@@ -410,26 +275,34 @@ ul {
 
 
 #prompt-input {
-  transition: 145ms cubic-bezier(.42,0,.81,1.01);
   background-color: hsl(240 18% 12%);
+  color: hsl(0 0% 58%);
+
   font-family: "clearSans", "Arial", sans-serif;
   font-size: 14px;
-  color: hsl(0 0% 58%);
   line-height: 1.4;
+
   width: 100%;
   min-width: 100px;
   height: 28px;
   max-height: 30vh;
-  /* border: 1px solid hsl(240 18% 18%); */
+
+  margin: 0;
+  padding: 4px 4px 4px 16px;
+
   border-color: hsl(240 18% 15%);
   border-radius: 40px 0 0 40px;
-  margin: 0;
-  /* padding: calc(1vw + 1vh) calc(2.5vw + 2.5vh); */
-  padding: 4px 4px 4px 16px;
-  resize: none;
-  overflow: hidden;
   border-style: outset;
 
+  resize: none;
+  overflow: hidden;
+
+  transition: 145ms cubic-bezier(.42,0,.81,1.01);
+
+}
+
+#prompt-input:hover {
+  cursor: pointer;
 }
 
 #prompt-input:focus {
@@ -437,23 +310,28 @@ ul {
   outline: none;
   background-color: hsl(240 18% 10%);
   border-style: outset;
+  cursor: default;
 }
 
 #prompt-button {
-  /* transition: 5000ms cubic-bezier(.42,0,.81,1.01); */
-  background-color: hsl(240 18% 15%);
+  background-color: hsl(240 18% 8%);
+  color: #000;
+
   height: 28px;
   max-height: 30vh;
   width: 80px;
+
   font-family: "clearSans", "Arial", sans-serif;
-  color: #000;
-  /* border: 1px solid hsl(240 18% 10%); */
-  border-color: hsl(240 18% 15%);
+
+  border-color: hsl(240 18% 10%);
   border-radius: 0 40px 40px 0;
   padding: .2rem;
+
+  transition: 145ms cubic-bezier(.42,0,.81,1.01);
 }
 
 #prompt-button:hover {
+  border-color: hsl(31 100% 44%);
   background-image: linear-gradient(
   55deg,
   hsl(30deg 100% 44%) 0%,
@@ -467,8 +345,9 @@ ul {
   hsl(33deg 100% 60%) 79%,
   hsl(34deg 100% 62%) 100%
 );
-border-color: hsl(31 100% 44%);
+  transition: 145ms cubic-bezier(.42,0,.81,1.01);
 
+  cursor: pointer;
 }
 
 #prompt-button:focus {
@@ -486,6 +365,44 @@ border-color: hsl(31 100% 44%);
     hsl(34deg 100% 62%) 100%
   );
   outline: none;
+}
+
+#terms {
+  background-color: hsl(240 17% 12%);
+  border-color: hsl(240 17% 7%);
+  width: 60%;
+  padding: 4rem;
+
+}
+.terms-container{
+  text-align: center;
+  width: 100%;
+}
+
+.terms-header {
+  text-align: left;
+}
+
+.terms-body {
+  text-align: left;
+}
+
+.terms-button-container {
+
+}
+
+.terms-button{
+  background-color: hsl(240 13% 6%);
+  border: none;
+  color: hsl(0 0% 14%);
+  font-family: "clearSans", "Arial", sans-serif;
+  font-size: .5rem;
+}
+
+.terms-button:hover {
+  color: hsl(0 0% 54%);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* WAMMY MEDIA QUERIES */
@@ -506,26 +423,26 @@ border-color: hsl(31 100% 44%);
     margin: 0;
   }
 
-  .wammy-topleft{
+  .wammy-topleft {
     padding: 0;
     margin: 0;
     text-align: end;
   }
 
-  .wammy-logoimage{
+  .wammy-logoimage {
     width: 2rem;
     padding: .6rem .8rem 0 0;
     margin: 0;
     opacity: 50%;
   }
 
-  .wammy-body{
+  .wammy-body {
     display: none;
     padding: 0;
     margin: 0;
   }
 
-  .wammy-topright{
+  .wammy-topright {
     display: none;
     background-color: red;
     padding: 0;
@@ -549,6 +466,10 @@ border-color: hsl(31 100% 44%);
     background-color: inherit;
     font-size: .8rem;
     margin: 3rem 0 0 0;
+  }
+
+  .prompt-container {
+    padding: 0 2rem;
   }
 
   .prompt-section{
@@ -814,7 +735,7 @@ a:active {
 }
 
 .expelled-container{
-  margin: 8rem 0 0 1rem
+  margin: 8rem 0 0 1rem;
 }
 .expelled-link{
   font-family: "clearSans", "Arial", sans-serif;
@@ -824,16 +745,14 @@ a:active {
 }
 
 
-/* Color palette */
-
-/*
+/* Color palette
 
   Black, #0d0d11 hsl(240 13% 6%)
   Med Black hsl(240 18% 8%)
   Light Black, #111118 hsl(240 17% 8%)
   Grey, hsl(240 18% 15%)
-  White, #FAFAFA hsl(0 0% 98)
-  Blue, #2E58FF, hsl(228 100%, 59%)
+  White, #FAFAFA hsl(0 0% 98%)
+  Blue, #2E58FF, hsl(228 100% 60%)
   Orange, #FB8804, hsl(32 97% 50%)
 
 */

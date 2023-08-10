@@ -8,7 +8,8 @@ const form = document.getElementById('prompt-form');
 const input = document.getElementById('prompt-input');
 const button = document.getElementById('prompt-button');
 const promptLibrary = document.getElementById('prompt-library-container');
-const message = document.getElementsByTagName("li");
+const promptList = document.getElementById('prompt-library-list');
+const promptListItems = promptList.querySelectorAll('li');
 const wammyLogo = document.getElementById('wammyLogo');
 const userQuestion = document.createElement('li');
 const botResponse = document.createElement('li');
@@ -80,50 +81,107 @@ const botResponse = document.createElement('li');
 
 // Commands //
     function activateCommands() {
+
       // listens for to the prompt input for '/'
       input.addEventListener("keydown", (e) => {
+
+
         // NEEDS: to only run the 'if statment' when the prompt-input value equals '/'
         if (e.keyCode === 191 && input.value.length === 0) {
+          e.preventDefault();
+          displayPromptLibrary();
 
-            // select the prompt library
+          selectPrompt();
 
 
-            // displays prompt library
-            promptLibrary.classList.add('open');
-            promptLibrary.style.display = "grid";
-
-            // listens for the tab key user to select a command by focusing, clicking or typing the command
-            document.addEventListener("keydown" , (e) => {
-              if (e.keyCode === 40) {
-                console.log('you pressed up')
-              }
-            });
-
-            // updates the value of the prompt input with the value of the item selected from the prompt library
-
-            // Listens for the escape key and closes the prompt library and clears the prompt text area if it is inputed
-            input.addEventListener("keydown", (e) => {
-              if (e.keyCode === 27) {
-                promptLibrary.style.display = 'none';
-                input.value = '';
-              }
-            });
         }
       });
     }
 
 
 
-// Quick Copy //
-    function copyMessage() {
+// open prompt library
+function displayPromptLibrary() {
+  // displays prompt library
+  promptLibrary.classList.add('open');
+  promptLibrary.style.display = "grid";
 
-
-      message.addEventListener('click', (e) => {
-        // if (document.getElementById('prompt-input').value ==='') {
-        //   document.getElementById('prompt-input').value = userMessage.textContent;
-        // }
-      });
+  // Closes the prompt library and clears the text area
+  document.addEventListener("keydown", (e) => {
+    if (e.keyCode === 27) {
+      promptLibrary.style.display = 'none';
+      input.value = '';
     }
+  });
+}
+
+// select the prompt library
+
+ function selectPrompt() {
+
+   let focusedIndex = 0;
+
+   //highlights the first element of the prompt list if the user presses the up arrow
+   document.addEventListener("keydown", (e) => {
+     if (e.keyCode === 38) {
+      e.preventDefault();
+      console.log(promptListItems);
+      promptListItems.forEach(function (item) {
+        console.log(item);
+      });
+
+      promptList.addEventListener("keydown", (e) => {
+          if (e.keyCode === 40) {
+            e.preventDefault();
+
+
+          }
+      });
+     }
+   });
+//
+//   // select the first element in the prompt list
+
+//   //
+//   // // and add an event listener for two key presses
+//   // promptList.addEventListener("keydown", (e) => {
+//   if (e.keyCode === )
+// })
+//   //
+//   // // if the user presses the up key the selector moves to the list item before
+//   // keycode === 'up arrow'
+//   // promptList.select.beforeElement
+//   // listElement.focus
+//   // // close the up arrow event listener
+//   //
+//   // // if the user presses the down key the selector moves to the list item after
+//   // keycode === 'down arrow'
+//   // promptList.select.afterElement
+//   // listElement.focus
+//   // // close the down arrow event listener
+//   //
+//   // // After the user selects a list item, event listener for enter key
+//   // document.addEventListener
+//   // keyCode === 'enter key'
+//   // // close the enter key event listener
+//   //
+//   // // After the user presses enter the innerText of the list item is copied to the prompt input.
+//   // input.value = listElement.innerText
+ }
+
+
+
+
+// Quick Copy //
+    // function copyMessage() {
+    //
+    //
+    //   message.addEventListener('click', (e) => {
+    //     // if (document.getElementById('prompt-input').value ==='') {
+    //     //   document.getElementById('prompt-input').value = userMessage.textContent;
+    //     // }
+    //   });
+    // }
 
 // User question //
     // add the user's question to the dialogue box
@@ -217,7 +275,7 @@ const botResponse = document.createElement('li');
           e.preventDefault();
 
           // resets to the defualt size of the prompt input bar
-          resetSize()
+          resetSize();
 
           // get the value of the input
           const question = input.value;
@@ -226,7 +284,7 @@ const botResponse = document.createElement('li');
           handleSubmitQuestion(question).then((data) => {
               // add the chatbot's response to the DOM when the fetch request is complete
               addBotResponseToDialogueBox(data);
-              copyMessage();
+
           });
       });
 
@@ -236,7 +294,7 @@ const botResponse = document.createElement('li');
           e.preventDefault();
 
           // resets to the defualt size of the prompt input bar
-          resetSize()
+          resetSize();
 
            //get the value of the input
           const question = input.value;
@@ -245,7 +303,7 @@ const botResponse = document.createElement('li');
           handleSubmitQuestion(question).then((data) => {
               // add the chatbot's response to the DOM when the fetch request is complete
               addBotResponseToDialogueBox(data);
-              copyMessage();
+
 
           });
         }
