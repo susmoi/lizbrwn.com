@@ -3,101 +3,6 @@
   src: url("fonts/clearsansscreen-bk.woff2")
 }
 
-/* BODY */
-
-body {
-  margin: 0;
-  font-size: 16px;
-  background-color: hsl(240 14% 6%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
-/* MAIN */
-
-main {
-  /* make sure to cover the screen */
-
-  /* put on top of footer*/
-  position: relative;
-  z-index: 1;
-}
-
-/* BOOTSTRAP */
-.row{
-  /* removes default right margin on rows */
-  margin-right: 0;
-}
-
-
-/* ~~~~~ PAGES ~~~~~ */
-
-/* ALL */
-
-#skip {
-  display: none;
-}
-
-/* ALL Media Queries */
-@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx) {
-  #skip {
-    display: block;
-    margin: 10% 0 0 4rem;
-  }
-  #skip > a {
-    color: #fff;
-    font-family: clearSans;
-    font-weight: 600;
-    opacity: 10%;
-    font-size: 12px;
-  }
-}
-
-
-/* INDEX */
-
-.index-container {
-  margin: 7rem 5rem;
-}
-
-.index-header {
-  font-size: 4rem;
-  font-weight: 700;
-  margin-bottom: 5rem;
-  color: white;
-}
-
-.index-body > p {
-  font-size: 1.3rem;
-  color: white;
-}
-
-.index-link {
-  font-size: 2rem;
-  color: white;
-  font-family: inherit;
-}
-
-
-/* INDEX MEDIA QUERIES */
-@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
-
-  .index-container {
-    margin: 4rem 3rem;
-  }
-
-.index-header {
-  font-size: 1.5rem;
-  margin-bottom: 2.5rem;
-}
-
-  .index-body > p {
-    font-size: 0.8rem;
-    color: white;
-  }
-}
-
 
 /* WAMMY */
 
@@ -171,7 +76,6 @@ main {
   margin: 0;
   text-align: center;
 }
-
 
 .bottom-gradient{
   width: 100%;
@@ -394,7 +298,7 @@ ul {
 .terms-button{
   background-color: hsl(240 13% 6%);
   border: none;
-  color: hsl(0 0% 14%);
+  color: hsl(0 0% 20%);
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .5rem;
 }
@@ -481,74 +385,100 @@ ul {
 
 }
 
-/* CLIENTS */
+/* BODY */
 
-.clients {
-  margin: 10rem 4rem 0 4rem;
+body {
+  margin: 0;
+  font-size: 16px;
+  background-color: hsl(240 14% 6%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* MAIN */
+
+main {
+  /* make sure to cover the screen */
+
+  /* put on top of footer*/
+  position: relative;
+  z-index: 1;
+}
+
+/* BOOTSTRAP */
+.row{
+  /* removes default right margin on rows */
+  margin-right: 0;
 }
 
 
-/* TOP */
+/* ALL PAGES */
 
-.top-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  margin: 7rem 4rem 0 4rem;
+#skip {
+  display: none;
 }
 
-.top-item {
-  border: none;
-  display: block;
-  background-color: #FCFCFC;
-  color: black;
-  width: 100%;
-}
-
-.top-img-wrapper {
-
-}
-
-.top-img{
-  width: 100%;
-  border-radius: .25rem;
-  opacity: 2.5%;
-  transition: .8s ease-in-out;
-}
-
-.top-img:hover{
-  opacity: 100%;
-}
-
-.top-watching-img{
-  width: 100%;
-  border-radius: .25rem;
-  opacity: 85%;
-  transition: 350ms cubic-bezier(.55,.09,.68,.53);
-}
-
-.top-watching-img:hover{
-  opacity: 100%;
-}
-
-.top-header-wrapper {
-
-}
-
-.top-header{
-  color: black;
-  font-size: .7rem;
-  font-weight: 600;
-}
-
-/* TOP MEDIA QUERIES */
-
+/* ALL Media Queries */
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx) {
-  .top-img{
-    opacity: 90%;
+  #skip {
+    display: block;
+    margin: 10% 0 0 4rem;
+  }
+  #skip > a {
+    color: #fff;
+    font-family: clearSans;
+    font-weight: 600;
+    opacity: 10%;
+    font-size: 12px;
+  }
+}
+
+
+/* INDEX */
+
+.index-container {
+  margin: 7rem 5rem;
+}
+
+.index-header {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+  color: white;
+}
+
+.index-body > p {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.index-link {
+  font-size: 2rem;
+  color: white;
+  font-family: inherit;
+}
+
+
+/* INDEX MEDIA QUERIES */
+@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
+
+  .index-container {
+    margin: 4rem 3rem;
   }
 
+.index-header {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
 }
+
+  .index-body > p {
+    font-size: 0.8rem;
+    color: white;
+  }
+}
+
+
 
 
 /* ~~~~~ JAVASCRIPT ELEMENTS ~~~~~ */
