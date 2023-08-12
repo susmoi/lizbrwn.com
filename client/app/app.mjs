@@ -38,6 +38,7 @@ const botResponse = document.createElement('li');
     document.addEventListener('mousemove', (e) => {
       dialogueBox.style.display ='block';
       wammyLogo.style.opacity = '0%';
+      wammyLogo.style.display = 'none';
       resetTimer();
     });
 
@@ -45,6 +46,7 @@ const botResponse = document.createElement('li');
     document.addEventListener('keydown', (e) => {
       dialogueBox.style.display ='block';
       wammyLogo.style.opacity = '0%';
+      wammyLogo.style.display = 'none';
       resetTimer();
     });
 
