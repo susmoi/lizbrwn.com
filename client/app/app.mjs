@@ -190,7 +190,6 @@ function displayPromptLibrary() {
     function addUserQuestionToDialogueBox(question) {
         // create a new li element
 
-
         // add user-specific styling to element
         userQuestion.classList.add('user-prompt');
 
@@ -249,7 +248,7 @@ function displayPromptLibrary() {
       // add the user's question to the DOM
       addUserQuestionToDialogueBox(question);
 
-      // logs the response of a fetch request to the openai completions api.
+      // Sends the user's request to the OpenAI completions API
       const response = await fetch('/api/openai', {
         method: 'POST',
         headers: {
@@ -258,7 +257,7 @@ function displayPromptLibrary() {
         body: JSON.stringify({ question }),
       });
 
-      // parse the response as json
+      // Parses the response as JSON
       const { content } = await response.json();
       return content;
     }
