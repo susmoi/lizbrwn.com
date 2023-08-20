@@ -14,7 +14,7 @@ const wammyLogo = document.getElementById('wammyLogo');
 const userQuestion = document.createElement('li');
 const botResponse = document.createElement('li');
 
-// Screen saver //
+// Screen Saver Function //
     // Listens for the document's content to load
     document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -81,7 +81,7 @@ const botResponse = document.createElement('li');
 
 
 
-// Commands //
+// Command Function //
     function activateCommands() {
 
       // listens for to the prompt input for '/'
@@ -211,7 +211,7 @@ function displayPromptLibrary() {
     }
 
 
-// Bot response //
+// Bot response Function //
     // add the chatbot's response to the dialogue box
     function addBotResponseToDialogueBox(data) {
         // create a new li element
@@ -262,8 +262,9 @@ function displayPromptLibrary() {
       return content;
     }
 
-// Start up function //
-    // onload - Sends prompt to server then adds the response to the bot's frontend.
+// The start up function
+    // onload - Sends the user's request to app server
+    // then adds the response to the bot's frontend.
     // when the window loads, add an event listener to the form
     // that calls the handleSubmitQuestion function when the form is submitted
     window.onload = () => {
@@ -272,18 +273,18 @@ function displayPromptLibrary() {
       activateCommands();
 
       form.addEventListener('submit', (e) => {
-          // prevent the form from refreshing the page
+          // Prevents the 'submission' from refreshing the page
           e.preventDefault();
 
-          // resets to the defualt size of the prompt input bar
+          // Resets the prompt input bar to the defualt size
           resetSize();
 
-          // get the value of the input
+          // Selects the text inside of the prompt input bar
           const question = input.value;
 
-          // call the function that handles the fetch request to the server
+          // Fetches the request
           handleSubmitQuestion(question).then((data) => {
-              // add the chatbot's response to the DOM when the fetch request is complete
+              // Adds the bot's response to the dialogue box when the fetch request is complete
               addBotResponseToDialogueBox(data);
 
           });
@@ -291,18 +292,18 @@ function displayPromptLibrary() {
 
       form.addEventListener('keydown', (e) => {
         if (e.keyCode === 13) {
-           //prevent the form from refreshing the page
+           // Prevents the keypress from refreshing the page
           e.preventDefault();
 
-          // resets to the defualt size of the prompt input bar
+          // Resets to the prompt input bar to the defualt size
           resetSize();
 
-           //get the value of the input
+           // Selects the text inside of the prompt input bar
           const question = input.value;
 
-           //call the function that handles the fetch request to the server
+           // Fetches the user request
           handleSubmitQuestion(question).then((data) => {
-              // add the chatbot's response to the DOM when the fetch request is complete
+              // Adds the bot's response to the dialogue box when the fetch request is complete
               addBotResponseToDialogueBox(data);
 
 
