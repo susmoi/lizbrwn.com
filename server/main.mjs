@@ -23,7 +23,7 @@ app.use(express.static(path.join(process.cwd(), 'client')))
 
 // Serves the app homepage
 app.get('/', (req, res) => {
-  res.sendFile(path.join(process.cwd(), 'client/bot-app.html'));
+  res.sendFile(path.join(process.cwd(), 'client/portfolio.html'));
 });
 
 // Sends the user's input to OpenAPI
