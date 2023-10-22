@@ -150,6 +150,55 @@ main {
 
 }
 
+
+/* ABOUT DESKTOP */
+
+.about-title{
+  text-align: center;
+  font-size: 2rem;
+}
+
+#about{
+  height: auto;
+}
+
+.about-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.about-container{
+  display: grid;
+  grid-template-columns: 50vw;
+  grid-template-rows: auto;
+  grid-gap: 4px;
+  min-height: 50vh;
+  transition:
+  grid-template-columns 0.5s ease-out 300ms,
+  grid-template-rows 0.5s ease-out 330ms;
+
+}
+
+.about-hero-container{
+  margin-bottom: 35px;
+}
+
+.about-hero{
+  width: 100%;
+  height: 100%;
+
+}
+
+.about-text-container{
+
+}
+
+
+
+
 /* NAV DESKTOP */
 
 #nav {
