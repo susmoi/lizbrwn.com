@@ -3,6 +3,8 @@
   src: url("fonts/clearsansscreen-bk.woff2")
 }
 
+/* DESKTOP SCREENS */
+
 body {
   margin: 0;
   display: flex;
@@ -17,7 +19,7 @@ main {
 }
 
 
-/* GRID */
+/* GRID DESKTOP*/
 
 .grid-title{
   text-align: center;
@@ -39,6 +41,9 @@ main {
   grid-template-rows: 360px 360px 360px;
   grid-gap: 4px;
   min-height: 50vh;
+  transition:
+  grid-template-columns 0.5s ease-out 300ms,
+  grid-template-rows 0.5s ease-out 330ms;
 
 
 }
@@ -46,17 +51,24 @@ main {
 .grid-item{
   width: 540px;
   height: 360px;
-  /* background-color: rgb(5, 5, 5); */
   border-style: solid;
   border-width: 1px;
+  transition:
+  width 0.5s ease-out 300ms,
+  height 0.5s ease-out 330ms;
 }
 
 .grid-image-container{
-  opacity: 0%;
+  opacity: 100%;
 }
 
 .grid-image-container:hover{
   opacity: 100%;
+}
+
+.grid-image{
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -102,40 +114,6 @@ main {
   border-bottom: 2px solid white;
 }
 
-
-/* NAV MEDIA QUERIES */
-
-@media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
-
-  .nav-container {
-    display: grid;
-    justify-content: inherit;
-    font-size: .9rem;
-    text-align: center;
-    border-bottom: none;
-  }
-
-  .nav-element {
-    padding: 1.5rem;
-    margin: 0 0;
-    background-color: none;
-    font-weight: 600;
-  }
-
-.nav-item:hover {
-    color: white;
-    text-decoration: none;
-    filter: none;
-    border-bottom: none;
-  }
-  .nav-item.active {
-    filter: none;
-    border-bottom: none;
-    color: #F8D6B2;
-    font-weight: 600;
-  }
-
-}
 
 /* FOOTER */
 
@@ -193,4 +171,156 @@ p { font-family: "clearSans", "Arial", sans-serif;
 
 a:link {
   text-decoration: none;
+}
+
+
+/* LAPTOP SCREENS */
+
+@media screen and (max-width: 1902px) and (min--webkit-device-pixel-ratio: 2) and (max--webkit-device-pixel-ratio: 3),
+       screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 3dppx) {
+
+
+
+/* GRID LAPTOP SCREENS */
+
+ #grid{
+
+
+ }
+
+ .grid-wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .grid-container{
+   display: grid;
+   grid-template-columns: 360px 360px 360px;
+   grid-template-rows: 240px 240px 240px;
+   grid-gap: 4px;
+   min-height: 50vh;
+   transition:
+   grid-template-columns 0.5s ease-in 330ms,
+   grid-template-rows 0.5s ease-in 300ms;
+ }
+
+ .grid-item{
+   width: 360px;
+   height: 240px;
+   /* background-color: rgb(5, 5, 5); */
+   border-style: solid;
+   border-width: 1px;
+   transition:
+   width 0.5s ease-in 330ms,
+   height 0.5s ease-in 300ms;
+ }
+
+ .grid-image-container{
+   opacity: 100%;
+ }
+
+ .grid-image-container:hover{
+   opacity: 100%;
+ }
+
+ .grid-image{
+   width: 100%;
+   height: 100%;
+
+ }
+}
+
+
+
+/* SMALL WINDOWS */
+
+@media screen and (max-width: 735px) and (min--webkit-device-pixel-ratio: 2) and (max--webkit-device-pixel-ratio: 3),
+       screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3dppx) {
+
+
+/* NAV SMALL WINDOWS */
+ .nav-container {
+   display: grid;
+   justify-content: inherit;
+   font-size: .9rem;
+   text-align: center;
+   border-bottom: none;
+ }
+
+ .nav-element {
+   padding: 1.5rem;
+   margin: 0 0;
+   background-color: transparent;
+   font-weight: 600;
+ }
+
+.nav-item:hover {
+   color: white;
+   text-decoration: none;
+   filter: none;
+   border-bottom: none;
+ }
+ .nav-item.active {
+   filter: none;
+   border-bottom: none;
+   color: #F8D6B2;
+   font-weight: 600;
+ }
+
+ /* GRID SMALL WINDOWS */
+
+  #grid{
+
+  }
+
+  .grid-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 107px 107px 107px;
+    grid-template-rows: 71px 71px 71px;
+    grid-gap: 4px;
+    min-height: 0;
+    transition:
+    grid-template-columns 0.5s ease-in 200ms,
+    grid-template-rows 0.5s ease-in 180ms;
+  }
+
+  .grid-item{
+    width: 107px;
+    height: 71px;
+    border-style: solid;
+    border-width: 1px;
+    transition:
+    width 0.5s ease-in 200ms,
+    height 0.5s ease-in 180ms;
+  }
+
+  .grid-image-container{
+    opacity: 100%;
+  }
+
+  .grid-image-container:hover{
+    opacity: 100%;
+  }
+
+  .grid-image{
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+
+/* PHONE SCREENS */
+
+@media screen and (max-width: 390px) and (-webkit-device-pixel-ratio: 2), (max-width: 390px) and (resolution: 3dppx){
+
+
+
 }
