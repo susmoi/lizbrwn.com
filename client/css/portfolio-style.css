@@ -18,19 +18,45 @@ main {
 
 }
 
+/* INDEX DESKTOP */
 
+.index-large-header{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.index-large-header h1 {
+  font-size: 2.8rem;
+}
+
+.index-content-section{
+  margin-bottom: 20px;
+  max-width: 36%;
+}
+
+.index-content-section p{
+  font-size: 1.04rem;
+}
 /* GRID DESKTOP*/
 
 .grid-title{
   text-align: center;
   font-size: 2rem;
+  margin-top: 2.4rem;
 }
+
+.grid-title h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
 #grid{
   height: auto;
 }
 
 .grid-wrapper{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -40,7 +66,7 @@ main {
   grid-template-columns: 540px 540px 540px;
   grid-template-rows: 360px 360px 360px;
   grid-gap: 4px;
-  min-height: 50vh;
+  max-height: 50vh;
   transition:
   grid-template-columns 0.5s ease-out 300ms,
   grid-template-rows 0.5s ease-out 330ms;
@@ -447,11 +473,37 @@ a:link {
 
 
 
+/* INDEX LAPTOP */
+
+.index-large-header{
+  margin-bottom: 1.6rem;
+  margin-top: 2rem;
+}
+
+.index-large-header h1{
+  font-size: 2.4rem;
+}
+
+.index-content-section{
+ margin-bottom: 20px;
+ max-width: 55%;
+}
+
+.index-content-section p {
+  font-size: 1.05rem;
+}
+
 /* GRID LAPTOP SCREENS */
 
  #grid{
 
 
+ }
+
+ .grid-title h2{
+   margin-top: 2rem;
+   font-size: 1.5rem;
+   font-weight: 600;
  }
 
  .grid-wrapper{
@@ -532,6 +584,24 @@ a:link {
    border-bottom: none;
    color: #F8D6B2;
    font-weight: 600;
+ }
+
+
+ /* INDEX SMALL */
+
+ .index-large-header {
+   margin-bottom: .6rem;
+   margin-top: 1rem;
+ }
+
+ .index-large-header h1{
+   font-size: 1rem;
+ }
+
+ .index-content-section{
+   font-size: 16px;
+   margin-bottom: 20px;
+   max-width: 75%;
  }
 
  /* GRID SMALL WINDOWS */
