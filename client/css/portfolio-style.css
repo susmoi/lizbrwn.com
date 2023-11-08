@@ -167,16 +167,16 @@ main {
   display: flex;
   justify-content: center;
   margin: 2rem 0;
-  padding: 2rem 0;
-  background-color: #4B627D;
+  /* padding: 2rem 0; */
+  /* background-color: #4B627D; */
   border: 1px solid;
   border-color: rgba(0,0,0,.24);
   border-radius: 2px;
 }
 
 .project-image {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   border-radius: 2px;
 }
 
@@ -297,15 +297,16 @@ main {
 }
 
 .about-hero-container{
+  margin-top: 50px;
   margin-bottom: 35px;
   display: grid;
-  grid-template-columns: auto 70%;
+  grid-template-columns: auto 80%;
   grid-template-rows: auto auto;
 }
 
 .about-hero{
   width: 100%;
-  height: 100%;
+  height: 90%;
   border: 1px solid;
   border-color: rgba(0,0,0,.24);
   border-radius: 2px;
@@ -337,11 +338,22 @@ main {
 
 
 .nav-container {
-  display: flex;
+  display: grid;
   font-family: "clearSans", "Arial", sans-serif;
-  font-size: 1.1rem;
+  font-size: .8rem;
   text-align: center;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
+  grid-template-columns: auto auto;
+}
+
+.nav-portfolio-title{
+  font-family: "clearSans", "Arial", sans-serif;
+  font-size: .9rem;
+  font-weight: 800;
+  padding: 0 0 5px 0;
+  color: black;
+  margin: 0 20px 0 0;
+
 }
 
 .nav-item {
@@ -649,8 +661,25 @@ a:link {
     width: 100%;
     height: 100%;
   }
+  /* ABOUT SMALL  */
 
+  .about-hero-container{
+    margin-bottom: 35px;
+    display: grid;
+    grid-template-columns: auto 50%;
+    grid-template-rows: auto auto;
+  }
+
+  .about-hero{
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    border-color: rgba(0,0,0,.24);
+    border-radius: 2px;
+
+  }
 }
+
 
 
 /* PHONE SCREENS */
