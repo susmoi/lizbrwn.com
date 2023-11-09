@@ -321,12 +321,12 @@ main {
   margin-top: 50px;
   margin-bottom: 35px;
   display: grid;
-  grid-template-columns: auto 80%;
+  grid-template-columns: auto 75%;
   grid-template-rows: auto auto;
 }
 
 .about-hero{
-  width: 100%;
+  width: 90%;
   height: 90%;
   border: 1px solid;
   border-color: rgba(0,0,0,.24);
@@ -755,6 +755,16 @@ a:link {
 
 @media screen and (max-width: 390px) and (-webkit-device-pixel-ratio: 2), (max-width: 390px) and (resolution: 3dppx){
 
-
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 4px;
+    max-height: 55vh;
+    max-width: 30vw
+    transition:
+      grid-template-columns 0.5s ease-in 200ms,
+      grid-template-rows 0.5s ease-in 180ms;
+  }
 
 }
