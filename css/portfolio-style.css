@@ -151,7 +151,7 @@ main {
 }
 
 .project-text-container{
-
+  margin-bottom: 80px;
 }
 
 .tag-section{
@@ -253,19 +253,25 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8rem;
-  margin-bottom: 4rem;
 
 }
 
 .CTA-container{
-  padding: 25px 50px;
+  padding: 0 50px;
 
 }
 
 .CTA-header{
   font-size: .8rem;
   margin: 0;
+
+}
+
+.CTA-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 45%;
 
 }
 
