@@ -1,101 +1,106 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="author" content="">
     <meta name="title" content="">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>DEV: Portfolio</title>
     <link rel="icon" type="image/png" href="images/favicon.ico">
-
-
-    <!-- style sheets & images -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="images" href="images">
-
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-
-    <!-- scripts -->
+    <link rel="stylesheet" type="text/css" href="css/portfolio-style.css">
     <script src="https://kit.fontawesome.com/bb7ea3d4ab.js" crossorigin="anonymous">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="scripts/nav.js"></script>
-    <script src="scripts/footer.js"></script>
-    <script src="scripts/top.js"></script>
 
+</head>
 
-  </head>
-  <body>
-    <!-- DESKTOP NAV -->
-      <div id="nav">
-         <!-- cc-nav.html inserted below -->
+<body class="">
+    <header id="nav">
+      <div class="nav-container">
+        <div class="">
+          <a href="https://lizbrwn.com" tabindex="0">
+            <p class="nav-portfolio-title">Liz Brown // Design, Research, and Technology</p>
+          </a>
+        </div>
+        <div class="nav-links">
+           <a class="nav-item" href="https://lizbrwn.com/about" target="" tabindex="0">About</a>
+        </div>
       </div>
-    <!-- DESKTOP NAV END -->
-    <!-- MAIN -->
-    <main>
+    </header>
 
-      <!-- Main CONTAINER -->
-      <div class="index-container">
+  <main class="">
 
-        <!-- TITLE CONTAINER-->
-          <div class="title-container" >
-            <h1 class= "index-header">Liz Brown</h1>
+    <div id="grid">
+      <div class="grid-wrapper">
+        <div class="grid-title">
+            <h1>Recent Projects</h1>
           </div>
-        <!-- TITLE CONTAINER END -->
+        <div class="grid-container">
+          <a href="https://lizbrwn.com/shogun" tabindex="-1">
+            <div class="grid-item grid-item-1">
+              <div class="grid-image-container">
+                <img class="grid-image" src="images/shogun-developer-jtbd.jpg" alt="" tabindex="0">
+              </div>
+            </div>
+          </a>
 
-        <!-- ABOUT -->
-        <div class="index-body">
-          <p>
-          I have training as a digital designer and understand how to implement the principles that support good user experiences. My goal is to improve how businesses connect with their customers on the internet.
-          </p>
+          <a href="https://lizbrwn.com/monotype" tabindex="-1">
+            <div class="grid-item grid-item-2">
+              <div class="grid-image-container">
+                <img class="grid-image" src="images/monotype-mosaic-homepage.png" alt="" tabindex="0">
+              </div>
+            </div>
+          </a>
+
+          <a href="https://lizbrwn.com/ed-tech" tabindex="-1">
+            <div class="grid-item grid-item-3">
+              <div class="grid-image-container">
+                <img class="grid-image" src="images/ed-tech-personas.jpg" alt="" tabindex="0">
+              </div>
+            </div>
+          </a>
 
         </div>
-        <!-- ABOUT END -->
-
-        <div class="wammy-top" style="width: 10%; ">
-          <div class="" style="background-color: #101009; border-radius: .25rem; margin: 10rem 0 0 0">
-            <a href="http://localhost:2626" target="_blank">
-              <img src="images/wammy-logo.png" alt="" class="wammylogoimage" style="width:100%;">
-            </a>
-          </div>
-          <div class="">
-            <p class="wammy-body"></p>
-          </div>
+        <div class="index-large-header">
+          <h2>Process and Philosophy</h2>
         </div>
-      <!-- MAIN CONTAINER END -->
+        <div class="index-content-section">
+          <p>The application of UX, HCI, and Design principles develops understanding that soars and products that scale. Producing actionable insights comes from a process to untangle knotted networks. Facilitated debates to weigh forms and functions. Maintaining a dual-focus set on optimizing end user experiences and advancing business goals.</p>
+        </div>
+        <div class="index-content-section">
+            <p>On and off. Transistors following protocols transfer information under the clouds and over the ocean's currents. Pixels, interfaces, and animations. At their core, electronics were designed to calculate measured exchanges. Big as a room, now small as a pocket. The ubiquity of these devices expands daily.</p>
+          </div>
+        <div class="index-content-section">
+            <p>Not all new products will require technology. Every old service doesn't need to be AI ready. Research can happen away from the specter of tech. The flexibility of information, how it is processed, designed, and researched, is one of its greatest strengths.</p>
+          </div>
 
-    </main>
-    <!-- END OF MAIN -->
-
-    <!-- MOBILE NAV -->
-    <div id="nav-mobile">
-       <!-- cc-nav.html inserted below -->
+      </div>
     </div>
-    <!-- MOBILE NAV END -->
 
-    <!-- FOOTER -->
-    <div id="footer">
-      <!-- cc-footer.html inserted below -->
+  </main>
+<!-- MAIN END -->
 
+<!-- FOOTER -->
+<div id="footer">
+  <footer class="footer">
+    <div class="">
+      <div class="icon-container">
+      <a class="footer-icon fab fa-linkedin-in fa-3x" href="https://www.linkedin.com/in/liz-brown-7a08288b/" target="_blank"></a>
+      <a class="footer-icon far fa-envelope fa-3x" href="mailto:liz.alma.brown@gmail.com?subject=Hello" target="_self" data-content="liz.alma.brown@gmail.com" data-type="mail" target="_blank"></a>
+      </div>
+      <p class="footer-p mt-3">2023 All rights reserved.</p>
     </div>
-    <!-- FOOTER END -->
+  </footer>
+</div>
+<!-- FOOTER END -->
 
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+<script src="app/app.mjs" type="module"></script>
 
-    <!-- SCRIPTS END -->
-  </body>
+
+</body>
+
 </html>
