@@ -757,8 +757,8 @@ a:link {
 
   .grid-container{
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
     grid-gap: 4px;
     max-height: 55vh;
     max-width: 30vw
