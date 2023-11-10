@@ -755,16 +755,28 @@ a:link {
 
 @media screen and (max-width: 390px) and (-webkit-device-pixel-ratio: 2), (max-width: 390px) and (resolution: 3dppx){
 
+  /* GRID PHONE */
+
+  .grid-wrapper{
+    padding: 0 40px;
+
+  }
   .grid-container{
-    display: grid;
-    grid-template-columns: 100%;
+    display: block;
+    /* grid-template-columns: 100%;
     grid-template-rows: 100%;
     grid-gap: 4px;
     max-height: 55vh;
     max-width: 30vw
     transition:
       grid-template-columns 0.5s ease-in 200ms,
-      grid-template-rows 0.5s ease-in 180ms;
+      grid-template-rows 0.5s ease-in 180ms; */
   }
 
+
+  /* INDEX CONTENT */
+
+  .index-content-section{
+    max-width: 80%;
+  }
 }
