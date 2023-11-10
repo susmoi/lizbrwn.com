@@ -774,9 +774,17 @@ a:link {
   }
 
 
-  /* INDEX CONTENT */
+  /* INDEX CONTENT PHONE */
 
   .index-content-section{
     max-width: 80%;
   }
+
+
+  /* ABOUT PHONE */
+  .about-wrapper{
+    padding: 0 50px;
+  }
+
+
 }
