@@ -291,8 +291,8 @@ main {
 /* ABOUT DESKTOP LARGE */
 
 .about-title{
-  text-align: center;
-  font-size: 2rem;
+  text-align: start;
+  margin: 50px 0 0 0;
 }
 
 #about{
@@ -303,7 +303,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 
 }
 
@@ -967,6 +967,20 @@ a:link {
   .about-container{
     display: block;
   }
+
+  .about-hero-container{
+    display: none;
+  }
+
+  .about-title {
+    margin: 50px 0 0 0;
+  }
+
+  .about-title h1 {
+    font-size: 30px;
+  }
+
+
 
   /* FOOTER PHONE  */
   #footer{
