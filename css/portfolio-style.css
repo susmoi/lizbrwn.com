@@ -391,7 +391,7 @@ main {
 
 .about-text-container p {
   /* background-color: green; */
-  font-size: 12px;
+  font-size: 16px;
 }
 
 
@@ -684,7 +684,7 @@ a:link {
   }
 
   .about-text-container p {
-
+    font-size: 12px;
   }
 
 }
@@ -821,25 +821,40 @@ a:link {
 
   /* ABOUT SMALL  */
 
+  .about-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 0;
+    min-height: 50vh;
+    transition:
+      grid-template-columns 0.5s ease-out 300ms,
+      grid-template-rows 0.5s ease-out 330ms;
+    /* background-color: blue; */
+  }
+
   .about-hero-container{
-    padding-right: .8rem;
+    padding-right: 0;
     margin-top: 5rem;
+    align-items: start;
+    padding: 0 2rem;
     /* display: grid;
     grid-template-columns: auto 70%;
     grid-template-rows: auto auto; */
   }
 
   .about-hero{
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 100px;
+    max-width: 100px;
   }
 
   .about-text-container{
     /* background-color: green; */
-    padding-left: .8rem;
-    padding-right: 1.5rem;
-    margin-top: 4.78rem;
-    max-width: 80%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 2rem;
+    max-width: 100%;
+    padding: 0 2rem;
   }
 
   .about-title {
@@ -848,11 +863,12 @@ a:link {
   }
 
   .about-title h1 {
-    font-size: 22px;
+    font-size: 16px;
 
   }
 
   .about-text-container p {
+    font-size: 10px
 
   }
 }
@@ -1091,6 +1107,18 @@ a:link {
 
 
   /* ABOUT PHONE */
+  .about-container{
+    display: grid;
+    grid-template-columns: 50vw;
+    grid-template-rows: auto;
+    grid-gap: 0;
+    min-height: 50vh;
+    transition:
+      grid-template-columns 0.5s ease-out 300ms,
+      grid-template-rows 0.5s ease-out 330ms;
+    /* background-color: blue; */
+  }
+
   .about-wrapper{
     padding: 0 50px;
   }
@@ -1109,6 +1137,11 @@ a:link {
 
   .about-title h1 {
     font-size: 30px;
+  }
+
+  .about-text-container p {
+    /* background-color: green; */
+    font-size: 12px;
   }
 
 
