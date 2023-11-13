@@ -808,11 +808,13 @@ a:link {
     width: 100%;
     height: 100%;
     border: none;
+    border-radius: 0;
 
   }
 
   .project-text-container{
     margin-top: 230px;
+    margin-bottom: 0;
     padding: 2px 25px 80px 25px;
     background-color: white;
     z-index: 200;
