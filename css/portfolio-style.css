@@ -25,7 +25,7 @@ main {
   margin-bottom: 1rem;
 }
 
-.index-large-header h2 {
+.index-large-header h2{
   font-size: .8rem;
   font-weight: 900;
 }
@@ -396,6 +396,13 @@ main {
   text-align: center;
   /* justify-content: flex-end; */
   grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.nav-portfolio-title-container {
+  justify-self: start;
+  padding-left: 2.5rem;
+
 }
 
 .nav-portfolio-title{
@@ -406,6 +413,11 @@ main {
   color: black;
   margin: 0 20px 0 0;
 
+}
+
+.nav-link-container{
+  justify-self: end;
+  padding-right: 2.5rem;
 }
 
 .nav-item {
