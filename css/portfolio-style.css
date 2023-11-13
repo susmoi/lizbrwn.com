@@ -3,7 +3,7 @@
   src: url("fonts/clearsansscreen-bk.woff2")
 }
 
-/* DESKTOP SCREENS */
+/* DESKTOP LARGE WINDOW */
 
 body {
   margin: 0;
@@ -18,7 +18,7 @@ main {
 
 }
 
-/* INDEX DESKTOP */
+/* INDEX DESKTOP LARGE */
 
 .index-large-header{
   margin-top: 2rem;
@@ -38,7 +38,9 @@ main {
 .index-content-section p{
   font-size: .8rem;
 }
-/* GRID DESKTOP*/
+
+
+/* GRID DESKTOP LARGE */
 
 .grid-title{
   text-align: center;
@@ -112,7 +114,7 @@ main {
 }
 
 
-/* PROJECT PAGE DESKTOP */
+/* PROJECT DESKTOP LARGE */
 
 #project{
   height: auto;
@@ -247,7 +249,7 @@ main {
 
 }
 
-/* CTA DESKTOP */
+/* CTA DESKTOP  LARGE */
 
 #CTA{
   display: flex;
@@ -286,7 +288,7 @@ main {
 }
 
 
-/* ABOUT DESKTOP */
+/* ABOUT DESKTOP LARGE */
 
 .about-title{
   text-align: center;
@@ -341,7 +343,7 @@ main {
 
 
 
-/* NAV DESKTOP */
+/* NAV DESKTOP LARGE */
 
 #nav {
   width: 100%;
@@ -395,7 +397,7 @@ main {
 }
 
 
-/* FOOTER */
+/* FOOTER DESKTOP LARGE*/
 
 .footer {
   position: sticky;
@@ -429,7 +431,7 @@ main {
 }
 
 
-/* TEXT DESKTOP*/
+/* TEXT DESKTOP LARGE */
 
 h1 {
   font-family: 'Arial', sans-serif;
@@ -499,7 +501,7 @@ a:link {
 }
 
 
-/* LAPTOP SCREENS */
+/* LAPTOP WINDOW */
 
 @media screen and (max-width: 1902px) and (min--webkit-device-pixel-ratio: 2) and (max--webkit-device-pixel-ratio: 3),
        screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 3dppx) {
@@ -526,7 +528,7 @@ a:link {
   font-size: 1.05rem;
 }
 
-/* GRID LAPTOP SCREENS */
+/* GRID LAPTOP */
 
  #grid{
 
@@ -602,13 +604,13 @@ a:link {
 
 
 
-/* SMALL WINDOWS */
+/* SMALL WINDOW */
 
 @media screen and (max-width: 735px) and (min--webkit-device-pixel-ratio: 2) and (max--webkit-device-pixel-ratio: 3),
        screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3dppx) {
 
 
-/* NAV SMALL WINDOWS */
+/* NAV SMALL */
  .nav-container {
    display: grid;
    justify-content: inherit;
@@ -663,7 +665,7 @@ a:link {
    max-width: 100%;
  }
 
- /* GRID SMALL WINDOWS */
+ /* GRID SMALL */
 
   #grid{
 
@@ -751,7 +753,7 @@ a:link {
 
 
 
-/* PHONE SCREENS */
+/* PHONE WINDOW  */
 
 @media screen and (max-width: 390px) and (-webkit-device-pixel-ratio: 2), (max-width: 390px) and (resolution: 3dppx){
 
@@ -780,10 +782,185 @@ a:link {
     max-width: 80%;
   }
 
+  /* PROJECT PHONE */
+  #project{
+
+  }
+
+  .project-wrapper{
+
+  }
+
+  .project-container{
+    display: block;
+
+  }
+
+  .project-hero-container{
+    position: fixed;
+    z-index: -1;
+  }
+
+
+  .project-hero{
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .project-text-container{
+    margin-top: 230px
+    margin-bottom: 80px;
+    padding: 2px 25px;
+    background-color: white;
+    z-index: 200;
+  }
+
+  .tag-section h1 {
+    font-size: 34px;
+
+  }
+
+  .title-section h2{
+    font-size: 14px;
+
+  }
+
+  .subtitle-secton{
+    margin-top: 60px;
+  }
+
+
+  .subtitle-section h3 {
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    line-height: 1.4;
+  }
+
+  .regular-content-section p{
+    font-size: 16px;
+    margin-bottom: 20px;
+
+  }
+
+  .image-section{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    /* padding: 2rem 0; */
+    /* background-color: #4B627D; */
+
+  }
+
+  .project-image {
+    width: 60%;
+    height: 60%;
+    border: 1px solid;
+    border-color: rgba(0,0,0,.24);
+    border-radius: 2px;
+  }
+
+  .summary-wrapper{
+    /* display: flex;
+    justify-content: center; */
+
+  }
+
+  .summary-title{
+    text-align: start;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+  }
+
+  .summary-title h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .summary-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+
+  }
+
+  .summary-box{
+    /* padding: 1rem; */
+
+  }
+
+  .summary-box h5{
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: .8rem;
+    margin-top: 0;
+    margin-bottom: .2rem;
+    line-height: 1.4;
+    padding: 0 1rem .4rem 0;
+
+  }
+
+  .summary-box p {
+    color: blue;
+    font-family: "Arial", sans-serif;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+    line-height: 1.4;
+    margin-top: 0;
+    padding: 0 1rem 0 0;
+    color: black;
+
+  }
+
+  /* CTA DESKTOP  LARGE */
+
+  #CTA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .CTA-container{
+    padding: 0 50px 0 0;
+
+  }
+
+  .CTA-header{
+    font-size: .8rem;
+    margin: 0;
+    color: black;
+
+  }
+
+  .CTA-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .CTA-link p{
+
+  }
+
+  .CTA-arrow p{
+    font-size: 4rem;
+    margin: 0;
+
+  }
+
+
 
   /* ABOUT PHONE */
   .about-wrapper{
     padding: 0 50px;
+  }
+
+  .about-container{
+    display: block;
   }
 
 
