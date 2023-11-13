@@ -67,9 +67,9 @@ main {
 .grid-container{
   display: grid;
   grid-template-columns: 540px 540px 540px;
-  grid-template-rows: 360px 360px 360px;
+  grid-template-rows: auto;
   grid-gap: 4px;
-  max-height: 40vh;
+  max-height: fit-content;
   transition:
     grid-template-columns 0.5s ease-out 300ms,
     grid-template-rows 0.5s ease-out 330ms;
@@ -619,9 +619,9 @@ a:link {
  .grid-container{
    display: grid;
    grid-template-columns: 360px 360px 360px;
-   grid-template-rows: 240px 240px 240px;
+   grid-template-rows: auto;
    grid-gap: 4px;
-   max-height: 25vh;
+   max-height: fit-content;
    transition:
     grid-template-columns 0.5s ease-in 330ms,
     grid-template-rows 0.5s ease-in 300ms;
@@ -778,7 +778,7 @@ a:link {
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-gap: 4px;
-    max-height: 55vh;
+    max-height: fit-content;
     transition:
       grid-template-columns 0.5s ease-in 200ms,
       grid-template-rows 0.5s ease-in 180ms;
