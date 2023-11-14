@@ -406,7 +406,6 @@ main {
   background-color: hsl(213, 18%, 75%);
   position: sticky;
   margin-top: 0;
-  backdrop-filter: blur(5px);
   top: 0;
   border-bottom: 1px solid;
   border-bottom-color: rgba(0,0,0,.24);
@@ -435,7 +434,7 @@ main {
 .nav-portfolio-title{
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .9rem;
-  font-weight: 800;
+  font-weight: 200;
   padding: 0 0 5px 0;
   color: black;
   margin: 0 20px 0 0;
@@ -875,7 +874,7 @@ a:link {
 
 
 
-/* PHONE WINDOW  */
+/* PHONE  */
 
 @media screen and (max-width: 390px) and (-webkit-device-pixel-ratio: 2), (max-width: 390px) and (resolution: 3dppx){
 
@@ -911,10 +910,11 @@ a:link {
   }
 
 
-  /* INDEX CONTENT PHONE */
+  /* INDEX PHONE */
 
   .index-large-header{
     margin-bottom: 0;
+    align-self: start;
   }
 
   .index-large-header h2{
@@ -923,6 +923,7 @@ a:link {
 
   .index-content-section{
     max-width: fit-content;
+    margin-bottom: 1px;
   }
 
   .index-content-section p {
@@ -955,6 +956,7 @@ a:link {
     width: 100%;
     height: 100%;
     border: none;
+    border-radius: 0;
 
   }
 
@@ -1112,7 +1114,7 @@ a:link {
     grid-template-columns: 50vw;
     grid-template-rows: auto;
     grid-gap: 0;
-    min-height: 50vh;
+    min-height: fit-content;
     transition:
       grid-template-columns 0.5s ease-out 300ms,
       grid-template-rows 0.5s ease-out 330ms;
@@ -1120,7 +1122,7 @@ a:link {
   }
 
   .about-wrapper{
-    padding: 0 50px;
+    padding: 0 1.8rem;
   }
 
   .about-container{
@@ -1131,8 +1133,12 @@ a:link {
     display: none;
   }
 
+  .about-text-container {
+    padding: 0;
+  }
+
   .about-title {
-    margin: 50px 0 0 0;
+    margin: 50px 0 18px 0;
   }
 
   .about-title h1 {
@@ -1140,7 +1146,6 @@ a:link {
   }
 
   .about-text-container p {
-    /* background-color: green; */
     font-size: 12px;
   }
 
@@ -1150,7 +1155,6 @@ a:link {
     background-color: hsl(213, 18%, 75%);
     position: sticky;
     margin-top: 0;
-    backdrop-filter: blur(5px);
     top: 0;
     border-bottom: 1px solid;
     border-bottom-color: rgba(0,0,0,.24);
@@ -1179,11 +1183,10 @@ a:link {
   .nav-portfolio-title{
     font-family: "clearSans", "Arial", sans-serif;
     font-size: 10px;
-    font-weight: 800;
-    padding: 0 0 5px 0;
+    font-weight: 200;
+    padding: 0;
     color: black;
     margin: 0 20px 0 0;
-
   }
 
   .nav-link-container{
@@ -1214,6 +1217,10 @@ a:link {
   #footer {
     background-color: white;
     z-index: 200;
+  }
+
+  .footer-icon{
+    padding: 0 .4rem;
   }
 
   .footer-p{
