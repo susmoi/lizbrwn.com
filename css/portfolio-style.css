@@ -951,6 +951,9 @@ a:link {
     margin-top: 0;
   }
 
+  .monotype-hero-container{
+    margin-top: 2.5rem;
+  }
 
   .project-hero{
     width: 100%;
