@@ -1161,8 +1161,8 @@ a:link {
     top: 0;
     border-bottom: 1px solid;
     border-bottom-color: rgba(0,0,0,.24);
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-top: 25px;
     z-index: 1000;
   }
 
@@ -1194,13 +1194,13 @@ a:link {
 
   .nav-link-container{
     justify-self: end;
-    padding-right: .2rem;
+    padding-right: 1rem;
   }
 
   .nav-item {
     padding: 0 0 5px 0;
     color: black;
-    margin: 0 20px 0 0;
+    margin: 0 0 0 0;
     text-decoration: none;
   }
 
