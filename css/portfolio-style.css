@@ -279,9 +279,14 @@ main {
 
 #CTA{
   width: fit-content;
+
 }
 
 #CTA:hover * {
+    color: #0097F5;
+  }
+
+.CTA-link:focus * {
     color: #0097F5;
   }
 
@@ -304,6 +309,7 @@ main {
   justify-content: center;
   align-items: center;
   width: fit-content;
+  padding: .2rem;
 
 }
 
@@ -475,17 +481,25 @@ main {
 }
 
 .footer-icon {
-  padding: 0 1.3rem;
+  padding: .1rem;
+  margin: 0 1.3rem;
+
 }
 
 
 /* selects footer icons */
 .fab, .far {
   color: black;
+  width: fit-content;
 }
 
 /* selects :hover footer icons */
 .fab:hover, .far:hover {
+  color: #0097F5;
+
+}
+
+.fab:focus, .far:focus {
   color: #0097F5;
 
 }
