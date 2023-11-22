@@ -137,9 +137,10 @@ main {
   grid-template-rows: auto;
   grid-gap: 4px;
   min-height: 50vh;
+  justify-items: center;
   transition:
-  grid-template-columns 0.5s ease-out 300ms,
-  grid-template-rows 0.5s ease-out 330ms;
+    grid-template-columns 0.5s ease-out 300ms,
+    grid-template-rows 0.5s ease-out 330ms;
 
 }
 
@@ -277,10 +278,7 @@ main {
 /* CTA DESKTOP */
 
 #CTA{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  width: fit-content;
 }
 
 #CTA:hover * {
