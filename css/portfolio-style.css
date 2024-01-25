@@ -3,7 +3,7 @@
   src: url("fonts/clearsansscreen-bk.woff2")
 }
 
-/* DESKTOP LARGE WINDOW */
+/* DESKTOP */
 
 body {
   margin: 0;
@@ -43,13 +43,11 @@ main {
 /* GRID DESKTOP */
 
 .grid-title{
+  color: white;
   text-align: center;
-  margin-top: -19px;
-  margin-bottom: 37px;
-}
-
-.grid-title h1 {
-  font-size: 2.2rem;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: calc(1.1em + 1vw);
   font-weight: 600;
 }
 
@@ -114,7 +112,7 @@ main {
 }
 
 
-/* PROJECT DESKTOP LARGE */
+/* PROJECT DESKTOP */
 
 #project{
   height: auto;
@@ -386,15 +384,16 @@ main {
 
 .about-title h1 {
   width: fit-content;
-  font-size: 6.4rem;
+  font-size: calc(2em + 2vw);
   margin: 0 0 0 3.5rem;
 
+  /*! min-height: 0vw; */
 }
 
 .about-text-container{
   /*! padding-left: .8rem; */
   /*! padding-right: 1.5rem; */
-  margin-top: 4.76rem;
+  /*! margin-top: 4.76rem; */
   /*! max-width: 40%; */
 }
 
@@ -405,10 +404,6 @@ main {
 
 .about-text h2 {
 }
-
-
-
-
 
 
 /* NAV DESKTOP */
@@ -520,6 +515,7 @@ main {
   cursor: default;
   padding: 0;
   margin: 10px 0;
+  color: white;
 }
 
 
@@ -593,7 +589,7 @@ a:link {
 }
 
 
-/* LAPTOP WINDOW */
+/* LAPTOP */
 
 @media screen and (max-width: 1902px) and (min--webkit-device-pixel-ratio: 2) and (max--webkit-device-pixel-ratio: 3),
        screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 3dppx) {
@@ -695,8 +691,8 @@ a:link {
   .about-text-container{
     padding-left: 5.8rem;
     padding-right: 1.5rem;
-    margin-top: 26.8rem;
-    max-width: 70%;
+    /*! margin-top: 26.8rem; */
+    max-width: 90%;
   }
 
   .about-title {
@@ -710,7 +706,7 @@ a:link {
   }
 
   .about-text-container p {
-    font-size: .8rem;
+    font-size: calc(.15em + 1vw);
     line-height: 1.45;
   }
 
@@ -718,7 +714,7 @@ a:link {
 
 
 
-/* SMALL WINDOW */
+/* SMALL */
 
 @media screen and (max-width: 735px) and (min--webkit-device-pixel-ratio: 2) and (max--webkit-device-pixel-ratio: 3),
        screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3dppx) {
@@ -790,8 +786,11 @@ a:link {
     margin-bottom: 20px;
   }
 
-.grid-title h1 {
-  font-size: 24px;
+.grid-title{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: calc(1.1em + 1vw);
+  font-weight: 600;
 }
 
   .grid-wrapper{
@@ -857,7 +856,7 @@ a:link {
     transition:
       grid-template-columns 0.5s ease-out 300ms,
       grid-template-rows 0.5s ease-out 330ms;
-    padding-left: 4rem;
+    padding-left: 1rem;
   }
 
   .about-hero-container{
@@ -890,7 +889,7 @@ a:link {
   }
 
   .about-title h1 {
-    font-size: 3rem;
+    font-size: calc(1.8em + 1vw);
     margin: 0 0 0 0;
   }
 
@@ -925,6 +924,14 @@ a:link {
     transition:
       grid-template-columns 0.5s ease-in 200ms,
       grid-template-rows 0.5s ease-in 180ms; */
+  }
+
+  .grid-title {
+    color: white;
+    margin-top: -19px;
+    margin-bottom: 37px;
+    font-size: 2.2rem;
+    font-weight: 600;
   }
 
   .grid-item{
@@ -1175,7 +1182,7 @@ a:link {
   .about-title-container{
     /*! padding-left: .8rem; */
     /*! padding-right: 1.5rem; */
-    margin-top: 2.8rem;
+    /*! margin-top: 2.8rem; */
   }
 
   .about-title {
@@ -1185,8 +1192,8 @@ a:link {
 
   .about-title h1 {
     width: fit-content;
-    font-size: 2rem;
-    margin: 0 0 0 40px;
+    font-size: calc(2em + 1vw);
+    margin: 0 0 0 0;
 
   }
 
@@ -1214,7 +1221,7 @@ a:link {
     font-family: "clearSans", "Arial", sans-serif;
     font-size: 10px;
     text-align: center;
-    /* justify-content: flex-end; */
+    justify-content: center;
     grid-template-columns: auto auto;
     align-items: center;
   }
@@ -1230,7 +1237,7 @@ a:link {
     font-size: 10px;
     font-weight: 200;
     padding: 0;
-    color: black;
+    color: white;
     margin: 0 20px 0 0;
   }
 
