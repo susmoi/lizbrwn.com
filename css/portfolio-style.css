@@ -928,10 +928,11 @@ a:link {
 
   .grid-title {
     color: white;
-    margin-top: -19px;
-    margin-bottom: 37px;
-    font-size: 2.2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
     font-weight: 600;
+
   }
 
   .grid-item{
@@ -1169,6 +1170,7 @@ a:link {
 
   .about-container{
     display: block;
+    margin-top: 2rem;
   }
 
   .about-hero-container{
@@ -1192,13 +1194,15 @@ a:link {
 
   .about-title h1 {
     width: fit-content;
-    font-size: calc(2em + 1vw);
+    font-size: calc(30px + 1vw);
     margin: 0 0 0 0;
 
   }
 
   .about-text-container p {
-    font-size: 12px;
+    font-size: 10px;
+    line-height: 1.4;
+    margin-bottom: 0;
   }
 
   /* NAV PHONE */
@@ -1269,6 +1273,15 @@ a:link {
   #footer {
     background-color: black;
     z-index: 200;
+  }
+
+  .footer {
+  position: sticky;
+  color: black;
+  padding: 2em;
+  font-size: .5em;
+  text-align: center;
+}
   }
 
   .footer-icon{
