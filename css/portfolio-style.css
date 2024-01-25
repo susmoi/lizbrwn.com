@@ -324,8 +324,6 @@ main {
 
 /* ABOUT DESKTOP */
 
-
-
 #about{
   height: auto;
   margin-bottom: 4rem;
@@ -1169,12 +1167,22 @@ a:link {
     padding: 0;
   }
 
+  .about-title-container{
+    /*! padding-left: .8rem; */
+    /*! padding-right: 1.5rem; */
+    margin-top: 2.8rem;
+  }
+
   .about-title {
-    margin: 50px 0 18px 0;
+    text-align: start;
+    margin-bottom: 10px;
   }
 
   .about-title h1 {
-    font-size: 2.4rem;
+    width: fit-content;
+    font-size: 2rem;
+    margin: 0 0 0 40px;
+
   }
 
   .about-text-container p {
