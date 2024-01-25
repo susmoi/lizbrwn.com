@@ -274,7 +274,7 @@ main {
 
 #CTA{
   width: fit-content;
-
+  padding-bottom: 1.6rem;
 }
 
 #CTA:hover * {
@@ -287,7 +287,6 @@ main {
 
 
 .CTA-container{
-  padding: 0 50px 0 0;
 
 }
 
