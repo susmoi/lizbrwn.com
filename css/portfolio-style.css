@@ -340,9 +340,9 @@ main {
 
 .about-container{
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-gap: 0;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: auto;
+  /*! grid-gap: 0; */
   min-height: 40vh;
   transition:
     grid-template-columns 0.5s ease-out 300ms,
@@ -354,11 +354,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: end;
-  /* margin-top: 60px;
-  margin-bottom: 35px; */
-  /* display: grid;
-  grid-template-columns: auto 75%;
-  grid-template-rows: auto auto; */
   padding-right: .8rem;
   margin-top: 5rem;
 
@@ -371,18 +366,24 @@ main {
   border: 1px solid;
   border-color: rgba(0,0,0,.24);
   border-radius: 2px;
+}
 
+.about-text-content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-title-container{
-  /*! padding-left: .8rem; */
-  /*! padding-right: 1.5rem; */
-  /*! margin-top: 2.8rem; */
+
 }
 
 .about-title {
   text-align: start;
-  margin-bottom: 10px;
+  /*! margin-bottom: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-title h1 {
@@ -394,15 +395,16 @@ main {
 }
 
 .about-text-container{
-  /*! padding-left: .8rem; */
-  /*! padding-right: 1.5rem; */
-  /*! margin-top: 4.76rem; */
-  /*! max-width: 40%; */
+    /*! padding-left: 5.8rem; */
+    /*! padding-right: 1.5rem; */
+    /*! max-width: 90%; */
 }
 
 
 .about-text-container p {
-  font-size: 16px;
+  font-size: calc(18px + .3vw);
+  line-height: 1.45;
+  max-width: 51%;
 }
 
 .about-text h2 {
@@ -698,6 +700,10 @@ a:link {
     max-width: 90%;
   }
 
+  .about-text-content-section {
+
+  }
+
   .about-title {
     text-align: start;
     margin-bottom: 10px;
@@ -853,7 +859,7 @@ a:link {
   .about-container{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
     grid-gap: 0;
     min-height: 0;
     transition:
@@ -881,7 +887,7 @@ a:link {
     padding-left: 0;
     padding-right: 0;
     /*! margin-top: 2rem; */
-    /*! max-width: 100%; */
+    max-width: 100%;
     padding: 0;
     margin-top: 1rem;
   }
@@ -901,6 +907,8 @@ a:link {
     line-height: .83rem;
 
     margin-bottom: 0;
+    max-width: 100%;
+    width: fit-content;
   }
 }
 
