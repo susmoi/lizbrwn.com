@@ -3,7 +3,7 @@
   src: url("fonts/clearsansscreen-bk.woff2")
 }
 
-/* DESKTOP */
+/* --- DOCUMENT DESKTOP --- */
 
 body {
   margin: 0;
@@ -16,10 +16,84 @@ body {
 
 main {
 
-
 }
 
-/* INDEX DESKTOP */
+/* --- TEXT DESKTOP --- */
+
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin: 2rem 0 .3rem 0;
+  color: Black;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: Black;
+  margin-top: 0;
+}
+
+h3 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+h4 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+h5 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+h6 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+p {
+  font-family: "Arial", sans-serif;
+  font-size: 0.7rem;
+  /*! margin-bottom: 0; */
+  /*! line-height: 1.6; */
+  /*! margin-top: 0; */
+  color: black;
+  }
+
+a:link {
+  text-decoration: none;
+}
+
+.regular-content-section p{
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* --- INDEX DESKTOP --- */
 
 .index-large-header{
   margin-top: 2rem;
@@ -41,7 +115,7 @@ main {
 }
 
 
-/* GRID DESKTOP */
+/* --- GRID DESKTOP --- */
 
 .grid-title{
   color: white;
@@ -113,7 +187,7 @@ main {
 }
 
 
-/* PROJECT DESKTOP */
+/* --- PROJECT DESKTOP --- */
 
 #project{
   height: auto;
@@ -174,11 +248,8 @@ main {
   line-height: 1.4;
 }
 
-.regular-content-section p{
-  font-size: 16px;
-  margin-bottom: 20px;
+.project-content-section p {
 
-  line-height: 1.5;
 }
 
 .image-section{
@@ -273,7 +344,7 @@ main {
   margin-bottom: 0;
 }
 
-/* CTA DESKTOP */
+/* --- CTA DESKTOP --- */
 
 #CTA{
   width: fit-content;
@@ -322,7 +393,7 @@ main {
 }
 
 
-/* ABOUT DESKTOP */
+/* --- ABOUT DESKTOP --- */
 
 #about{
   height: auto;
@@ -411,7 +482,7 @@ main {
 }
 
 
-/* NAV DESKTOP */
+/* --- NAV DESKTOP --- */
 
 #nav {
   width: 100%;
@@ -476,7 +547,7 @@ main {
 }
 
 
-/* FOOTER DESKTOP */
+/* --- FOOTER DESKTOP --- */
 
 #footer{
   background-color: black;
@@ -498,14 +569,11 @@ main {
 
 }
 
-
-/* selects footer icons */
 .fab, .far {
   color: white;
   width: fit-content;
 }
 
-/* selects :hover footer icons */
 .fab:hover, .far:hover {
   color: #0097F5;
 
@@ -524,84 +592,14 @@ main {
 }
 
 
-/* TEXT DESKTOP */
-
-h1 {
-  font-family: 'Arial', sans-serif;
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 1.2;
-  margin: 2rem 0 .3rem 0;
-  color: Black;
-}
-
-h2 {
-  font-family: 'Arial', sans-serif;
-  font-weight: 500;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: Black;
-  margin-top: 0;
-}
-
-h3 {
-  font-family: 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 1.7rem;
-  margin-bottom: 1rem;
-  margin-top: 0;
-  line-height: 1.4;
-}
-
-h4 {
-  font-family: 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 0;
-  line-height: 1.4;
-}
-
-h5 {
-  font-family: 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
-
-h6 {
-  font-family: 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 1.7rem;
-  margin-bottom: 1rem;
-  margin-top: 0;
-  line-height: 1.4;
-}
-
-p {
-  font-family: "Arial", sans-serif;
-  font-size: 0.7rem;
-  /*! margin-bottom: 0; */
-  /*! line-height: 1.6; */
-  /*! margin-top: 0; */
-  color: black;
-  }
-
-a:link {
-  text-decoration: none;
-}
-
-
-/* LAPTOP */
+/* --- LAPTOP --- */
 
 @media screen and (max-width: 1902px) and (min--webkit-device-pixel-ratio: 2) and (max--webkit-device-pixel-ratio: 3),
        screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 3dppx) {
 
 
 
-/* INDEX LAPTOP */
+/* --- INDEX LAPTOP --- */
 
 .index-large-header{
   margin-top: 2rem;
@@ -622,7 +620,7 @@ a:link {
   font-size: .8rem;
 }
 
-/* GRID LAPTOP */
+/* --- GRID LAPTOP --- */
 
  #grid{
 
@@ -656,11 +654,7 @@ a:link {
  }
 
  .grid-item{
-   /*! width: 360px; */
-   /*! height: 240px; */
-   /*! transition:
-    width 0.5s ease-in 330ms,
-    height 0.5s ease-in 300ms; */
+
  }
 
  .grid-image-container{
@@ -674,18 +668,13 @@ a:link {
  .grid-image{
    width: 100%;
    height: 100%;
-   /*! max-height: 180px; */
-
  }
 
-/* ABOUT LAPTOP */
+/* --- ABOUT LAPTOP --- */
 
   .about-hero-container{
     padding-right: .8rem;
     margin-top: 5rem;
-    /* display: grid;
-    grid-template-columns: auto 70%;
-    grid-template-rows: auto auto; */
   }
 
   .about-hero{
@@ -696,7 +685,6 @@ a:link {
   .about-text-container{
     padding-left: 5.8rem;
     padding-right: 1.5rem;
-    /*! margin-top: 26.8rem; */
     max-width: 90%;
   }
 
@@ -711,7 +699,6 @@ a:link {
 
   .about-title h1 {
 
-
   }
 
   .about-text-container p {
@@ -719,17 +706,32 @@ a:link {
     line-height: 1.45;
   }
 
+
+  /* --- PROJECT LAPTOP --- */
+
+  .subtitle-section h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    line-height: 1.4;
+  }
+
+  .project-content-section p {
+
+  }
+
 }
 
 
 
-/* SMALL */
+/* --- SMALL --- */
 
 @media screen and (max-width: 735px) and (min--webkit-device-pixel-ratio: 2) and (max--webkit-device-pixel-ratio: 3),
        screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3dppx) {
 
 
-/* NAV SMALL */
+/* --- NAV SMALL --- */
  .nav-container {
    display: grid;
    justify-content: inherit;
@@ -767,7 +769,7 @@ a:link {
  }
 
 
- /* INDEX SMALL */
+ /* --- INDEX SMALL --- */
 
  .index-large-header {
    margin-bottom: .6rem;
@@ -784,7 +786,7 @@ a:link {
    max-width: 100%;
  }
 
- /* GRID SMALL */
+ /* --- GRID SMALL --- */
 
   #grid{
 
@@ -812,7 +814,6 @@ a:link {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    /*! grid-gap: 4px; */
     max-height: fit-content;
     transition:
       grid-template-columns 0.5s ease-in 200ms,
@@ -820,12 +821,7 @@ a:link {
   }
 
   .grid-item{
-    /* width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    transition:
-      width 0.5s ease-in 200ms,
-      height 0.5s ease-in 180ms; */
+
   }
 
   .grid-item:hover{
@@ -842,7 +838,6 @@ a:link {
 
   .grid-image{
     width: 100%;
-    /*! max-height: 100%; */
 
   }
 
@@ -854,7 +849,7 @@ a:link {
 
   }
 
-  /* ABOUT SMALL  */
+  /* --- ABOUT SMALL --- */
 
   .about-container{
     display: grid;
@@ -873,9 +868,6 @@ a:link {
     margin-top: 5rem;
     align-items: start;
     padding: 0 2rem;
-    /* display: grid;
-    grid-template-columns: auto 70%;
-    grid-template-rows: auto auto; */
   }
 
   .about-hero{
@@ -886,7 +878,6 @@ a:link {
   .about-text-container{
     padding-left: 0;
     padding-right: 0;
-    /*! margin-top: 2rem; */
     max-width: 100%;
     padding: 0;
     margin-top: 1rem;
@@ -910,15 +901,38 @@ a:link {
     max-width: 100%;
     width: fit-content;
   }
+
+  /* --- PROJECT SMALL --- */
+
+  .subtitle-section h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    line-height: 1.4;
+  }
+
+  .project-content-section p {
+    font-size: calc(10px + .1vw);
+  }
+
 }
 
 
 
-/* PHONE  */
+
+/* --- PHONE --- */
 
 @media screen and (max-width: 390px) and (-webkit-device-pixel-ratio: 2), (max-width: 390px) and (resolution: 3dppx){
 
-  /* GRID PHONE */
+  /* --- TEXT PHONE --- */
+
+  .regular-content-section p{
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  /* --- GRID PHONE --- */
 
   .grid-wrapper{
     padding: 0 40px;
@@ -927,14 +941,6 @@ a:link {
   .grid-container{
     display: block;
     max-height: fit-content;
-    /* grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    grid-gap: 4px;
-    max-height: 55vh;
-    max-width: 30vw
-    transition:
-      grid-template-columns 0.5s ease-in 200ms,
-      grid-template-rows 0.5s ease-in 180ms; */
   }
 
   .grid-title {
@@ -959,7 +965,7 @@ a:link {
   }
 
 
-  /* INDEX PHONE */
+  /* --- INDEX PHONE --- */
 
   .index-large-header{
     margin-bottom: 0;
@@ -980,13 +986,14 @@ a:link {
   }
 
 
-  /* PROJECT PHONE */
+  /* --- PROJECT PHONE --- */
+
   #project{
 
   }
 
   .project-wrapper{
-
+    background-color: inherit;
   }
 
   .project-container{
@@ -1048,9 +1055,7 @@ a:link {
     line-height: 1.4;
   }
 
-  .regular-content-section p{
-    font-size: 16px;
-    margin-bottom: 20px;
+  .project-content-section p {
 
   }
 
@@ -1122,7 +1127,7 @@ a:link {
 
   }
 
-  /* CTA PHONE */
+  /* --- CTA PHONE --- */
 
   #CTA{
     display: flex;
@@ -1163,7 +1168,7 @@ a:link {
 
 
 
-  /* ABOUT PHONE */
+  /* --- ABOUT PHONE --- */
   .about-container{
     display: grid;
     grid-template-columns: 50vw;
@@ -1216,7 +1221,7 @@ a:link {
     margin-bottom: 0;
   }
 
-  /* NAV PHONE */
+  /* --- NAV PHONE --- */
   #nav {
     width: 100%;
     background-color: hsl(0, 0%, 0%);
@@ -1280,10 +1285,9 @@ a:link {
 
 
 
-  /* FOOTER PHONE  */
+  /* --- FOOTER PHONE --- */
   #footer {
     background-color: black;
-    /*! z-index: 200; */
     display: block;
   }
 
