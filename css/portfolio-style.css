@@ -862,7 +862,7 @@ a:link {
 
   .grid-title {
     color: white;
-    margin-top: 35px;
+    margin-top: 23px;
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 600;
@@ -913,14 +913,16 @@ a:link {
   }
 
   .project-container{
-    display: block;
+    display: flex;
+    flex-direction: column;
 
   }
 
   .project-hero-container{
-    position: fixed;
-    z-index: -1;
+    /* position: fixed;
+    z-index: -1; */
     margin-top: 0;
+    background-color: white;
   }
 
   .monotype-hero-container{
@@ -1088,7 +1090,7 @@ a:link {
   .about-wrapper {
     justify-content: center;
     padding-bottom: 0;
-    min-height: 25vh;
+    min-height: 40vh;
   }
 
   .about-container{
@@ -1135,27 +1137,21 @@ a:link {
     position: sticky;
     margin-top: 0;
     top: 0;
-    border-bottom: 1px solid;
-    border-bottom-color: rgba(0,0,0,.24);
     padding-top: 12px;
     padding-bottom: 12px;
-    z-index: 1000;
   }
 
 
   .nav-container {
-    display: grid;
+    display: flex;
     font-family: "clearSans", "Arial", sans-serif;
     font-size: 10px;
-    text-align: center;
     justify-content: center;
-    grid-template-columns: auto auto;
     align-items: center;
   }
 
   .nav-portfolio-title-container {
-    justify-self: start;
-    padding-left: 1rem;
+    padding-left: 0;
 
   }
 
@@ -1165,7 +1161,7 @@ a:link {
     font-weight: 200;
     padding: 0;
     color: white;
-    margin: 0 20px 0 0;
+    margin: 0 0 0 0;
   }
 
   .nav-link-container{
