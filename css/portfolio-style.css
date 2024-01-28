@@ -386,7 +386,6 @@ a:link {
   flex-direction: row;
   align-items: center;
   min-height: 30vh;
-  padding-bottom: 2rem;
 
 }
 
@@ -394,6 +393,7 @@ a:link {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
+  width: 100%;
   transition:
     grid-template-columns 0.5s ease-out 300ms,
     grid-template-rows 0.5s ease-out 330ms;
@@ -403,7 +403,7 @@ a:link {
 
 }
 
-.about-text-container{
+.about-text-container {
 
 }
 
@@ -416,8 +416,8 @@ a:link {
 
 .about-title h1 {
   width: fit-content;
-  font-size: calc(2em + 2vw);
-  margin: 0 0 0 3.5rem;
+  font-size: calc(2rem + .3vw);
+  margin: 0 0 0 0;
 }
 
 .about-text-content-section {
@@ -427,7 +427,7 @@ a:link {
 }
 
 .about-text-container p {
-  font-size: calc(18px + .3vw);
+  font-size: calc(.8rem + .3vw);
   line-height: 1.45;
 }
 
@@ -608,26 +608,27 @@ a:link {
 /* --- ABOUT LAPTOP --- */
 
   .about-text-container{
-    padding-left: 5.8rem;
+    /* padding-left: 5.8rem;
     padding-right: 1.5rem;
-    max-width: 90%;
+    max-width: 90%; */
   }
 
   .about-text-content-section {
+    height: 100%;
+    justify-content: start;
 
   }
 
   .about-title {
     text-align: start;
-    margin-bottom: 10px;
   }
 
   .about-title h1 {
-
+    font-size: calc(1.7rem + .3vw);
   }
 
   .about-text-container p {
-    font-size: calc(.15em + 1vw);
+    font-size: calc(.75rem + .2vw);
     line-height: 1.45;
   }
 
@@ -776,16 +777,28 @@ a:link {
 
   /* --- ABOUT SMALL --- */
 
+  #about {
+    padding-bottom: .5rem;
+  }
+
+  .about-wrapper {
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
   .about-container{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-gap: 0;
-    min-height: 0;
-    transition:
-      grid-template-columns 0.5s ease-out 300ms,
-      grid-template-rows 0.5s ease-out 330ms;
-    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .about-title {
+
+  }
+
+  .about-title h1 {
+    font-size: calc(1.6em + .3vw);
+    margin: 0 0 0 0;
   }
 
   .about-text-container{
@@ -793,17 +806,7 @@ a:link {
     padding-right: 0;
     max-width: 100%;
     padding: 0;
-    margin-top: 1rem;
-  }
-
-  .about-title {
-    text-align: start;
-    margin-bottom: 0;
-  }
-
-  .about-title h1 {
-    font-size: calc(1.8em + 1vw);
-    margin: 0 0 0 0;
+    margin-top: 0;
   }
 
   .about-text-container p {
@@ -812,6 +815,12 @@ a:link {
     margin-bottom: 0;
     max-width: 100%;
     width: fit-content;
+  }
+
+  .about-text-content-section {
+    display: block;
+    width: fit-content;
+    padding-top: .3rem;
   }
 
   /* --- PROJECT SMALL --- */
@@ -1072,50 +1081,50 @@ a:link {
 
   /* --- ABOUT PHONE --- */
 
-  .about-container{
-    display: grid;
-    grid-template-columns: 50vw;
-    grid-template-rows: auto;
-    grid-gap: 0;
-    min-height: fit-content;
-    transition:
-      grid-template-columns 0.5s ease-out 300ms,
-      grid-template-rows 0.5s ease-out 330ms;
+  #about {
+    padding-bottom: .5rem;
   }
 
-  .about-wrapper{
-    padding: 0 1.8rem;
+  .about-wrapper {
+    justify-content: center;
+    padding-bottom: 0;
+    min-height: 25vh;
   }
 
   .about-container{
-    display: block;
-    margin-top: 1.2rem;
-  }
-
-  .about-text-container {
-    padding: 0;
-  }
-
-  .about-title-container{
-
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
   }
 
   .about-title {
-    text-align: start;
-    margin-bottom: 0;
+    align-items: start;
   }
 
   .about-title h1 {
-    width: fit-content;
     font-size: calc(24px + 1vw);
     margin: 0 0 0 0;
+  }
 
+  .about-text-container{
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    padding: 0;
+    margin-top: 0;
   }
 
   .about-text-container p {
-    font-size: 10px;
-    line-height: 1.4;
+    font-size: .55rem;
+    line-height: .83rem;
     margin-bottom: 0;
+    max-width: 100%;
+    width: fit-content;
+  }
+
+  .about-text-content-section {
+    display: block;
+    width: fit-content;
   }
 
   /* --- NAV PHONE --- */
