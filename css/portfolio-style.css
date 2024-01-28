@@ -200,7 +200,6 @@ a:link {
   transition:
     grid-template-columns 0.5s ease-out 300ms,
     grid-template-rows 0.5s ease-out 330ms;
-
 }
 
 .project-hero-container{
@@ -915,7 +914,7 @@ a:link {
   .project-container{
     display: flex;
     flex-direction: column;
-
+    grid-gap: 0;
   }
 
   .project-hero-container{
@@ -926,7 +925,7 @@ a:link {
   }
 
   .monotype-hero-container{
-    margin-top: 2.5rem;
+    margin-top: 0;
   }
 
   .project-hero{
@@ -945,7 +944,7 @@ a:link {
   }
 
   .ed-tech-project-text-container{
-    margin-top: 150px;
+
   }
 
   .tag-section h1 {
