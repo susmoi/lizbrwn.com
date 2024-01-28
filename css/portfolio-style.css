@@ -938,7 +938,6 @@ a:link {
   }
 
   .project-text-container{
-    margin-top: 230px;
     margin-bottom: 0;
     padding: 2px 25px 80px 25px;
     background-color: white;
@@ -1051,7 +1050,7 @@ a:link {
   }
 
   .CTA-container{
-    padding: 0 50px 0 0;
+    padding: 0 0 0 0;
 
   }
 
