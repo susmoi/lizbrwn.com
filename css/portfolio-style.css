@@ -330,10 +330,20 @@ a:link {
   padding-bottom: 1.6rem;
 }
 
+.CTA-Wrapper {
+
+}
+
 .CTA-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.CTA-link-container{
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -350,18 +360,19 @@ a:link {
   align-items: center;
   width: fit-content;
   padding: .2rem;
+  color: #0097F5
 }
 
 .CTA-link:focus * {
-    color: #0097F5;
+    text-decoration: underline;
 }
 
 .CTA-link:hover * {
-    color: #0097F5;
+    text-decoration: underline;
 }
 
-.CTA-link p{
-
+.CTA-link p {
+  color: #0097F5
 }
 
 .CTA-arrow p{
@@ -1202,7 +1213,7 @@ a:link {
   }
 
   .footer-icon{
-  
+
   }
 
   .footer-p{
