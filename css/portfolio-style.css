@@ -303,20 +303,22 @@ a:link {
 
 .case-study-link{
   text-decoration: none;
-  color: #0097F5;
-  border-bottom: solid 3px;
   width: fit-content;
-  transition: 100ms ease-out 10ms;
+  color: #0097F5;
 }
 
+.case-study-link p{
+  color: #0097F5;
+}
+
+
+
 .case-study-link:hover{
-  border-bottom: solid 6px;
-  transition: 100ms ease-in 5ms;
+  text-decoration: underline;
 }
 
 .case-study-link:focus{
-  border-bottom: solid 6px;
-  transition: 100ms ease-in 5ms;
+  text-decoration: underline;
 }
 
 .case-study-link p{
