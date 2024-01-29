@@ -1094,7 +1094,7 @@ a:link {
   /* --- ABOUT PHONE --- */
 
   #about {
-    padding-bottom: .5rem;
+    padding-bottom: 0;
   }
 
   .about-wrapper {
