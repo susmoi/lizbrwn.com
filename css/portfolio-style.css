@@ -505,8 +505,7 @@ a:link {
 }
 
 .footer-icon {
-  padding: .1rem;
-  margin: 0 1.3rem;
+  padding: 0 .5rem;
 
 }
 
@@ -1203,7 +1202,7 @@ a:link {
   }
 
   .footer-icon{
-    padding: 0 .4rem;
+  
   }
 
   .footer-p{
