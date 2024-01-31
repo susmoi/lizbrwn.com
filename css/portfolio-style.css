@@ -84,6 +84,38 @@ a:link {
   text-decoration: none;
 }
 
+h1::selection {
+  color: white;
+  background-color: #0097F5;
+}
+
+h2::selection {
+  color: white;
+  background-color: #0097F5;
+}
+
+h3::selection {
+  color: white;
+  background-color: #0097F5;
+}
+
+h4::selection {
+  color: white;
+  background-color: #0097F5;
+}
+h5::selection {
+  color: white;
+  background-color: #0097F5;
+}
+h6::selection {
+  color: white;
+  background-color: #0097F5;
+}
+p::selection {
+  color: white;
+  background-color: #0097F5;
+}
+
 .regular-content-section p{
   font-size: 16px;
   margin-bottom: 20px;
