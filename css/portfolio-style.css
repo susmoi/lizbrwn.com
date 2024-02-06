@@ -3,11 +3,6 @@
   src: url("fonts/clearsansscreen-bk.woff2")
 }
 
-/* TEST */
-.test-background-image {
-    background-image: url("css-images/ed-tech-hero.jpg");
-}
-
 
 /* --- DOCUMENT DESKTOP --- */
 
@@ -1263,18 +1258,17 @@ p::selection {
 }
 
 
-/* Color Scheme */
+/* Color Palette *//*
 
-/*
+Dessert Tan                 #4B627D
+Blueberry Blue              #0097F5
+Icey Grey                   #2c3037
+Cloudy Sky Grey             #b4becb hsl(213, 18%, 75%)
+Chalkboard Black            #F8D6B2
+Very Transparent Black      rgba(0,0,0,.24)
+True Black                  #00000
+True White                  #FFFFFF
+True Blue                   HEX CODE                        */
 
-#4B627D                         Dessert Tan
-#0097F5                         Blueberry Blue
-#2c3037                         Icey Grey
-#b4becb hsl(213, 18%, 75%)      Cloudy Sky Grey
-#F8D6B2                         Chalkboard Black
-rgba(0,0,0,.24)                 Very Transparent Black
-#00000                          True Black
-#FFFFFF                         True White
-HEX CODE                        True Blue
-
-*/
+/* CSS Color Names Supported by Browsers
+https://www.w3schools.com/colors/colors_hex.asp */
