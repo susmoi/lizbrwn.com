@@ -176,7 +176,7 @@ p::selection {
 }
 
 .grid-image:hover {
-  box-shadow:0 0 2px 1px rgb(98, 100, 100);
+  box-shadow: 0 0 2px 1px rgb(98, 100, 100);
   opacity: 100%;
 }
 
@@ -579,22 +579,44 @@ screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 
 
   /* --- ABOUT LAPTOP --- */
 
-  .about-text-content-section {
-    height: 100%;
-    justify-content: start;
-
+  #about {
+    padding-bottom: .2rem;
   }
 
+  .about-wrapper {
+    padding-bottom: 0;
+  }
+
+
   .about-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: start;
   }
 
   .about-title h1 {
-    font-size: calc(1.7rem + .3vw);
+    font-size: calc(2em + .2vw);
+    margin: 0 0 0 0;
   }
 
-  .about-text-container p {
-    font-size: calc(.75rem + .2vw);
+  .about-text-container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .about-text-content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+  }
+
+  .about-text-content-section p {
+    font-size: calc(.8rem + .2vw);
     line-height: 1.45;
   }
 
@@ -712,22 +734,23 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
   /* --- ABOUT SMALL --- */
 
   #about {
-    padding-bottom: .5rem;
+    padding-bottom: .2rem;
   }
 
   .about-wrapper {
-    justify-content: center;
     padding-bottom: 0;
   }
 
-  .about-container {
+
+  .about-title {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    align-items: center;
+    text-align: start;
   }
 
   .about-title h1 {
-    font-size: calc(1.6em + .3vw);
+    font-size: calc(1.5em + .2vw);
     margin: 0 0 0 0;
   }
 
@@ -739,18 +762,16 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
     margin-top: 0;
   }
 
-  .about-text-container p {
-    font-size: .55rem;
-    line-height: .83rem;
-    margin-bottom: 0;
-    max-width: 100%;
-    width: fit-content;
+  .about-text-content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
   }
 
-  .about-text-content-section {
-    display: block;
-    width: fit-content;
-    padding-top: .3rem;
+  .about-text-content-section p {
+    font-size: calc(.6rem + .2vw);
+    line-height: 1.45;
   }
 
   /* --- PROJECT SMALL --- */
@@ -1106,9 +1127,6 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
     font-size: 10px;
   }
 }
-
-
-
 
 
 /* Color Palette */
