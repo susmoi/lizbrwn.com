@@ -1003,12 +1003,12 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
   /* --- ABOUT PHONE --- */
 
   .about-title h1 {
-    font-size: calc(1.2em + .2vw);
+    font-size: calc(1.35em + .2vw);
     margin: 0 0 0 0;
   }
 
   .about-text-content-section p {
-    font-size: calc(.5rem + .2vw);
+    font-size: calc(.55rem + .2vw);
     line-height: 1.45;
   }
 
