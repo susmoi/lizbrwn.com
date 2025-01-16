@@ -414,7 +414,7 @@ p::selection {
 .about-text-content-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 
 .about-text-content-section p {
