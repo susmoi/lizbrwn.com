@@ -398,11 +398,18 @@ p::selection {
 
 }
 
+.about-container {
+  display: flex;
+  align-items: start;
+
+}
+
 .about-title {
   display: flex;
   flex-direction: column;
   align-items: start;
   text-align: start;
+  width: fit-content;
 }
 
 .about-title h1 {
@@ -415,6 +422,7 @@ p::selection {
   display: flex;
   flex-direction: column;
   align-items: start;
+  width: fit-content;
 }
 
 .about-text-content-section p {
