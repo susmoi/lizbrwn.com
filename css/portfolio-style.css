@@ -385,6 +385,7 @@ p::selection {
 
 #about {
   height: auto;
+  padding-top: 3rem;
   padding-bottom: 4rem;
   background-color: white;
 }
@@ -588,7 +589,7 @@ screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 
   /* --- ABOUT LAPTOP --- */
 
   #about {
-    padding-bottom: .2rem;
+    padding-bottom: 3rem;
   }
 
   .about-wrapper {
