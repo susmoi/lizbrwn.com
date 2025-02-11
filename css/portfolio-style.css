@@ -173,6 +173,7 @@ p::selection {
   align-items: center;
   height: 100%;
   padding: 0 30vw 0 30vw;
+  gap: 20px;
 }
 
 .grid-image:hover {
@@ -395,13 +396,14 @@ p::selection {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-height: 30vh;
+  min-height: 20vh;
 
 }
 
 .about-container {
   display: flex;
   align-items: start;
+  padding: 0 30vw 0 30vw;
 
 }
 
@@ -415,7 +417,7 @@ p::selection {
 
 .about-title h1 {
   width: fit-content;
-  font-size: calc(3rem + .3vw);
+  font-size: calc(1.5rem + .3vw);
   margin: 0 0 0 0;
 }
 
@@ -427,7 +429,7 @@ p::selection {
 }
 
 .about-text-content-section p {
-  font-size: calc(1.2rem + .3vw);
+  font-size: calc(.8rem + .3vw);
   line-height: 1.45;
 }
 
@@ -604,7 +606,7 @@ screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 
   }
 
   .about-title h1 {
-    font-size: calc(2em + .2vw);
+    font-size: calc(1.2em + .2vw);
     margin: 0 0 0 0;
   }
 
