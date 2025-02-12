@@ -429,6 +429,7 @@ p::selection {
   align-items: start;
   text-align: start;
   width: fit-content;
+  padding: 0 0 16px 0;
 }
 
 .about-title h1 {
