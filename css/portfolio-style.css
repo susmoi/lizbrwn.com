@@ -829,6 +829,27 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
   }
 
 
+  /* --- ABOUT PHONE ---*/
+
+  #about {
+    padding: 40px;
+  }
+
+  .about-container {
+    padding: 0;
+  }
+
+  .about-title h1 {
+    font-size: calc(1.7em + .2vw);
+    margin: 0 0 0 0;
+  }
+
+  .about-text-content-section p {
+    font-size: calc(.9rem + .2vw);
+    line-height: 1.45;
+  }
+
+
   /* --- INDEX PHONE --- */
 
   .index-large-header {
@@ -1002,18 +1023,6 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 
   }
 
-
-  /* --- ABOUT PHONE --- */
-
-  .about-title h1 {
-    font-size: calc(1.35em + .2vw);
-    margin: 0 0 0 0;
-  }
-
-  .about-text-content-section p {
-    font-size: calc(.55rem + .2vw);
-    line-height: 1.45;
-  }
 
   /* --- NAV PHONE --- */
 
