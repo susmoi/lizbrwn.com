@@ -755,7 +755,7 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
   /* --- ABOUT SMALL --- */
 
   #about {
-    padding-bottom: .2rem;
+    
   }
 
   .about-wrapper {
