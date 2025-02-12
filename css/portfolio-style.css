@@ -130,6 +130,14 @@ p::selection {
   line-height: 1.5;
 }
 
+.regular-content-section li {
+  font-family: "Arial", sans-serif;
+  color: black;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* --- INDEX DESKTOP --- */
 
 .index-large-header {
