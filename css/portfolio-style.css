@@ -1,7 +1,3 @@
-@font-face {
-  font-family: 'clearSans';
-  src: url("fonts/clearsansscreen-bk.woff2")
-}
 
 
 /* --- DOCUMENT DESKTOP --- */
@@ -202,7 +198,15 @@ figcaption p {
   display: none;
 }
 
+.grid-link:focus .grid-image {
+  display: none;
+}
+
 .grid-link:hover .grid-image-hover {
+  display: block;
+}
+
+.grid-link:focus .grid-image-hover {
   display: block;
 }
 
@@ -780,9 +784,6 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
     align-items: center;
   }
 
-  .grid-container {
-    
-  }
 
   .grid-image {
     width: 100%;
@@ -790,9 +791,6 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 
   /* --- ABOUT SMALL --- */
 
-  #about {
-    
-  }
 
   .about-wrapper {
     padding-bottom: 0;
@@ -973,9 +971,9 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 
   }
 
-  .subtitle-secton {
+  /* .subtitle-section {
     margin-top: 60px;
-  }
+  } */
 
 
   .subtitle-section h3 {
@@ -1162,7 +1160,7 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 
 Dessert Tan                 #4B627D
 Blueberry Blue              #0097F5
-Icey Grey                   #2c3037
+Icy Grey                   #2c3037
 Cloudy Sky Grey             #b4becb hsl(213, 18%, 75%)
 Chalkboard Black            #F8D6B2
 Very Transparent Black      rgba(0,0,0,.24)
