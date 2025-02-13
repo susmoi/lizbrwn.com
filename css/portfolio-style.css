@@ -552,6 +552,8 @@ figcaption {
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
   position: sticky;
   bottom: 0;
   left: 0;
@@ -582,6 +584,32 @@ figcaption {
   color: #0097F5;
 
 }
+
+.footer-link {
+  padding: .2rem;
+  color: #0097F5
+}
+
+.footer-link:focus * {
+  text-decoration: underline;
+}
+
+.footer-link:hover * {
+  text-decoration: underline;
+}
+
+.footer-h6 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: .7rem;
+  /* margin-bottom: 20px; */
+  margin-top: 0;
+  line-height: 1.4;
+  padding: 0;
+  /* margin: 10px 0; */
+  color: white;
+}
+
 
 .footer-p {
   cursor: default;
