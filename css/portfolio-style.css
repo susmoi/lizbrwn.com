@@ -138,6 +138,12 @@ p::selection {
   line-height: 1.5;
 }
 
+figcaption p {
+  margin: 5px;
+  display: block;
+  text-align: center;
+}
+
 /* --- INDEX DESKTOP --- */
 
 .index-large-header {
@@ -266,15 +272,35 @@ p::selection {
 
 .image-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 2rem 0;
+  gap: 20px;
 
 }
 
 .project-image {
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   border-radius: 2px;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figcaption {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.04);
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .summary-title {
