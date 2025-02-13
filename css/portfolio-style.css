@@ -586,6 +586,7 @@ figcaption {
 }
 
 .footer-link {
+  margin: 0;
   padding: .2rem;
   color: #0097F5
 }
@@ -602,11 +603,9 @@ figcaption {
   font-family: 'Arial', sans-serif;
   font-weight: 600;
   font-size: .7rem;
-  /* margin-bottom: 20px; */
-  margin-top: 0;
+  margin: 0;
   line-height: 1.4;
   padding: 0;
-  /* margin: 10px 0; */
   color: white;
 }
 
@@ -614,7 +613,7 @@ figcaption {
 .footer-p {
   cursor: default;
   padding: 0;
-  margin: 10px 0;
+  margin: 0;
   color: white;
 }
 
