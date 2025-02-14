@@ -297,7 +297,7 @@ figcaption p {
 .project-image {
   width: 100%;
   height: 100%;
-  border-radius: 2px;
+  border-radius: 2px 2px 0 0;
 }
 
 figure {
@@ -1017,14 +1017,6 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
     justify-content: center;
     margin: 2rem 0;
 
-  }
-
-  .project-image {
-    width: 60%;
-    height: 60%;
-    border: 1px solid;
-    border-color: rgba(0, 0, 0, .24);
-    border-radius: 2px;
   }
 
   .summary-title {
