@@ -206,35 +206,38 @@ figcaption p {
   gap: 20px;
 }
 
-.grid-link:hover .grid-image {
-  display: none;
+.grid-link { 
+  position: relative;
+  display: block; 
 }
 
+.grid-link .grid-image {
+  opacity: 1;
+  transition: opacity 800ms ease;
+  display: block;
+  width: 100%; 
+  height: 100%; 
+}
+
+.grid-link .grid-image-hover {
+  opacity: 0;
+  transition: opacity 800ms ease;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+}
+
+.grid-link:hover .grid-image,
 .grid-link:focus .grid-image {
-  display: none;
+  opacity: 0;
 }
 
-.grid-link:hover .grid-image-hover {
-  display: block;
-}
-
+.grid-link:hover .grid-image-hover,
 .grid-link:focus .grid-image-hover {
-  display: block;
-}
-
-.grid-image {
-  width: 100%;
-  height: 100%;
-  opacity: 92%;
-  border-radius: 1px;
-  display: block;
-}
-
-.grid-image-hover {
-  width: 100%;
-  height: 100%;
-  border-radius: 1px;
-  display: none;
+  opacity: 1;
 }
 
 /* --- PROJECT DESKTOP --- */
