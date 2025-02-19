@@ -13,6 +13,17 @@ body {
 
 /* --- TEXT DESKTOP --- */
 
+h1::-moz-selection, h1::selection,
+h2::-moz-selection, h2::selection,
+h3::-moz-selection, h3::selection,
+h4::-moz-selection, h4::selection,
+h5::-moz-selection, h5::selection,
+h6::-moz-selection, h6::selection,
+p::-moz-selection, p::selection {
+  color: white;
+  background-color: #0097F5;
+}
+
 h1 {
   font-family: 'Arial', sans-serif;
   font-weight: 600;
@@ -75,41 +86,6 @@ p {
 
 a:link {
   text-decoration: none;
-}
-
-h1::selection {
-  color: white;
-  background-color: #0097F5;
-}
-
-h2::selection {
-  color: white;
-  background-color: #0097F5;
-}
-
-h3::selection {
-  color: white;
-  background-color: #0097F5;
-}
-
-h4::selection {
-  color: white;
-  background-color: #0097F5;
-}
-
-h5::selection {
-  color: white;
-  background-color: #0097F5;
-}
-
-h6::selection {
-  color: white;
-  background-color: #0097F5;
-}
-
-p::selection {
-  color: white;
-  background-color: #0097F5;
 }
 
 .about-text-content-section p {
@@ -270,7 +246,9 @@ figcaption p {
   justify-items: center;
   transition:
     grid-template-columns 0.5s ease-out 300ms,
-    grid-template-rows 0.5s ease-out 330ms;
+    grid-template-rows 0.5s ease-out 330ms,
+    -ms-grid-columns 0.5s ease-out 300ms,
+    -ms-grid-rows 0.5s ease-out 330ms;
 }
 
 .project-hero-container {
@@ -386,6 +364,8 @@ figcaption {
   background-color: #0097F5;
   border-radius: 3px;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   scale: 1;
   transition: scale 150ms linear;
@@ -415,6 +395,8 @@ figcaption {
 /* --- CTA DESKTOP --- */
 
 #CTA {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding-bottom: 1.6rem;
 }
@@ -443,6 +425,8 @@ figcaption {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: .2rem;
   color: #0097F5
@@ -488,7 +472,7 @@ figcaption {
 
 .about-container {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   padding: 0 30vw 0 30vw;
 
 }
@@ -496,13 +480,17 @@ figcaption {
 .about-title {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   text-align: start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 0 0 16px 0;
 }
 
 .about-title h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-size: calc(1.5rem + .3vw);
   margin: 0 0 0 0;
@@ -511,7 +499,9 @@ figcaption {
 .about-text-content-section {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -525,6 +515,7 @@ figcaption {
 #nav {
   width: 100%;
   background-color: hsl(0, 0%, 0%);
+  position: -webkit-sticky;
   position: sticky;
   margin-top: 0;
   top: 0;
@@ -570,7 +561,8 @@ figcaption {
 }
 
 .nav-item.active {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
   border-bottom: 2px solid white;
 }
 
@@ -584,6 +576,7 @@ figcaption {
 .footer {
   display: flex;
   justify-content: center;
+  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   left: 0;
@@ -600,6 +593,8 @@ figcaption {
 .fab,
 .far {
   color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -651,6 +646,7 @@ figcaption {
 /* --- LAPTOP --- */
 
 @media screen and (max-width: 1902px) and (min--webkit-device-pixel-ratio: 2) and (max--webkit-device-pixel-ratio: 3),
+screen and (max-width: 1902px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 3),
 screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 3dppx) {
 
 
@@ -761,6 +757,7 @@ screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 
 /* --- SMALL --- */
 
 @media screen and (max-width: 735px) and (min--webkit-device-pixel-ratio: 2) and (max--webkit-device-pixel-ratio: 3),
+screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 3),
 screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3dppx) {
 
 
@@ -788,12 +785,14 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 
   .nav-item:hover {
     text-decoration: underline;
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
     border-bottom: none;
   }
 
   .nav-item.active {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
     border-bottom: none;
     color: #F8D6B2;
     font-weight: 600;
@@ -974,6 +973,8 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
   }
 
   .index-content-section {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-bottom: 1px;
   }
@@ -1023,6 +1024,8 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 
   .tag-section h1 {
     font-size: 34px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 
   }
@@ -1133,6 +1136,7 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
   #nav {
     width: 100%;
     background-color: hsl(0, 0%, 0%);
+    position: -webkit-sticky;
     position: sticky;
     margin-top: 0;
     top: 0;
@@ -1181,7 +1185,8 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
   }
 
   .nav-item.active {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
     border-bottom: 2px solid white;
   }
 
@@ -1195,6 +1200,7 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
   }
 
   .footer {
+    position: -webkit-sticky;
     position: sticky;
     color: black;
     padding: 2em;
