@@ -84,6 +84,15 @@ p {
   color: black;
 }
 
+.index-large-header h2 {
+  font-size: .8rem;
+  font-weight: 900;
+}
+
+.index-content-section p {
+  font-size: .8rem;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -122,6 +131,27 @@ a:link {
   margin-bottom: 1rem;
   margin-top: 0;
   line-height: 1.4;
+}
+
+.project-summary-container h3 {
+  font-size: calc(6px + .2vw);
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  color: #9E9E9E;
+  
+}
+
+.project-summary-text h4 {
+  font-size: calc(12px + .2vw);
+  margin: 0;
+  padding-bottom: 5px;
+  /* color: #121212; */
+}
+
+.project-summary-text p {
+  font-size: calc(12px + .2vw);
+  /* color: #121212; */
+  font-weight: 400;
 }
 
 .summary-title h4 {
@@ -176,20 +206,10 @@ figcaption p {
   margin-bottom: .3rem;
 }
 
-.index-large-header h2 {
-  font-size: .8rem;
-  font-weight: 900;
-}
-
 .index-content-section {
   margin-bottom: 20px;
   max-width: 36%;
 }
-
-.index-content-section p {
-  font-size: .8rem;
-}
-
 
 /* --- GRID DESKTOP --- */
 
@@ -309,11 +329,11 @@ figcaption p {
 
 .project-summary-container {
   padding: 1.5rem; 
-  margin: 2rem 0; 
+  margin: 2rem 0 6rem 0; 
   background-color: #FFF;
-  border-radius: 8px;
-  border: 1px solid  #E5F5FF;
-  box-shadow: 0 1.5px 8px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  border: 1.5px solid  rgba(0,0,0,.1);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,.06);
 }
 
 .project-summary-section {
@@ -321,27 +341,6 @@ figcaption p {
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: 1rem;
   
-}
-
-.project-summary-container h3 {
-  font-size: calc(12px + .2vw);
-  margin: 0 0 1rem 0;
-  font-weight: 600;
-  color: #9E9E9E;
-}
-
-
-.project-summary-text h4 {
-  font-size: calc(12px + .2vw);
-  margin: 0;
-  padding-bottom: 5px;
-  color: #121212;
-}
-
-.project-summary-text p {
-  font-size: calc(12px + .2vw);
-  color: #121212;
-  font-weight: 400;
 }
 
 .design-process-container {
