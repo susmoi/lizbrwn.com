@@ -307,9 +307,7 @@ figcaption p {
   min-height: 35vh;
 }
 
-.project-summary-section {
-  display: grid;
-  gap: 1rem;
+.project-summary-container {
   padding: 1.5rem; 
   margin: 2rem 0; 
   background-color: #FFF;
@@ -318,9 +316,16 @@ figcaption p {
   box-shadow: 0 1.5px 8px rgba(0, 0, 0, 0.03);
 }
 
-.project-summary-text h3 {
+.project-summary-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+  
+}
+
+.project-summary-container h3 {
   font-size: calc(12px + .2vw);
-  margin: 0 0 0 0;
+  margin: 0 0 1rem 0;
   font-weight: 600;
   color: #9E9E9E;
 }
