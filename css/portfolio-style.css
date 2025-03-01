@@ -171,7 +171,6 @@ a:link {
 }
 
 .summary-box p {
-  color: blue;
   font-family: "Arial", sans-serif;
   font-size: 0.7rem;
   margin-bottom: 0;
@@ -188,6 +187,7 @@ a:link {
 }
 
 figcaption p {
+  font-size: 12px;
   margin: 5px;
   display: block;
   text-align: center;
@@ -400,7 +400,7 @@ figcaption p {
 .project-summary-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 1rem;
+  gap: .5rem;
   
 }
 
@@ -939,13 +939,6 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
     line-height: 1.4;
   }
 
-  .project-content-section p {
-    font-size: 16px;
-  }
-
-  .project-content-section li {
-    font-size: 16px;
-  }
 }
 
 
@@ -1104,6 +1097,13 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 
   }
 
+  .summary-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+
+  }
+
   .summary-title {
     text-align: start;
     margin-top: 10rem;
@@ -1113,13 +1113,6 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
   .summary-title h4 {
     font-size: 1.1rem;
     font-weight: 600;
-  }
-
-  .summary-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-
   }
 
   .summary-box h5 {
