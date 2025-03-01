@@ -1,4 +1,4 @@
-
+/* --- *DESKTOP* ------------------------------------------------------------------------------------------ */
 
 /* --- DOCUMENT DESKTOP --- */
 
@@ -211,16 +211,65 @@ figcaption p {
   max-width: 36%;
 }
 
-/* --- GRID DESKTOP --- */
+/* --- ABOUT DESKTOP --- */
 
-.grid-title {
-  color: white;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 25px;
-  font-size: calc(1.1em + 1vw);
-  font-weight: 600;
+#about {
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background-color: white;
 }
+
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 30vw 0 30vw;
+
+}
+
+.about-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 0 16px 0;
+}
+
+.about-title h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: calc(1.5rem + .3vw);
+  margin: 0 0 0 0;
+}
+
+.about-text-content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.about-text-content-section p {
+  font-size: calc(.8rem + .3vw);
+  line-height: 1.45;
+}
+
+/* --- GRID DESKTOP --- */
 
 #grid {
   background-color: black;
@@ -233,15 +282,27 @@ figcaption p {
   align-items: center;
 }
 
+.grid-title {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: calc(1.1em + 1vw);
+  font-weight: 600;
+}
+
 .grid-container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  padding: 0 30vw 0 30vw;
+  height: 100%; */
+  padding: 0 10vw 0 10vw; 
   gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
 }
+
 
 .grid-link { 
   position: relative;
@@ -250,10 +311,10 @@ figcaption p {
 
 .grid-link .grid-image {
   opacity: 1;
-  transition: opacity 800ms ease;
-  -webkit-transition: opacity 800ms ease;
-  -moz-transition: opacity 800ms ease;
-  -o-transition: opacity 800ms ease;
+  transition: opacity 800ms linear;
+  -webkit-transition: opacity 800ms linear;
+  -moz-transition: opacity 800ms linear;
+  -o-transition: opacity 800ms linear;
   display: block;
   width: 100%; 
   height: 100%; 
@@ -261,10 +322,10 @@ figcaption p {
 
 .grid-link .grid-image-hover {
   opacity: 0;
-  transition: opacity 800ms ease;
-  -webkit-transition: opacity 800ms ease;
-  -moz-transition: opacity 800ms ease;
-  -o-transition: opacity 800ms ease;
+  transition: opacity 800ms linear;
+  -webkit-transition: opacity 800ms linear;
+  -moz-transition: opacity 800ms linear;
+  -o-transition: opacity 800ms linear;
   display: block;
   position: absolute;
   top: 0;
@@ -325,6 +386,7 @@ figcaption p {
 .project-text-container {
   margin-bottom: 80px;
   min-height: 35vh;
+  width: 100%;
 }
 
 .project-summary-container {
@@ -490,64 +552,6 @@ figcaption {
 }
 
 
-/* --- ABOUT DESKTOP --- */
-
-#about {
-  height: auto;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
-  background-color: white;
-}
-
-.about-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  min-height: 20vh;
-
-}
-
-.about-container {
-  display: flex;
-  align-items: flex-start;
-  padding: 0 30vw 0 30vw;
-
-}
-
-.about-title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: start;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0 0 16px 0;
-}
-
-.about-title h1 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: calc(1.5rem + .3vw);
-  margin: 0 0 0 0;
-}
-
-.about-text-content-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.about-text-content-section p {
-  font-size: calc(.8rem + .3vw);
-  line-height: 1.45;
-}
-
 /* --- NAV DESKTOP --- */
 
 #nav {
@@ -681,7 +685,7 @@ figcaption {
 }
 
 
-/* --- LAPTOP --- */
+/* --- *LAPTOP* ------------------------------------------------------------------------------------------ */
 
 @media screen and (max-width: 1902px) and (min--webkit-device-pixel-ratio: 2) and (max--webkit-device-pixel-ratio: 3),
 screen and (max-width: 1902px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 3),
@@ -722,12 +726,6 @@ screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .grid-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
   }
 
   .grid-image {
@@ -792,7 +790,7 @@ screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 
 }
 
 
-/* --- SMALL --- */
+/* --- *SMALL* ------------------------------------------------------------------------------------------ */
 
 @media screen and (max-width: 735px) and (min--webkit-device-pixel-ratio: 2) and (max--webkit-device-pixel-ratio: 3),
 screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 3),
@@ -858,38 +856,20 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
     max-width: 100%;
   }
 
-  /* --- GRID SMALL --- */
-
-  /* .grid-title {
-    margin-top: 0;
-    margin-bottom: 20px;
-  } */
-
-  .grid-title {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-size: calc(1.1em + 1vw);
-    font-weight: 600;
-  }
-
-  .grid-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  .grid-image {
-    width: 100%;
-  }
-
   /* --- ABOUT SMALL --- */
 
+  #about {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
 
   .about-wrapper {
     padding-bottom: 0;
   }
 
+  .about-container {
+    padding: 0 10vw 0 10vw;
+  }
 
   .about-title {
     display: flex;
@@ -923,6 +903,34 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
     line-height: 1.45;
   }
 
+  /* --- GRID SMALL --- */
+
+  .grid-title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: calc(1.1em + 1vw);
+    font-weight: 600;
+  }
+
+  .grid-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-container {
+    padding: 0 10vw 0 10vw; 
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .grid-image {
+    width: 100%;
+  }
+
+
+
   /* --- PROJECT SMALL --- */
   .subtitle-section h3 {
     font-weight: 600;
@@ -942,7 +950,7 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 }
 
 
-/* --- PHONE --- */
+/* --- *PHONE* ------------------------------------------------------------------------------------------ */
 
 @media screen and (max-width: 390px) and (-webkit-device-pixel-ratio: 2),
 (max-width: 390px) and (resolution: 3dppx) {
@@ -962,7 +970,11 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
   }
 
   .grid-container {
-    padding: 0;
+    padding: 0 10vw 0 10vw; 
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* padding: 0; */
   }
 
   .grid-title {
