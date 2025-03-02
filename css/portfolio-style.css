@@ -280,23 +280,23 @@ figcaption p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 25px;
+}
+
+.grid-title-container {
+  margin: 40px 0 0 0;
 }
 
 .grid-title {
   color: white;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: calc(1.1em + 1vw);
   font-weight: 600;
 }
 
 .grid-container {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%; */
   padding: 0 10vw 0 10vw; 
   gap: 20px;
   display: grid;
@@ -307,25 +307,28 @@ figcaption p {
 .grid-link { 
   position: relative;
   display: block; 
+  border-radius: 30px;
 }
 
 .grid-link .grid-image {
+  border-radius: 3px;
   opacity: 1;
-  transition: opacity 800ms linear;
+  /* transition: opacity 800ms linear;
   -webkit-transition: opacity 800ms linear;
   -moz-transition: opacity 800ms linear;
-  -o-transition: opacity 800ms linear;
+  -o-transition: opacity 800ms linear; */
   display: block;
   width: 100%; 
   height: 100%; 
 }
 
 .grid-link .grid-image-hover {
+  border-radius: 3px;
   opacity: 0;
-  transition: opacity 800ms linear;
-  -webkit-transition: opacity 800ms linear;
-  -moz-transition: opacity 800ms linear;
-  -o-transition: opacity 800ms linear;
+  transition: opacity 200ms linear;
+  -webkit-transition: opacity 200ms linear;
+  -moz-transition: opacity 200ms linear;
+  -o-transition: opacity 200ms linear;
   display: block;
   position: absolute;
   top: 0;
@@ -337,6 +340,10 @@ figcaption p {
 .grid-link:hover .grid-image,
 .grid-link:focus .grid-image {
   opacity: 0;
+  transition: opacity 4s linear;
+  -webkit-transition: opacity 4s linear;
+  -moz-transition: opacity 4s linear;
+  -o-transition: opacity 4s linear;
 }
 
 .grid-link:hover .grid-image-hover,
