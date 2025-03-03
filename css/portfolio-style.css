@@ -964,7 +964,7 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
   /* --- GRID PHONE --- */
 
   .grid-wrapper {
-    padding: 0 40px;
+    padding: 0 0;
 
   }
 
@@ -973,13 +973,18 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
     gap: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* padding: 0; */
+
+  }
+
+  .grid-title-container {
+    margin: 0 0 0 0;
+
   }
 
   .grid-title {
     color: white;
-    margin-top: 23px;
-    margin-bottom: 20px;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
     font-size: 16px;
     font-weight: 600;
   }
