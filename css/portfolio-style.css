@@ -1291,8 +1291,9 @@ https://www.w3schools.com/colors/colors_hex.asp */
 
 .design-process-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
   gap: 0;
+  /* padding: 0 10vw 0 10vw; */
 
 }
 
@@ -1306,4 +1307,24 @@ https://www.w3schools.com/colors/colors_hex.asp */
 
 .design-process-title-text-container h1 {
   font-size: 3rem;
+}
+
+.fof-wrapper {
+  height: 30vh;
+
+}
+
+.fof-about-title h1 {
+  color: #0097F5;
+  font-size: calc(.5rem + 2.5vw);
+}
+
+.fof-grid-title {
+  font-size: calc(.5rem + 1vw);
+  margin-bottom: 0;
+  
+}
+
+.fof-grid-container {
+  filter: grayscale(100%)
 }
