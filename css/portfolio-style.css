@@ -1320,11 +1320,15 @@ https://www.w3schools.com/colors/colors_hex.asp */
 }
 
 .fof-grid-title {
-  font-size: calc(.5rem + 1vw);
+  font-size: calc(.2rem + 1vw);
   margin-bottom: 0;
   
 }
 
 .fof-grid-container {
-  filter: grayscale(100%)
+  filter: grayscale(100%);
+  padding: 0 10vw 0 10vw;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
