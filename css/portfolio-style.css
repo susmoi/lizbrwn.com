@@ -307,7 +307,7 @@ figcaption p {
 .grid-link { 
   position: relative;
   display: block; 
-  border-radius: 30px;
+  border-radius: 3px;
 }
 
 .grid-link .grid-image {
