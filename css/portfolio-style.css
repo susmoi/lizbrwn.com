@@ -11,6 +11,13 @@ body {
   background-color: black;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF;
+}
+
 /* --- TEXT DESKTOP --- */
 
 h1::-moz-selection, h1::selection,
@@ -355,34 +362,13 @@ figcaption p {
 
 #project {
   height: auto;
-  background-color: white;
-}
-
-.project-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-
-}
-
-.project-container {
-  display: grid;
-  grid-template-columns: 50vw;
-  grid-template-rows: auto;
-  grid-gap: 4px;
-  min-height: 50vh;
-  justify-items: center;
-  transition:
-    grid-template-columns 0.5s ease-out 300ms,
-    grid-template-rows 0.5s ease-out 330ms,
-    -ms-grid-columns 0.5s ease-out 300ms,
-    -ms-grid-rows 0.5s ease-out 330ms;
+  width: 50vw;
 }
 
 .project-hero-container {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .project-hero {
@@ -391,9 +377,8 @@ figcaption p {
   border-radius: 2px;
 }
 
-.project-text-container {
-  margin-bottom: 80px;
-  min-height: 35vh;
+.project-title-container {
+  background-color: pink;
 }
 
 .project-summary-container {
@@ -405,11 +390,32 @@ figcaption p {
   box-shadow: 0px 0px 30px 0px rgba(0,0,0,.06);
 }
 
+.project-summary-title {
+  background-color: pink;
+}
+
 .project-summary-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: .5rem;
-  
+
+}
+
+.project-summary-text {
+
+}
+
+
+.subtitle-section {
+  background-color: pink;
+}
+
+.project-content-section {
+  background-color: pink;
+}
+
+.image-section {
+  background-color: pink;
 }
 
 .design-process-container {
@@ -502,10 +508,8 @@ figcaption {
 /* --- CTA DESKTOP --- */
 
 #CTA {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-bottom: 1.6rem;
+  background-color: white;
+
 }
 
 .CTA-container {
@@ -513,13 +517,10 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
+  gap: .5rem;
 }
 
-.CTA-link-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
 .CTA-header {
   font-weight: 900;
@@ -529,14 +530,8 @@ figcaption {
 }
 
 .CTA-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   padding: .2rem;
-  color: #0097F5
+  color: #0097F5;
 }
 
 .CTA-link:focus * {
@@ -548,7 +543,8 @@ figcaption {
 }
 
 .CTA-link p {
-  color: #0097F5
+  color: #0097F5;
+  margin: 0;
 }
 
 .CTA-arrow p {
