@@ -355,6 +355,7 @@ figcaption p {
 
 #project {
   height: auto;
+  background-color: white;
 }
 
 .project-wrapper {
