@@ -1,3 +1,11 @@
+/* Variables */
+
+:root {
+  --desktop-width: calc(100vw / 3);
+}
+
+
+
 /* --- *DESKTOP* ------------------------------------------------------------------------------------------ */
 
 /* --- DOCUMENT DESKTOP --- */
@@ -364,7 +372,8 @@ figcaption p {
   height: auto;
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  /* width: 50vw; */
+  width: var(--desktop-width);
 }
 
 .project-hero-container {
@@ -781,6 +790,12 @@ screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 
 
 
   /* --- PROJECT LAPTOP --- */
+
+  #project {
+
+    width: clamp(calc(100vw / 3.5), calc(100vw / 3), calc(100vw / 3));
+    /* width: var(--desktop-width); */
+  }
 
   .subtitle-section h3 {
     font-weight: 600;
