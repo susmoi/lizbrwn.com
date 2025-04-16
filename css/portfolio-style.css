@@ -226,7 +226,7 @@ figcaption p {
   max-width: 36%;
 }
 
-/* --- ABOUT DESKTOP --- */
+/* --- INDEX ABOUT DESKTOP --- */
 
 #about {
   height: auto;
@@ -365,6 +365,67 @@ figcaption p {
 .grid-link:focus .grid-image-hover {
   opacity: 1;
 }
+
+/* --- ABOUT PAGE DESKTOP --- */
+
+#about-page {
+  height: auto;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background-color: red;
+}
+
+.about-page-wrapper { 
+  /* display flex centers the grid */
+  display: flex; 
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+  /* min-height: 20vh; */
+  background-color: green;
+}
+
+.about-page-container {
+  /* display grid defines the two grid layout*/
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  justify-items: center;
+  /* align-items: flex-start; */
+  /* padding: 0 30vw 0 30vw; */
+  background-color: blue;
+  /* height: 400px; */
+}
+
+.about-page-image-container {
+  background-color: orange;
+  aspect-ratio: 1;
+  max-height: 200px;
+  max-height: 200px;
+}
+
+.about-page-image {
+  width: 100%;
+  height: 100%;
+}
+
+.about-page-title-container {
+  background-color: yellow;
+}
+
+.about-page-text-container{
+  background-color: purple;
+  height: auto;
+  min-width: 200px;
+  max-width: 400px;
+ 
+}
+
+.about-page-title h1 {
+  margin: 0;
+}
+
+
 
 /* --- PROJECT DESKTOP --- */
 
@@ -745,7 +806,7 @@ screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 
     height: 100%;
   }
 
-  /* --- ABOUT LAPTOP --- */
+  /* --- ABOUT INDEX LAPTOP --- */
 
   #about {
     padding-bottom: 3rem;
