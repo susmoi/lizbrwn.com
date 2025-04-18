@@ -1026,6 +1026,18 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
     width: 100%;
   }
 
+  /* --- ABOUT PAGE SMALL --- */
+
+.about-page-container {
+  /* display grid defines the two column grid layout, but switches to one column if viewport shrinks*/
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: flex-start;
+    padding: 1rem;
+    background-color: white;
+    grid-gap: 20px;
+}
+
 
 
   /* --- PROJECT SMALL --- */
@@ -1127,6 +1139,18 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
   .index-content-section p {
     font-size: 12px;
   }
+
+    /* --- ABOUT PAGE SMALL --- */
+
+.about-page-container {
+  /* display grid defines the two column grid layout, but switches to one column if viewport shrinks*/
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: flex-start;
+    padding: 1rem;
+    background-color: white;
+    grid-gap: 20px;
+}
 
 
   /* --- PROJECT PHONE --- */
