@@ -1026,6 +1026,10 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 
   /* --- ABOUT PAGE SMALL --- */
 
+  #about-page { 
+    padding-top: 1rem;
+  }
+
 .about-page-container {
   /* display grid defines the two column grid layout, but switches to one column if viewport shrinks*/
   display: grid;
@@ -1138,17 +1142,22 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
     font-size: 12px;
   }
 
-    /* --- ABOUT PAGE PHONE --- */
+  /* --- ABOUT PAGE PHONE --- */
 
-.about-page-container {
-  /* display grid defines the two column grid layout, but switches to one column if viewport shrinks*/
-  display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-items: flex-start;
-    padding: 1rem;
-    background-color: white;
-    grid-gap: 20px;
-}
+
+  #about-page {
+    padding-top: 1rem;
+  }
+
+  .about-page-container {
+    /* display grid defines the two column grid layout, but switches to one column if viewport shrinks*/
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      justify-items: flex-start;
+      padding: 1rem;
+      background-color: white;
+      grid-gap: 20px;
+  }
 
 
   /* --- PROJECT PHONE --- */
