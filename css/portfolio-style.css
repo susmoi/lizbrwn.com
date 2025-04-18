@@ -578,7 +578,10 @@ figcaption {
 /* --- CTA DESKTOP --- */
 
 #CTA {
-  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 1.6rem;
 
 }
 
@@ -587,8 +590,13 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  gap: .5rem;
+  
+}
+
+.CTA-link-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 
@@ -600,8 +608,14 @@ figcaption {
 }
 
 .CTA-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: .2rem;
-  color: #0097F5;
+  color: #0097F5
 }
 
 .CTA-link:focus * {
@@ -614,7 +628,6 @@ figcaption {
 
 .CTA-link p {
   color: #0097F5;
-  margin: 0;
 }
 
 .CTA-arrow p {
