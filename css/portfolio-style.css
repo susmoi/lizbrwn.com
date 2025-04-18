@@ -898,11 +898,9 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 
   .nav-container {
     display: grid;
-    justify-content: inherit;
-    font-size: .5rem;
-    font-weight: 200;
-    text-align: center;
-    border-bottom: none;
+    font-family: "clearSans", "Arial", sans-serif;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0 0 15px;
   }
 
   .nav-item {
@@ -1140,7 +1138,7 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
     font-size: 12px;
   }
 
-    /* --- ABOUT PAGE SMALL --- */
+    /* --- ABOUT PAGE PHONE --- */
 
 .about-page-container {
   /* display grid defines the two column grid layout, but switches to one column if viewport shrinks*/
@@ -1316,11 +1314,10 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 
 
   .nav-container {
-    display: flex;
+    display: grid;
     font-family: "clearSans", "Arial", sans-serif;
-    font-size: 10px;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0 0 15px;
   }
 
   .nav-link-container {
