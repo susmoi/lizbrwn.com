@@ -214,6 +214,12 @@ figcaption p {
   line-height: 1.5;
 }
 
+.nav-container p {
+  padding: 0 0 5px 0;
+  color: white;
+  margin: 0 20px 0 0;
+}
+
 /* --- INDEX DESKTOP --- */
 
 .index-large-header {
@@ -658,12 +664,11 @@ figcaption {
 .nav-container {
   display: grid;
   font-family: "clearSans", "Arial", sans-serif;
-  justify-content: center;
-  grid-template-columns: auto;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding: .5rem 0 .5rem 5rem;
 }
 
-.nav-portfolio-title {
+.nav-link {
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .6rem;
   font-weight: 200;
@@ -672,13 +677,13 @@ figcaption {
 }
 
 .nav-link-container {
-  justify-self: end;
-  padding-right: 2.5rem;
+  display: flex;
+  
 }
 
 .nav-item {
   padding: 0 0 5px 0;
-  color: black;
+  color: white;
   margin: 0 20px 0 0;
   text-decoration: none;
 }
@@ -900,7 +905,7 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
     border-bottom: none;
   }
 
-  .nav-portfolio-title {
+  .nav-item {
     font-size: .5rem;
     font-weight: 200;
   }
@@ -1294,30 +1299,18 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
     align-items: center;
   }
 
-  .nav-portfolio-title-container {
+  .nav-link-container {
     padding-left: 0;
 
   }
 
-  .nav-portfolio-title {
+  .nav-item {
     font-family: "clearSans", "Arial", sans-serif;
     font-size: 10px;
     font-weight: 200;
     padding: 0;
     color: white;
     margin: 0 0 0 0;
-  }
-
-  .nav-link-container {
-    justify-self: end;
-    padding-right: 1rem;
-  }
-
-  .nav-item {
-    padding: 0 0 5px 0;
-    color: black;
-    margin: 0 0 0 0;
-    text-decoration: none;
   }
 
   .nav-item:hover {
