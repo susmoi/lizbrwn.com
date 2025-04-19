@@ -276,7 +276,7 @@ figcaption p {
 .about-container {
   display: flex;
   align-items: flex-start;
-  padding: 0 30vw 0 30vw;
+  padding: 0 35vw 0 35vw;
 
 }
 
@@ -295,7 +295,7 @@ figcaption p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: calc(1.5rem + .3vw);
+  font-size: calc(2rem + .4vw);
   margin: 0 0 0 0;
 }
 
@@ -309,7 +309,7 @@ figcaption p {
 }
 
 .about-text-content-section p {
-  font-size: calc(.8rem + .3vw);
+  font-size: calc(1rem + .3vw);
   line-height: 1.45;
 }
 
@@ -852,6 +852,13 @@ screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 
     padding-bottom: 0;
   }
 
+  .about-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 30vw 0 30vw;
+  
+  }
+
 
   .about-title {
     display: flex;
@@ -861,7 +868,7 @@ screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 
   }
 
   .about-title h1 {
-    font-size: calc(1.2em + .2vw);
+    font-size: calc(1.8em + .2vw);
     margin: 0 0 0 0;
   }
 
