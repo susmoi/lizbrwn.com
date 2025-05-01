@@ -788,6 +788,7 @@ figcaption {
 
 .footer-link:hover * {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .footer-h6 {
