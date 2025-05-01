@@ -692,12 +692,12 @@ figcaption {
   z-index: 1000;
 }
 
-
 .nav-container {
-  display: grid;
+  display: flex;
   font-family: "clearSans", "Arial", sans-serif;
-  grid-template-columns: 1fr 1fr;
-  padding: .5rem 0 .5rem 5rem;
+  justify-content: space-between; /* Push items to opposite ends */
+  align-items: center; /* Vertically center items */
+  padding: 0.5rem 5rem; /* Adjust padding as needed */
 }
 
 .nav-link {
