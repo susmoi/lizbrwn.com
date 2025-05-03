@@ -690,7 +690,7 @@ figcaption {
   font-family: "clearSans", "Arial", sans-serif;
   justify-content: space-between; /* Push items to opposite ends */
   align-items: center; /* Vertically center items */
-  padding: 0.5rem 5rem; /* Adjust padding as needed */
+  /* padding: 0.5rem 5rem; Adjust padding as needed */
 }
 
 .nav-name-text {
@@ -937,22 +937,31 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 
   /* --- NAV SMALL --- */
 
+  #nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   .nav-container {
-    display: grid;
+    /* display: grid;
     font-family: "clearSans", "Arial", sans-serif;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px 0 0 15px;
+    grid-template-columns: 1fr 1fr; */
+    padding: 0 15px 0 15px;
   }
 
   .nav-container p {
     margin: 0 0 0 0;
+  }
+
+  .nav-link-container {
+    gap: 10px;
   }
   
   .nav-link-container p {
     font-family: "Arial", sans-serif;
     font-size: .7rem;
     color: white;
-    margin: 0 20px 0 0;
+    /* margin: 0 20px 0 0; */
   
   }
   
@@ -1383,10 +1392,10 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 
 
   .nav-container {
-    display: grid;
+    /* display: grid;
     font-family: "clearSans", "Arial", sans-serif;
     grid-template-columns: 1fr 1fr;
-    padding: 10px 0 0 15px;
+    padding: 10px 0 0 15px; */
   }
 
   .nav-link-container {
