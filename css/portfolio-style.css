@@ -240,22 +240,14 @@ figcaption p {
 
 .nav-container p {
   margin: 0 0 0 0;
+  font-size: 1rem;
 }
 
 .nav-link-container p {
   font-family: "Arial", sans-serif;
-  font-size: 1rem;
   color: white;
   margin: 0 30px 0 0;
 
-}
-
-.nav-name-text{
-  font-family: 'Arial', sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: white;
-  cursor: default;
 }
 
 /* --- INDEX DESKTOP --- */
@@ -699,6 +691,14 @@ figcaption {
   justify-content: space-between; /* Push items to opposite ends */
   align-items: center; /* Vertically center items */
   padding: 0.5rem 5rem; /* Adjust padding as needed */
+}
+
+.nav-name-text {
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
 }
 
 .nav-link {
