@@ -690,7 +690,7 @@ figcaption {
   font-family: "clearSans", "Arial", sans-serif;
   justify-content: space-between; /* Push items to opposite ends */
   align-items: center; /* Vertically center items */
-  /* padding: 0.5rem 5rem; Adjust padding as needed */
+  padding: 0.5rem 5rem;
 }
 
 .nav-name-text {
