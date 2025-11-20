@@ -499,11 +499,13 @@ figcaption p {
 }
 
 .project-text-container {
+  width: 100%;
   margin-bottom: 80px;
   min-height: 35vh;
 }
 
 .project-summary-container {
+  width: 100%;
   padding: 1.5rem; 
   margin: 2rem 0 3rem 0; 
   background-color: #FFF;
