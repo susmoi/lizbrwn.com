@@ -1482,17 +1482,18 @@ https://www.w3schools.com/colors/colors_hex.asp */
 }
 
 .fof-wrapper {
-  height: 30vh;
+  height: 44vh;
 
 }
 
 .fof-about-title h1 {
   color: #0097F5;
-  font-size: calc(.5rem + 2.5vw);
+  font-size: clamp(1.2rem, 6vw, 3.5rem);
+  margin: 0 0 0 0;
 }
 
 .fof-grid-title {
-  font-size: calc(.2rem + 1vw);
+  font-size: clamp(.7rem, 3.5vw, 1rem);
   margin-bottom: 0;
   
 }
