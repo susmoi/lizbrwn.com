@@ -276,7 +276,7 @@ figcaption p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-height: 20vh;
+  min-height: 35vh;
 
 }
 
@@ -348,7 +348,7 @@ figcaption p {
 }
 
 .grid-container {
-  padding: 0 10vw 0 10vw; 
+  padding: 0 12vw 0 12vw; 
   gap: 20px;
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
