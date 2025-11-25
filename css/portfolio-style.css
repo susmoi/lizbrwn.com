@@ -10,10 +10,6 @@
 
 /* --- DOCUMENT DESKTOP --- */
 
-html {
-  font-size: 16px;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -99,7 +95,7 @@ h6 {
 
 p {
   font-family: "Arial", sans-serif;
-  font-size: 0.7rem;
+  font-size: 16px;
   color: black;
 }
 
@@ -148,23 +144,24 @@ a:link {
 .project-content-section h4 {
   font-family: 'Arial', sans-serif;
   font-weight: 600;
-  font-size: .8rem;
+font-size: clamp(1rem, 1rem + 1vw, 2rem);
   line-height: 1.4;
-  margin: 42px 0 8px 0;
+  margin: 3rem 0 1rem 0;
 }
 
 .project-content-section p {
-  font-size: 16px;
+  font-size: clamp(16px, 16px + .5vw, 3rem);
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .project-content-section li {
   font-family: "Arial", sans-serif;
   color: black;
-  font-size: 16px;
+  font-size: clamp(16px, 16px + .5vw, 3rem);
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.6;
+  padding-bottom: .8rem;
 }
 
 .subtitle-section h3 {
@@ -229,8 +226,8 @@ a:link {
 }
 
 figcaption p {
-  font-size: 12px;
-  margin: 5px;
+  font-size: 1rem;
+  margin: 1rem;
   display: block;
   text-align: center;
 }
@@ -641,7 +638,7 @@ figcaption {
 
 .CTA-header {
   font-weight: 900;
-  font-size: 12px;
+  font-size: 1rem;
   margin: 0;
   color: black;
 }
@@ -667,6 +664,7 @@ figcaption {
 
 .CTA-link p {
   color: #0097F5;
+  font-size: 1rem;
 }
 
 .CTA-arrow p {
@@ -917,19 +915,6 @@ screen and (max-width: 1902px) and (min-resolution: 2dppx) and (max-resolution: 
 
   /* --- PROJECT LAPTOP --- */
 
-  /* #project {
-
-    width: clamp(calc(100vw / 3.5), calc(100vw / 3), calc(100vw / 3));
-    width: var(--desktop-width);
-  } */
-
-  .subtitle-section h3 {
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    margin-top: 0;
-    line-height: 1.4;
-  }
 
 }
 
@@ -1281,19 +1266,6 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
   .title-section h2 {
     font-size: 14px;
 
-  }
-
-  /* .subtitle-section {
-    margin-top: 60px;
-  } */
-
-
-  .subtitle-section h3 {
-    font-weight: 600;
-    font-size: 19px;
-    margin-bottom: 1rem;
-    margin-top: 0;
-    line-height: 1.4;
   }
 
   .image-section {
