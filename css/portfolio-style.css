@@ -414,8 +414,10 @@ figcaption p {
   width: 100%;
   padding-top: 5rem;
   padding-bottom: 4rem;
-  /* background-color: red; */
   background-image: url('../images/new-kent-yard.JPG');
+  background-position: center;
+  background-size: cover;
+  background-color: white;
 }
 
 .about-page-wrapper { 
