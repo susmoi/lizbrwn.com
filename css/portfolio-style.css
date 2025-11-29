@@ -317,7 +317,7 @@ figcaption p {
 }
 
 .about-text-content-section p {
-  font-size: clamp(.7rem, 2.6vw, 1.5rem);
+  font-size: clamp(1rem, 1.8vw + .5rem, 2rem);
   line-height: 1.45;
 }
 
