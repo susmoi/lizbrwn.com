@@ -509,7 +509,7 @@ figcaption p {
 
 .project-summary-container {
   width: 100%;
-  padding: 1.5rem; 
+  padding: 2rem 2rem 3rem 2rem; 
   margin: 2rem 0 3rem 0; 
   background-color: #FFF;
   border-radius: 4px;
@@ -520,7 +520,7 @@ figcaption p {
 .project-summary-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: .5rem;
+  gap: 2.2rem;
 
 }
 
@@ -1483,3 +1483,12 @@ https://www.w3schools.com/colors/colors_hex.asp */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
+
+/* MODAL */
+/* 1. Updated Modal Background/Container */
+  /* 🔥 Centering with Flexbox 🔥 */
+/* 2. Updated Modal Content (The Full-Sized Image) */
+  /* Define the max size for the image to prevent it from going off-screen */
+/* 3. The Close Button (Remains the same, but essential for the design) */
+/* Ensure the close button is on top of the image */
