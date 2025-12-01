@@ -166,7 +166,7 @@ font-size: clamp(1rem, 1rem + 1vw, 2rem);
 
 .subtitle-section h3 {
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: clamp(1rem, 1rem + 1.4vw, 2.5rem);
   margin-bottom: 1rem;
   margin-top: 0;
   line-height: 1.4;
@@ -1117,12 +1117,6 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 @media screen and (max-width: 390px) and (-webkit-device-pixel-ratio: 2),
 (max-width: 390px) and (resolution: 3dppx) {
 
-  /* --- TEXT PHONE --- */
-
-  .project-content-section p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
 
   /* --- GRID PHONE --- */
 
@@ -1275,45 +1269,24 @@ screen and (max-width: 735px) and (min-resolution: 2dppx) and (max-resolution: 3
 
   }
 
-  .summary-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
+  .project-summary-container {
+    width: 70vw;
+    padding: 1.4rem 1.4rem 2.4rem 1.4rem;
+    margin: 1rem 0 1.5rem 0;
 
   }
 
-  .summary-title {
-    text-align: start;
-    margin-top: 10rem;
-    margin-bottom: 2rem;
-  }
-
-  .summary-title h4 {
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-
-  .summary-box h5 {
-    font-family: 'Arial', sans-serif;
-    font-weight: 600;
-    font-size: .8rem;
-    margin-top: 0;
-    margin-bottom: .2rem;
-    line-height: 1.4;
-    padding: 0 1rem .4rem 0;
+  .project-summary-section {
+    gap: 1.1rem;
 
   }
 
-  .summary-box p {
-    font-family: "Arial", sans-serif;
-    font-size: 0.7rem;
-    margin-bottom: 0;
-    line-height: 1.4;
-    margin-top: 0;
-    padding: 0 1rem 0 0;
-    color: black;
-
+  figcaption p {
+    font-size: .9rem;
+    padding: 0 .8rem;
+    line-height: 1.4rem;
   }
+
 
   /* --- CTA PHONE --- */
 
